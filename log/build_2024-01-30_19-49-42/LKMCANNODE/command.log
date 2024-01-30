@@ -1,0 +1,6 @@
+Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE

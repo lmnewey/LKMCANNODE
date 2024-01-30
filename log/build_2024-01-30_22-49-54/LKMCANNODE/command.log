@@ -1,0 +1,4 @@
+Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE

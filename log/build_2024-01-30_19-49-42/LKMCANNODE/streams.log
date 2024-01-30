@@ -1,0 +1,48 @@
+[0.098s] Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+[0.854s] -- The C compiler identification is GNU 11.4.0
+[2.151s] -- The CXX compiler identification is GNU 11.4.0
+[3.069s] -- Detecting C compiler ABI info
+[4.102s] -- Detecting C compiler ABI info - done
+[4.139s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.140s] -- Detecting C compile features
+[4.142s] -- Detecting C compile features - done
+[4.220s] -- Detecting CXX compiler ABI info
+[5.179s] -- Detecting CXX compiler ABI info - done
+[5.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.211s] -- Detecting CXX compile features
+[5.213s] -- Detecting CXX compile features - done
+[5.299s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.484s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[5.688s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.814s] WARNING: Package name "LKMCANNODE" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[8.692s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.694s] -- Configured cppcheck include dirs: 
+[8.695s] -- Configured cppcheck exclude dirs and/or files: 
+[9.569s] -- Added test 'lint_cmake' to check CMake code style
+[12.635s] -- Added test 'uncrustify' to check C / C++ code style
+[12.637s] -- Configured uncrustify additional arguments: 
+[12.964s] -- Added test 'xmllint' to check XML markup files
+[13.140s] -- Configuring done
+[13.521s] -- Generating done
+[13.605s] -- Build files have been written to: /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+[13.612s] Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+[13.630s] Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+[13.758s] Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+[13.816s] Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+[13.825s] -- Install configuration: ""
+[13.876s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/package_run_dependencies/LKMCANNODE
+[14.029s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/parent_prefix_path/LKMCANNODE
+[14.152s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/ament_prefix_path.sh
+[14.223s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/ament_prefix_path.dsv
+[14.312s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/path.sh
+[14.399s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/path.dsv
+[14.494s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.bash
+[14.578s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.sh
+[14.661s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.zsh
+[14.745s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.dsv
+[14.829s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.dsv
+[14.943s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/packages/LKMCANNODE
+[15.076s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/cmake/LKMCANNODEConfig.cmake
+[15.169s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/cmake/LKMCANNODEConfig-version.cmake
+[15.299s] -- Installing: /mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.xml
+[15.383s] Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
