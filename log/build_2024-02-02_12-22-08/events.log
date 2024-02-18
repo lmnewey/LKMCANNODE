@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000611] (LKMCANNODE) JobQueued: {'identifier': 'LKMCANNODE', 'dependencies': OrderedDict()}
+[0.000692] (LKMCANNODE) JobStarted: {'identifier': 'LKMCANNODE'}
+[0.098175] (-) TimerEvent: {}
+[0.135584] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'cmake'}
+[0.135986] (LKMCANNODE) Command: {'cmd': ['/usr/bin/cmake', '/home/luke/LKMCANNODE', '-DCMAKE_INSTALL_PREFIX=/home/luke/LKMCANNODE/install/LKMCANNODE'], 'cwd': '/home/luke/LKMCANNODE/build/LKMCANNODE', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 60746 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-223fdd2f-818d-4bfd-9a10-ed17186038de.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/LKMCANNODE/build/LKMCANNODE'), ('SSH_CONNECTION', '192.168.3.59 60746 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.198375] (-) TimerEvent: {}
+[0.299325] (-) TimerEvent: {}
+[0.325953] (LKMCANNODE) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399489] (-) TimerEvent: {}
+[0.500069] (-) TimerEvent: {}
+[0.501493] (LKMCANNODE) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.520274] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600245] (-) TimerEvent: {}
+[0.679034] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.696501] (LKMCANNODE) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.700328] (-) TimerEvent: {}
+[0.701172] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.702422] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.709562] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.800537] (-) TimerEvent: {}
+[0.901100] (-) TimerEvent: {}
+[0.902955] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.921235] (LKMCANNODE) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.921718] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.922724] (LKMCANNODE) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.934832] (LKMCANNODE) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.001272] (-) TimerEvent: {}
+[1.101758] (-) TimerEvent: {}
+[1.202280] (-) TimerEvent: {}
+[1.302828] (-) TimerEvent: {}
+[1.305253] (LKMCANNODE) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.403013] (-) TimerEvent: {}
+[1.497698] (LKMCANNODE) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.503067] (-) TimerEvent: {}
+[1.593989] (LKMCANNODE) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.603184] (-) TimerEvent: {}
+[1.605781] (LKMCANNODE) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.627650] (LKMCANNODE) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.666181] (LKMCANNODE) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.703383] (-) TimerEvent: {}
+[1.717395] (LKMCANNODE) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.803540] (-) TimerEvent: {}
+[1.899232] (LKMCANNODE) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.903605] (-) TimerEvent: {}
+[1.905105] (LKMCANNODE) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.003803] (-) TimerEvent: {}
+[2.104350] (-) TimerEvent: {}
+[2.126472] (LKMCANNODE) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.179743] (LKMCANNODE) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.204528] (-) TimerEvent: {}
+[2.282527] (LKMCANNODE) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.304714] (-) TimerEvent: {}
+[2.305721] (LKMCANNODE) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.404890] (-) TimerEvent: {}
+[2.478764] (LKMCANNODE) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.480067] (LKMCANNODE) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.505062] (-) TimerEvent: {}
+[2.605626] (-) TimerEvent: {}
+[2.657535] (LKMCANNODE) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.661114] (LKMCANNODE) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.705802] (-) TimerEvent: {}
+[2.806377] (-) TimerEvent: {}
+[2.906974] (-) TimerEvent: {}
+[3.007523] (-) TimerEvent: {}
+[3.108088] (-) TimerEvent: {}
+[3.150895] (LKMCANNODE) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[3.151351] (LKMCANNODE) StderrLine: {'line': b'  By not providing "Findcan_msgs.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[3.151560] (LKMCANNODE) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "can_msgs",\n'}
+[3.151759] (LKMCANNODE) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[3.151954] (LKMCANNODE) StderrLine: {'line': b'\n'}
+[3.152145] (LKMCANNODE) StderrLine: {'line': b'  Could not find a package configuration file provided by "can_msgs" with any\n'}
+[3.152337] (LKMCANNODE) StderrLine: {'line': b'  of the following names:\n'}
+[3.152529] (LKMCANNODE) StderrLine: {'line': b'\n'}
+[3.152717] (LKMCANNODE) StderrLine: {'line': b'    can_msgsConfig.cmake\n'}
+[3.152909] (LKMCANNODE) StderrLine: {'line': b'    can_msgs-config.cmake\n'}
+[3.153100] (LKMCANNODE) StderrLine: {'line': b'\n'}
+[3.153289] (LKMCANNODE) StderrLine: {'line': b'  Add the installation prefix of "can_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[3.153482] (LKMCANNODE) StderrLine: {'line': b'  "can_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[3.153968] (LKMCANNODE) StderrLine: {'line': b'  "can_msgs" provides a separate development package or SDK, be sure it has\n'}
+[3.154274] (LKMCANNODE) StderrLine: {'line': b'  been installed.\n'}
+[3.154468] (LKMCANNODE) StderrLine: {'line': b'\n'}
+[3.154657] (LKMCANNODE) StderrLine: {'line': b'\x1b[0m\n'}
+[3.154847] (LKMCANNODE) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.155054] (LKMCANNODE) StdoutLine: {'line': b'See also "/home/luke/LKMCANNODE/build/LKMCANNODE/CMakeFiles/CMakeOutput.log".\n'}
+[3.172136] (LKMCANNODE) CommandEnded: {'returncode': 1}
+[3.208278] (-) TimerEvent: {}
+[3.308836] (-) TimerEvent: {}
+[3.343117] (LKMCANNODE) JobEnded: {'identifier': 'LKMCANNODE', 'rc': 1}
+[3.354123] (-) EventReactorShutdown: {}

@@ -1,0 +1,95 @@
+[0.179s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.279s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.335s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.473s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.473s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:774:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.473s]   774 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.474s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.474s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.474s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:850:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.475s]   850 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.475s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.475s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:850:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.475s]   850 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.475s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.475s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.476s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:862:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.476s]   862 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.476s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.476s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:862:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.476s]   862 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.477s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.479s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[6.479s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:47:[m[K [01;31m[Kerror: [m[Kexpected identifier
+[6.479s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor(std::[01;31m[Kmake_shared<BLDCMotor>[m[K(1));
+[6.480s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:69:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K([m[K’ token
+[6.480s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor(std::make_shared<BLDCMotor>[01;31m[K([m[K1));
+[6.480s]       |                                                                     [01;31m[K^[m[K
+[6.480s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K([m[K’ token
+[6.481s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor[34m[K([m[Kstd::make_shared<BLDCMotor>[01;31m[K([m[K1));
+[6.481s]       |                                         [34m[K~[m[K                           [01;31m[K^[m[K
+[6.481s]       |                                                                     [32m[K)[m[K
+[6.481s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:70:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[6.481s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor(std::make_shared<BLDCMotor>([01;31m[K1[m[K));
+[6.482s]       |                                                                      [01;31m[K^[m[K
+[6.482s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[6.482s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:5:[m[K [01;31m[Kerror: [m[K‘[01m[KleftMotor[m[K’ declared as function returning a function
+[6.482s]  1231 |     [01;31m[Kstd[m[K::shared_ptr<BLDCMotor> leftMotor(std::make_shared<BLDCMotor>(1));
+[6.482s]       |     [01;31m[K^~~[m[K
+[6.482s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.483s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor(std::make_shared<BLDCMotor>(1[01;31m[K)[m[K);
+[6.483s]       |                                                                       [01;31m[K^[m[K
+[6.483s]       |                                                                        [32m[K;[m[K
+[6.483s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:72:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[6.483s]  1231 |     std::shared_ptr<BLDCMotor> leftMotor(std::make_shared<BLDCMotor>(1)[01;31m[K)[m[K;
+[6.484s]       |                                                                        [01;31m[K^[m[K
+[6.484s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:48:[m[K [01;31m[Kerror: [m[Kexpected identifier
+[6.484s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor(std::[01;31m[Kmake_shared<BLDCMotor>[m[K(2));
+[6.484s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.484s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:70:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K([m[K’ token
+[6.485s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor(std::make_shared<BLDCMotor>[01;31m[K([m[K2));
+[6.485s]       |                                                                      [01;31m[K^[m[K
+[6.485s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K([m[K’ token
+[6.485s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor[34m[K([m[Kstd::make_shared<BLDCMotor>[01;31m[K([m[K2));
+[6.485s]       |                                          [34m[K~[m[K                           [01;31m[K^[m[K
+[6.486s]       |                                                                      [32m[K)[m[K
+[6.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:71:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[6.486s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor(std::make_shared<BLDCMotor>([01;31m[K2[m[K));
+[6.486s]       |                                                                       [01;31m[K^[m[K
+[6.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[6.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:5:[m[K [01;31m[Kerror: [m[K‘[01m[KrightMotor[m[K’ declared as function returning a function
+[6.487s]  1232 |     [01;31m[Kstd[m[K::shared_ptr<BLDCMotor> rightMotor(std::make_shared<BLDCMotor>(2));
+[6.487s]       |     [01;31m[K^~~[m[K
+[6.487s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:72:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.487s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor(std::make_shared<BLDCMotor>(2[01;31m[K)[m[K);
+[6.487s]       |                                                                        [01;31m[K^[m[K
+[6.488s]       |                                                                         [32m[K;[m[K
+[6.488s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:73:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[6.488s]  1232 |     std::shared_ptr<BLDCMotor> rightMotor(std::make_shared<BLDCMotor>(2)[01;31m[K)[m[K;
+[6.488s]       |                                                                         [01;31m[K^[m[K
+[6.652s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::onCanMessageReceived(const can_frame&)[m[K’:
+[6.652s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1305:10:[m[K [01;31m[Kerror: [m[K‘[01m[KleftMotor[m[K’ was not declared in this scope
+[6.653s]  1305 |          [01;31m[KleftMotor[m[K->parseResponse(frame.data);
+[6.653s]       |          [01;31m[K^~~~~~~~~[m[K
+[6.666s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1309:9:[m[K [01;31m[Kerror: [m[K‘[01m[KrightMotor[m[K’ was not declared in this scope
+[6.667s]  1309 |         [01;31m[KrightMotor[m[K->parseResponse(frame.data);
+[6.667s]       |         [01;31m[K^~~~~~~~~~[m[K
+[6.686s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::velocityCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.686s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1319:9:[m[K [01;31m[Kerror: [m[K‘[01m[KleftMotor[m[K’ was not declared in this scope
+[6.686s]  1319 |         [01;31m[KleftMotor[m[K->setSpeed(leftSpeed);
+[6.687s]       |         [01;31m[K^~~~~~~~~[m[K
+[6.700s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1320:9:[m[K [01;31m[Kerror: [m[K‘[01m[KrightMotor[m[K’ was not declared in this scope
+[6.700s]  1320 |         [01;31m[KrightMotor[m[K->setSpeed(rightSpeed);
+[6.700s]       |         [01;31m[K^~~~~~~~~~[m[K
+[6.715s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[6.715s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1333:35:[m[K [01;31m[Kerror: [m[K‘[01m[KleftMotor[m[K’ was not declared in this scope
+[6.715s]  1333 |         auto leftEncoderCommand = [01;31m[KleftMotor[m[K->readEncoderValuesCommand();
+[6.715s]       |                                   [01;31m[K^~~~~~~~~[m[K
+[6.728s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1334:36:[m[K [01;31m[Kerror: [m[K‘[01m[KrightMotor[m[K’ was not declared in this scope
+[6.729s]  1334 |         auto rightEncoderCommand = [01;31m[KrightMotor[m[K->readEncoderValuesCommand();
+[6.729s]       |                                    [01;31m[K^~~~~~~~~~[m[K
+[12.771s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[12.771s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[12.772s] gmake: *** [Makefile:146: all] Error 2
+[12.776s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

@@ -1,0 +1,477 @@
+[0.000000] (-) TimerEvent: {}
+[0.000305] (LKMCANNODE) JobQueued: {'identifier': 'LKMCANNODE', 'dependencies': OrderedDict()}
+[0.001162] (LKMCANNODE) JobStarted: {'identifier': 'LKMCANNODE'}
+[0.099858] (-) TimerEvent: {}
+[0.131163] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'cmake'}
+[0.132359] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'build'}
+[0.133876] (LKMCANNODE) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luke/LKMCANNODE/build/LKMCANNODE', '--', '-j4', '-l4'], 'cwd': '/home/luke/LKMCANNODE/build/LKMCANNODE', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 53611 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-75335edd-cdb2-452b-9652-7487e6db506d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/LKMCANNODE/build/LKMCANNODE'), ('SSH_CONNECTION', '192.168.3.59 53611 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200067] (-) TimerEvent: {}
+[0.236665] (LKMCANNODE) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lkmcannode\x1b[0m\n'}
+[0.290480] (LKMCANNODE) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o\x1b[0m\n'}
+[0.300248] (-) TimerEvent: {}
+[0.400820] (-) TimerEvent: {}
+[0.501377] (-) TimerEvent: {}
+[0.601963] (-) TimerEvent: {}
+[0.702617] (-) TimerEvent: {}
+[0.803179] (-) TimerEvent: {}
+[0.903760] (-) TimerEvent: {}
+[1.004417] (-) TimerEvent: {}
+[1.104990] (-) TimerEvent: {}
+[1.205627] (-) TimerEvent: {}
+[1.306271] (-) TimerEvent: {}
+[1.406906] (-) TimerEvent: {}
+[1.507542] (-) TimerEvent: {}
+[1.608143] (-) TimerEvent: {}
+[1.708756] (-) TimerEvent: {}
+[1.809417] (-) TimerEvent: {}
+[1.910077] (-) TimerEvent: {}
+[2.010715] (-) TimerEvent: {}
+[2.111390] (-) TimerEvent: {}
+[2.212034] (-) TimerEvent: {}
+[2.312628] (-) TimerEvent: {}
+[2.413263] (-) TimerEvent: {}
+[2.513868] (-) TimerEvent: {}
+[2.614454] (-) TimerEvent: {}
+[2.715053] (-) TimerEvent: {}
+[2.815663] (-) TimerEvent: {}
+[2.916238] (-) TimerEvent: {}
+[3.016772] (-) TimerEvent: {}
+[3.117350] (-) TimerEvent: {}
+[3.217923] (-) TimerEvent: {}
+[3.318522] (-) TimerEvent: {}
+[3.419102] (-) TimerEvent: {}
+[3.519693] (-) TimerEvent: {}
+[3.620274] (-) TimerEvent: {}
+[3.720876] (-) TimerEvent: {}
+[3.821550] (-) TimerEvent: {}
+[3.922150] (-) TimerEvent: {}
+[4.022767] (-) TimerEvent: {}
+[4.123357] (-) TimerEvent: {}
+[4.223960] (-) TimerEvent: {}
+[4.324563] (-) TimerEvent: {}
+[4.425171] (-) TimerEvent: {}
+[4.525766] (-) TimerEvent: {}
+[4.626348] (-) TimerEvent: {}
+[4.726967] (-) TimerEvent: {}
+[4.827599] (-) TimerEvent: {}
+[4.928178] (-) TimerEvent: {}
+[5.028814] (-) TimerEvent: {}
+[5.129401] (-) TimerEvent: {}
+[5.229991] (-) TimerEvent: {}
+[5.330580] (-) TimerEvent: {}
+[5.431158] (-) TimerEvent: {}
+[5.531754] (-) TimerEvent: {}
+[5.632344] (-) TimerEvent: {}
+[5.732922] (-) TimerEvent: {}
+[5.833540] (-) TimerEvent: {}
+[5.934124] (-) TimerEvent: {}
+[6.034777] (-) TimerEvent: {}
+[6.135373] (-) TimerEvent: {}
+[6.235956] (-) TimerEvent: {}
+[6.317751] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseGeneralStatusResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.318489] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:656:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.318866] (LKMCANNODE) StderrLine: {'line': b'  656 | void parseGeneralStatusResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.319076] (LKMCANNODE) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.319455] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseTorqueClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.319665] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:670:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.319962] (LKMCANNODE) StderrLine: {'line': b'  670 | void parseTorqueClosedLoopControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.320314] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.320570] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSpeedClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.320832] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:682:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.321027] (LKMCANNODE) StderrLine: {'line': b'  682 | void parseSpeedClosedLoopControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.321238] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.321739] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseMultiLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.322004] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:694:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.322343] (LKMCANNODE) StderrLine: {'line': b'  694 | void parseMultiLoopAngleControl1Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.322533] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.322786] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseMultiLoopAngleControl2Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.322977] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:709:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.323169] (LKMCANNODE) StderrLine: {'line': b'  709 | void parseMultiLoopAngleControl2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.323472] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.323664] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSingleLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.323856] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:722:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.324080] (LKMCANNODE) StderrLine: {'line': b'  722 | void parseSingleLoopAngleControl1Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.324271] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.324461] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSingleLoopAngleControl2Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.324664] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:734:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.324869] (LKMCANNODE) StderrLine: {'line': b'  734 | void parseSingleLoopAngleControl2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.325056] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.325266] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseIncrementAngleControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.325461] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:746:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.325654] (LKMCANNODE) StderrLine: {'line': b'  746 | void parseIncrementAngleControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.325844] (LKMCANNODE) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.326033] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.326224] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:760:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.326549] (LKMCANNODE) StderrLine: {'line': b'  760 | void parseWritePIDParametersToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, BLDCMotor& motor){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[6.326742] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.326932] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:760:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.327126] (LKMCANNODE) StderrLine: {'line': b'  760 | void parseWritePIDParametersToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[6.327332] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.327524] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadPIDParametersResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.327717] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:771:73:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.327908] (LKMCANNODE) StderrLine: {'line': b'  771 | void parseReadPIDParametersResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.328091] (LKMCANNODE) StderrLine: {'line': b'      |                                                              \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.328275] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadAccelerationResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.328460] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:790:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.328657] (LKMCANNODE) StderrLine: {'line': b'  790 | void parseReadAccelerationResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.328844] (LKMCANNODE) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.329028] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadEncoderResponse(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.329259] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:812:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.329466] (LKMCANNODE) StderrLine: {'line': b'  812 | void parseReadEncoderResponse(const uint8_t* response,\x1b[01;35m\x1b[KBLDCMotor motor\x1b[m\x1b[K){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {\n'}
+[6.329655] (LKMCANNODE) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.329844] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.330035] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:836:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.330227] (LKMCANNODE) StderrLine: {'line': b'  836 | void parseWriteEncoderValueToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.330432] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.330619] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:836:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.330815] (LKMCANNODE) StderrLine: {'line': b'  836 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.331003] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.331192] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.331383] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:848:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.331576] (LKMCANNODE) StderrLine: {'line': b'  848 | void parseWriteCurrentPositionToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.331764] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.331951] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:848:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.332141] (LKMCANNODE) StderrLine: {'line': b'  848 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.332328] (LKMCANNODE) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.332516] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMultiAngleLoopResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.332705] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:860:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.332910] (LKMCANNODE) StderrLine: {'line': b'  860 | void parseReadMultiAngleLoopResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.333098] (LKMCANNODE) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.333318] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadSingleAngleLoopResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.333510] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:867:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.333720] (LKMCANNODE) StderrLine: {'line': b'  867 | void parseReadSingleAngleLoopResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.333911] (LKMCANNODE) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.334117] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMotorState1AndErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.334312] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:875:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.334498] (LKMCANNODE) StderrLine: {'line': b'  875 | void parseReadMotorState1AndErrorStateResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.334681] (LKMCANNODE) StderrLine: {'line': b'      |                                                                         \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.334863] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseClearErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.335047] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:890:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.335237] (LKMCANNODE) StderrLine: {'line': b'  890 | void parseClearErrorStateResponse(const uint8_t* response,  \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.335424] (LKMCANNODE) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.335611] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMotorState2Response(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.335800] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:907:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.335986] (-) TimerEvent: {}
+[6.336229] (LKMCANNODE) StderrLine: {'line': b'  907 | void parseReadMotorState2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor motor\x1b[m\x1b[K) {\n'}
+[6.336426] (LKMCANNODE) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.336615] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KBLDCMotor::MessageType BLDCMotor::parseResponse(const uint8_t*, BLDCMotor::MessageType, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.336806] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:940:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KmessageType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.337017] (LKMCANNODE) StderrLine: {'line': b'  940 | MessageType parseResponse(const uint8_t* response, \x1b[01;35m\x1b[KMessageType messageType\x1b[m\x1b[K, BLDCMotor& motor) {\n'}
+[6.337233] (LKMCANNODE) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.337425] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:940:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.337617] (LKMCANNODE) StderrLine: {'line': b'  940 | MessageType parseResponse(const uint8_t* response, MessageType messageType, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.337804] (LKMCANNODE) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.338004] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.338193] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveNode\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.338394] (LKMCANNODE) StderrLine: {'line': b' 1152 |     \x1b[01;31m\x1b[KDifferentialDriveNode\x1b[m\x1b[K() : Node("differential_drive_node") {\n'}
+[6.338579] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.338765] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1185:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected class-name before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.338954] (LKMCANNODE) StderrLine: {'line': b' 1185 |      ~DifferentialDriveNode\x1b[01;31m\x1b[K(\x1b[m\x1b[K) {\n'}
+[6.339138] (LKMCANNODE) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.436209] (-) TimerEvent: {}
+[6.446661] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcan_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.447077] (LKMCANNODE) StderrLine: {'line': b' 1274 |     rclcpp::Publisher<\x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry>::SharedPtr odom_publisher_;\n'}
+[6.447271] (LKMCANNODE) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.447519] (LKMCANNODE) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Kcan_msgs\x1b[m\x1b[K\n'}
+[6.447725] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.447911] (LKMCANNODE) StderrLine: {'line': b' 1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr odom_publisher_;\n'}
+[6.448121] (LKMCANNODE) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.448304] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.448503] (LKMCANNODE) StderrLine: {'line': b' 1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K odom_publisher_;\n'}
+[6.448687] (LKMCANNODE) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.448872] (LKMCANNODE) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.453301] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.453789] (LKMCANNODE) StderrLine: {'line': b' 1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr \x1b[01;31m\x1b[Kodom_publisher_\x1b[m\x1b[K;\n'}
+[6.453989] (LKMCANNODE) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.454184] (LKMCANNODE) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[6.454376] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint DifferntialDrive::DifferentialDriveNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.454568] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[6.454758] (LKMCANNODE) StderrLine: {'line': b' 1152 |     DifferentialDriveNode() : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("differential_drive_node") {\n'}
+[6.454948] (LKMCANNODE) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.455133] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KDifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[KNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.455686] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.456060] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.456254] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.456441] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.456626] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.456810] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.456992] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.457193] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.457407] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.457590] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.457780] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.457974] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.458160] (LKMCANNODE) StderrLine: {'line': b' 1156 |             RCLCPP_ERROR(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Failed to initialize CAN socket");\n'}
+[6.458344] (LKMCANNODE) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.458527] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.458712] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.458896] (LKMCANNODE) StderrLine: {'line': b' 1156 |             \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Failed to initialize CAN socket");\n'}
+[6.459079] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.459262] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.459461] (LKMCANNODE) StderrLine: {'line': b' 1156 |             \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Failed to initialize CAN socket");\n'}
+[6.459654] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.459837] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.460020] (LKMCANNODE) StderrLine: {'line': b' 1156 |             \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Failed to initialize CAN socket");\n'}
+[6.460202] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.460385] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.460575] (LKMCANNODE) StderrLine: {'line': b' 1156 |             \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Failed to initialize CAN socket");\n'}
+[6.460761] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.460943] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.461125] (LKMCANNODE) StderrLine: {'line': b' 1156 |             \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Failed to initialize CAN socket");\n'}
+[6.461320] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.461506] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.461686] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.461868] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.462060] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.462243] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.462424] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.462605] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.462787] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.462969] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.463153] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.463337] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.463518] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.463701] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.463896] (LKMCANNODE) StderrLine: {'line': b' 1156 |             RCLCPP_ERROR(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Failed to initialize CAN socket");\n'}
+[6.464078] (LKMCANNODE) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.464261] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.464447] (LKMCANNODE) StderrLine: {'line': b' 1156 |             RCLCPP_ERROR(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Failed to initialize CAN socket");\n'}
+[6.464631] (LKMCANNODE) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.464812] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids taking the address of an unqualified or parenthesized non-static member function to form a pointer to member function.  Say \xe2\x80\x98\x1b[01m\x1b[K&DifferntialDrive::DifferentialDriveNode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.465000] (LKMCANNODE) StderrLine: {'line': b' 1160 |             can_read_thread_ = std::thread(&\x1b[01;31m\x1b[KDifferentialDriveNode\x1b[m\x1b[K::readCanMessages, this);\n'}
+[6.465192] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.465379] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.465564] (LKMCANNODE) StderrLine: {'line': b' 1160 |             can_read_thread_ = std::thread\x1b[01;31m\x1b[K(\x1b[m\x1b[K&DifferentialDriveNode::readCanMessages, this);\n'}
+[6.465745] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.465940] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveNode\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[6.466132] (LKMCANNODE) StderrLine: {'line': b' 1160 |             can_read_thread_ = std::thread(&\x1b[01;31m\x1b[KDifferentialDriveNode\x1b[m\x1b[K::readCanMessages, this);\n'}
+[6.466323] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.468622] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcan_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.469134] (LKMCANNODE) StderrLine: {'line': b' 1163 |         \x1b[01;31m\x1b[Kcan_pub_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("can_tx", 10);\n'}
+[6.469347] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.469533] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_publisher\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.469720] (LKMCANNODE) StderrLine: {'line': b' 1163 |         can_pub_ = this->\x1b[01;31m\x1b[Kcreate_publisher\x1b[m\x1b[K<std_msgs::msg::String>("can_tx", 10);\n'}
+[6.469903] (LKMCANNODE) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.470087] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.470272] (LKMCANNODE) StderrLine: {'line': b' 1163 |         can_pub_ = this->create_publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K("can_tx", 10);\n'}
+[6.470455] (LKMCANNODE) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.470636] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.470823] (LKMCANNODE) StderrLine: {'line': b' 1163 |         can_pub_ = this->create_publisher<std_msgs::msg::String>(\x1b[01;35m\x1b[K"can_tx"\x1b[m\x1b[K, 10);\n'}
+[6.471005] (LKMCANNODE) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.471189] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1167:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_subscription\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.471373] (LKMCANNODE) StderrLine: {'line': b' 1167 |         subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription\x1b[m\x1b[K<geometry_msgs::msg::Twist>(\n'}
+[6.471554] (LKMCANNODE) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.471737] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1167:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.471943] (LKMCANNODE) StderrLine: {'line': b' 1167 |         subscription_ = this->create_subscription<geometry_msgs::msg::Twist\x1b[01;31m\x1b[K>\x1b[m\x1b[K(\n'}
+[6.472141] (LKMCANNODE) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.472324] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1168:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.472510] (LKMCANNODE) StderrLine: {'line': b' 1168 |             \x1b[01;35m\x1b[K"cmd_vel"\x1b[m\x1b[K, 10, std::bind(&CanNode::velocity_callback, this, std::placeholders::_1));\n'}
+[6.472695] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.472876] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1168:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCanNode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.473059] (LKMCANNODE) StderrLine: {'line': b' 1168 |             "cmd_vel", 10, std::bind(&\x1b[01;31m\x1b[KCanNode\x1b[m\x1b[K::velocity_callback, this, std::placeholders::_1));\n'}
+[6.473266] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.485520] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.486087] (LKMCANNODE) StderrLine: {'line': b' 1170 |         \x1b[01;31m\x1b[Kodom_publisher_\x1b[m\x1b[K = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);\n'}
+[6.486441] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.486641] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[6.486834] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_publisher\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.487059] (LKMCANNODE) StderrLine: {'line': b' 1170 |         odom_publisher_ = this->\x1b[01;31m\x1b[Kcreate_publisher\x1b[m\x1b[K<nav_msgs::msg::Odometry>("odom", 10);\n'}
+[6.487252] (LKMCANNODE) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.487441] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.487662] (LKMCANNODE) StderrLine: {'line': b' 1170 |         odom_publisher_ = this->create_publisher<\x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry>("odom", 10);\n'}
+[6.487862] (LKMCANNODE) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.488049] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.488621] (LKMCANNODE) StderrLine: {'line': b' 1170 |         odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>(\x1b[01;35m\x1b[K"odom"\x1b[m\x1b[K, 10);\n'}
+[6.488815] (LKMCANNODE) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.489036] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1174:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_wall_timer\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.489406] (LKMCANNODE) StderrLine: {'line': b' 1174 |         timer_ = this->\x1b[01;31m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[6.489596] (LKMCANNODE) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.489782] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1175:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCanNode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.489971] (LKMCANNODE) StderrLine: {'line': b' 1175 |             std::chrono::milliseconds(10), std::bind(&\x1b[01;31m\x1b[KCanNode\x1b[m\x1b[K::loop_callback, this));\n'}
+[6.490158] (LKMCANNODE) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.490343] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1179:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.490534] (LKMCANNODE) StderrLine: {'line': b' 1179 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[6.490717] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.490898] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.491079] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.491275] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.491456] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.491637] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.491820] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.492005] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.492191] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.492378] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.492565] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.492751] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.492940] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DifferntialDrive::onCanMessageReceived(const can_frame&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.493128] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.493373] (LKMCANNODE) StderrLine: {'line': b' 1243 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.493574] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.493762] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.493951] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.494139] (LKMCANNODE) StderrLine: {'line': b' 1243 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.494327] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.494513] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.494707] (LKMCANNODE) StderrLine: {'line': b' 1243 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.494914] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.495099] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.495362] (LKMCANNODE) StderrLine: {'line': b' 1243 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.495781] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.496143] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.496832] (LKMCANNODE) StderrLine: {'line': b' 1243 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.497023] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.497433] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.497625] (LKMCANNODE) StderrLine: {'line': b' 1243 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.497808] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.497989] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.498170] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.498351] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.498533] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.498713] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.498911] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.499100] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.499281] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.499461] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.499644] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.499823] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.500010] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.500191] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.500377] (LKMCANNODE) StderrLine: {'line': b' 1243 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.500559] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.500740] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.500925] (LKMCANNODE) StderrLine: {'line': b' 1243 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received CAN message with ID: 0x%X", frame.can_id);\n'}
+[6.501107] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.501324] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.501508] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.501689] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.501869] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.502050] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.502233] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.502416] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.502598] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.502779] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.502966] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.503149] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.503347] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DifferntialDrive::velocityCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.503544] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.503738] (LKMCANNODE) StderrLine: {'line': b' 1255 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.503925] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.504109] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.504298] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.504480] (LKMCANNODE) StderrLine: {'line': b' 1255 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.504662] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.504844] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.505034] (LKMCANNODE) StderrLine: {'line': b' 1255 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.505230] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.505413] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.505604] (LKMCANNODE) StderrLine: {'line': b' 1255 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.505788] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.505969] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.506154] (LKMCANNODE) StderrLine: {'line': b' 1255 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.506334] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.506513] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.506694] (LKMCANNODE) StderrLine: {'line': b' 1255 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.506874] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.507055] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.507236] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.507425] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.507605] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.507787] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.507965] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.508143] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.508323] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.508502] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.508682] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.508861] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.509041] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.509233] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.509417] (LKMCANNODE) StderrLine: {'line': b' 1255 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.509598] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.509779] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.509962] (LKMCANNODE) StderrLine: {'line': b' 1255 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.510141] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.510322] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.510502] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.510696] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.510892] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.511073] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.511253] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.511433] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.511616] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.511808] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.511988] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.512172] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.512524] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.512710] (LKMCANNODE) StderrLine: {'line': b' 1257 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.512891] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.513072] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.513278] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.513461] (LKMCANNODE) StderrLine: {'line': b' 1257 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.513645] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.513827] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.514025] (LKMCANNODE) StderrLine: {'line': b' 1257 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.514205] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.514387] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.514566] (LKMCANNODE) StderrLine: {'line': b' 1257 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.514748] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.514930] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.515120] (LKMCANNODE) StderrLine: {'line': b' 1257 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.515304] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.515487] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.515670] (LKMCANNODE) StderrLine: {'line': b' 1257 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Received velocity command");\n'}
+[6.515851] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.516039] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.516220] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.516399] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.516581] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.516759] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.516941] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.517275] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.517485] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.517672] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.517855] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.518037] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.518217] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.518411] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.518605] (LKMCANNODE) StderrLine: {'line': b' 1257 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.518786] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.518968] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass DifferntialDrive\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.519156] (LKMCANNODE) StderrLine: {'line': b' 1257 |         RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received velocity command");\n'}
+[6.519351] (LKMCANNODE) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.519537] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.519727] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1282:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveNode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KDifferntialDrive\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.519916] (LKMCANNODE) StderrLine: {'line': b' 1282 |     auto node = std::make_shared<\x1b[01;31m\x1b[KDifferentialDriveNode\x1b[m\x1b[K>();\n'}
+[6.520097] (LKMCANNODE) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.520277] (LKMCANNODE) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[KDifferntialDrive\x1b[m\x1b[K\n'}
+[6.520469] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1282:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.520652] (LKMCANNODE) StderrLine: {'line': b' 1282 |     auto node = \x1b[01;31m\x1b[Kstd::make_shared<DifferentialDriveNode>()\x1b[m\x1b[K;\n'}
+[6.520838] (LKMCANNODE) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[6.521023] (LKMCANNODE) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[6.521241] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[6.521440] (LKMCANNODE) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[6.521625] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.521813] (LKMCANNODE) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[6.521999] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.522186] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.522373] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1282:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.522561] (LKMCANNODE) StderrLine: {'line': b' 1282 |     auto node = \x1b[01;31m\x1b[Kstd::make_shared<DifferentialDriveNode>()\x1b[m\x1b[K;\n'}
+[6.522748] (LKMCANNODE) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[6.536389] (-) TimerEvent: {}
+[6.636962] (-) TimerEvent: {}
+[6.737558] (-) TimerEvent: {}
+[6.838182] (-) TimerEvent: {}
+[6.938769] (-) TimerEvent: {}
+[7.039382] (-) TimerEvent: {}
+[7.140009] (-) TimerEvent: {}
+[7.240578] (-) TimerEvent: {}
+[7.341206] (-) TimerEvent: {}
+[7.441808] (-) TimerEvent: {}
+[7.528798] (LKMCANNODE) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1\n'}
+[7.529388] (LKMCANNODE) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2\n'}
+[7.529698] (LKMCANNODE) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.533629] (LKMCANNODE) CommandEnded: {'returncode': 2}
+[7.541933] (-) TimerEvent: {}
+[7.642839] (-) TimerEvent: {}
+[7.743735] (-) TimerEvent: {}
+[7.755772] (LKMCANNODE) JobEnded: {'identifier': 'LKMCANNODE', 'rc': 2}
+[7.767142] (-) EventReactorShutdown: {}

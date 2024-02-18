@@ -1,0 +1,236 @@
+[0.000000] (-) TimerEvent: {}
+[0.000994] (LKMCANNODE) JobQueued: {'identifier': 'LKMCANNODE', 'dependencies': OrderedDict()}
+[0.001094] (LKMCANNODE) JobStarted: {'identifier': 'LKMCANNODE'}
+[0.098321] (-) TimerEvent: {}
+[0.132085] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'cmake'}
+[0.133311] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'build'}
+[0.134779] (LKMCANNODE) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luke/LKMCANNODE/build/LKMCANNODE', '--', '-j4', '-l4'], 'cwd': '/home/luke/LKMCANNODE/build/LKMCANNODE', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 54283 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-11edb56f-b90f-4cce-95f5-c3ebb8e32cc3.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/LKMCANNODE/build/LKMCANNODE'), ('SSH_CONNECTION', '192.168.3.59 54283 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.198519] (-) TimerEvent: {}
+[0.239410] (LKMCANNODE) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lkmcannode\x1b[0m\n'}
+[0.294283] (LKMCANNODE) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o\x1b[0m\n'}
+[0.298633] (-) TimerEvent: {}
+[0.399145] (-) TimerEvent: {}
+[0.499787] (-) TimerEvent: {}
+[0.600363] (-) TimerEvent: {}
+[0.701023] (-) TimerEvent: {}
+[0.801637] (-) TimerEvent: {}
+[0.902213] (-) TimerEvent: {}
+[1.002777] (-) TimerEvent: {}
+[1.103344] (-) TimerEvent: {}
+[1.203946] (-) TimerEvent: {}
+[1.304579] (-) TimerEvent: {}
+[1.405177] (-) TimerEvent: {}
+[1.505850] (-) TimerEvent: {}
+[1.606490] (-) TimerEvent: {}
+[1.707109] (-) TimerEvent: {}
+[1.807793] (-) TimerEvent: {}
+[1.908415] (-) TimerEvent: {}
+[2.009022] (-) TimerEvent: {}
+[2.109640] (-) TimerEvent: {}
+[2.210254] (-) TimerEvent: {}
+[2.310838] (-) TimerEvent: {}
+[2.411445] (-) TimerEvent: {}
+[2.512100] (-) TimerEvent: {}
+[2.612725] (-) TimerEvent: {}
+[2.713368] (-) TimerEvent: {}
+[2.813979] (-) TimerEvent: {}
+[2.914611] (-) TimerEvent: {}
+[3.015212] (-) TimerEvent: {}
+[3.115846] (-) TimerEvent: {}
+[3.216410] (-) TimerEvent: {}
+[3.316963] (-) TimerEvent: {}
+[3.417542] (-) TimerEvent: {}
+[3.518146] (-) TimerEvent: {}
+[3.618734] (-) TimerEvent: {}
+[3.719309] (-) TimerEvent: {}
+[3.819932] (-) TimerEvent: {}
+[3.920489] (-) TimerEvent: {}
+[4.021107] (-) TimerEvent: {}
+[4.121730] (-) TimerEvent: {}
+[4.222369] (-) TimerEvent: {}
+[4.322990] (-) TimerEvent: {}
+[4.423605] (-) TimerEvent: {}
+[4.524995] (-) TimerEvent: {}
+[4.625593] (-) TimerEvent: {}
+[4.726245] (-) TimerEvent: {}
+[4.826802] (-) TimerEvent: {}
+[4.927384] (-) TimerEvent: {}
+[5.027927] (-) TimerEvent: {}
+[5.128540] (-) TimerEvent: {}
+[5.229163] (-) TimerEvent: {}
+[5.329760] (-) TimerEvent: {}
+[5.430403] (-) TimerEvent: {}
+[5.531053] (-) TimerEvent: {}
+[5.631670] (-) TimerEvent: {}
+[5.732303] (-) TimerEvent: {}
+[5.832942] (-) TimerEvent: {}
+[5.933564] (-) TimerEvent: {}
+[6.034175] (-) TimerEvent: {}
+[6.134785] (-) TimerEvent: {}
+[6.235383] (-) TimerEvent: {}
+[6.336037] (-) TimerEvent: {}
+[6.339173] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseGeneralStatusResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.339636] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:665:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.339962] (LKMCANNODE) StderrLine: {'line': b'  665 | void parseGeneralStatusResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.340271] (LKMCANNODE) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.340575] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseTorqueClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.340869] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:679:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.341092] (LKMCANNODE) StderrLine: {'line': b'  679 | void parseTorqueClosedLoopControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.341426] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.341747] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSpeedClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.342064] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:691:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.342259] (LKMCANNODE) StderrLine: {'line': b'  691 | void parseSpeedClosedLoopControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.342447] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.342634] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseMultiLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.343255] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:703:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.343587] (LKMCANNODE) StderrLine: {'line': b'  703 | void parseMultiLoopAngleControl1Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.343891] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.344149] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseMultiLoopAngleControl2Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.344343] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:718:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.344536] (LKMCANNODE) StderrLine: {'line': b'  718 | void parseMultiLoopAngleControl2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.345008] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.345258] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSingleLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.345454] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:731:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.345681] (LKMCANNODE) StderrLine: {'line': b'  731 | void parseSingleLoopAngleControl1Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.345871] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.346061] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseSingleLoopAngleControl2Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.346295] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:743:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.346500] (LKMCANNODE) StderrLine: {'line': b'  743 | void parseSingleLoopAngleControl2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.346685] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.346875] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseIncrementAngleControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.347066] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:755:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.347261] (LKMCANNODE) StderrLine: {'line': b'  755 | void parseIncrementAngleControlResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.347450] (LKMCANNODE) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.347639] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.347862] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:769:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.348056] (LKMCANNODE) StderrLine: {'line': b'  769 | void parseWritePIDParametersToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, BLDCMotor& motor){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[6.348246] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.348434] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:769:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.348626] (LKMCANNODE) StderrLine: {'line': b'  769 | void parseWritePIDParametersToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[6.348834] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.349021] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadPIDParametersResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.349207] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:780:73:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.349393] (LKMCANNODE) StderrLine: {'line': b'  780 | void parseReadPIDParametersResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.349575] (LKMCANNODE) StderrLine: {'line': b'      |                                                              \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.349756] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadAccelerationResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.349939] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:799:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.350137] (LKMCANNODE) StderrLine: {'line': b'  799 | void parseReadAccelerationResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.350321] (LKMCANNODE) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.350508] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadEncoderResponse(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.350706] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:821:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.350905] (LKMCANNODE) StderrLine: {'line': b'  821 | void parseReadEncoderResponse(const uint8_t* response,\x1b[01;35m\x1b[KBLDCMotor motor\x1b[m\x1b[K){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {\n'}
+[6.351095] (LKMCANNODE) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.351283] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.351471] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:845:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.351660] (LKMCANNODE) StderrLine: {'line': b'  845 | void parseWriteEncoderValueToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.351893] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.352083] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:845:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.352275] (LKMCANNODE) StderrLine: {'line': b'  845 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.352461] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.352648] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.352836] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.353027] (LKMCANNODE) StderrLine: {'line': b'  857 | void parseWriteCurrentPositionToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.353213] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.353398] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.353586] (LKMCANNODE) StderrLine: {'line': b'  857 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.353771] (LKMCANNODE) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.353956] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMultiAngleLoopResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.354143] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:869:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.354344] (LKMCANNODE) StderrLine: {'line': b'  869 | void parseReadMultiAngleLoopResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.354531] (LKMCANNODE) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.354717] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadSingleAngleLoopResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.354904] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:876:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.355111] (LKMCANNODE) StderrLine: {'line': b'  876 | void parseReadSingleAngleLoopResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.355301] (LKMCANNODE) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.355498] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMotorState1AndErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.355692] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:884:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.355911] (LKMCANNODE) StderrLine: {'line': b'  884 | void parseReadMotorState1AndErrorStateResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.356092] (LKMCANNODE) StderrLine: {'line': b'      |                                                                         \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.356273] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseClearErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.356456] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:899:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.356642] (LKMCANNODE) StderrLine: {'line': b'  899 | void parseClearErrorStateResponse(const uint8_t* response,  \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[6.356828] (LKMCANNODE) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.357016] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadMotorState2Response(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.357203] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:916:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.357393] (LKMCANNODE) StderrLine: {'line': b'  916 | void parseReadMotorState2Response(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor motor\x1b[m\x1b[K) {\n'}
+[6.357580] (LKMCANNODE) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.357766] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KBLDCMotor::MessageType BLDCMotor::parseResponse(const uint8_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.357951] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:980:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KBLDCMotor::parseReadEncoderResponse(const uint8_t*&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.358148] (LKMCANNODE) StderrLine: {'line': b'  980 |             \x1b[01;31m\x1b[Kthis->parseReadEncoderResponse(response)\x1b[m\x1b[K;\n'}
+[6.358334] (LKMCANNODE) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.358520] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:821:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseReadEncoderResponse(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.358708] (LKMCANNODE) StderrLine: {'line': b'  821 | void \x1b[01;36m\x1b[KparseReadEncoderResponse\x1b[m\x1b[K(const uint8_t* response,BLDCMotor motor){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {\n'}
+[6.358895] (LKMCANNODE) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.359081] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:821:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[6.436199] (-) TimerEvent: {}
+[6.536812] (-) TimerEvent: {}
+[6.637425] (-) TimerEvent: {}
+[6.738022] (-) TimerEvent: {}
+[6.838648] (-) TimerEvent: {}
+[6.939294] (-) TimerEvent: {}
+[7.039895] (-) TimerEvent: {}
+[7.140464] (-) TimerEvent: {}
+[7.241044] (-) TimerEvent: {}
+[7.341649] (-) TimerEvent: {}
+[7.442276] (-) TimerEvent: {}
+[7.542933] (-) TimerEvent: {}
+[7.643548] (-) TimerEvent: {}
+[7.744136] (-) TimerEvent: {}
+[7.844782] (-) TimerEvent: {}
+[7.945427] (-) TimerEvent: {}
+[8.046065] (-) TimerEvent: {}
+[8.146663] (-) TimerEvent: {}
+[8.247308] (-) TimerEvent: {}
+[8.347943] (-) TimerEvent: {}
+[8.448581] (-) TimerEvent: {}
+[8.549249] (-) TimerEvent: {}
+[8.649881] (-) TimerEvent: {}
+[8.750563] (-) TimerEvent: {}
+[8.851202] (-) TimerEvent: {}
+[8.952060] (-) TimerEvent: {}
+[9.052718] (-) TimerEvent: {}
+[9.153315] (-) TimerEvent: {}
+[9.253971] (-) TimerEvent: {}
+[9.354576] (-) TimerEvent: {}
+[9.455205] (-) TimerEvent: {}
+[9.555835] (-) TimerEvent: {}
+[9.656462] (-) TimerEvent: {}
+[9.757126] (-) TimerEvent: {}
+[9.857757] (-) TimerEvent: {}
+[9.958367] (-) TimerEvent: {}
+[10.058952] (-) TimerEvent: {}
+[10.159565] (-) TimerEvent: {}
+[10.260203] (-) TimerEvent: {}
+[10.360828] (-) TimerEvent: {}
+[10.461431] (-) TimerEvent: {}
+[10.562063] (-) TimerEvent: {}
+[10.662691] (-) TimerEvent: {}
+[10.763296] (-) TimerEvent: {}
+[10.863939] (-) TimerEvent: {}
+[10.964498] (-) TimerEvent: {}
+[11.065088] (-) TimerEvent: {}
+[11.165670] (-) TimerEvent: {}
+[11.266236] (-) TimerEvent: {}
+[11.366834] (-) TimerEvent: {}
+[11.467419] (-) TimerEvent: {}
+[11.567982] (-) TimerEvent: {}
+[11.668624] (-) TimerEvent: {}
+[11.769212] (-) TimerEvent: {}
+[11.869855] (-) TimerEvent: {}
+[11.946611] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1001:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.947042] (LKMCANNODE) StderrLine: {'line': b' 1001 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[11.947237] (LKMCANNODE) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.970051] (-) TimerEvent: {}
+[12.070677] (-) TimerEvent: {}
+[12.171259] (-) TimerEvent: {}
+[12.271863] (-) TimerEvent: {}
+[12.372451] (-) TimerEvent: {}
+[12.473072] (-) TimerEvent: {}
+[12.499310] (LKMCANNODE) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1\n'}
+[12.499783] (LKMCANNODE) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2\n'}
+[12.500489] (LKMCANNODE) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.504225] (LKMCANNODE) CommandEnded: {'returncode': 2}
+[12.573571] (-) TimerEvent: {}
+[12.676673] (-) TimerEvent: {}
+[12.728611] (LKMCANNODE) JobEnded: {'identifier': 'LKMCANNODE', 'rc': 2}
+[12.739824] (-) EventReactorShutdown: {}

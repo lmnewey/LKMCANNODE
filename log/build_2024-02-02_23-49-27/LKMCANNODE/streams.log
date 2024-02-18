@@ -1,0 +1,432 @@
+[0.139s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.238s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.292s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.301s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseGeneralStatusResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.301s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:656:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.301s]   656 | void parseGeneralStatusResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.301s]       |                                                          [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.302s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseTorqueClosedLoopControlResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.302s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:670:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.302s]   670 | void parseTorqueClosedLoopControlResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.303s]       |                                                                    [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.303s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseSpeedClosedLoopControlResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.303s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:682:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.303s]   682 | void parseSpeedClosedLoopControlResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.304s]       |                                                                   [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.304s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseMultiLoopAngleControl1Response(const uint8_t*, BLDCMotor&)[m[K’:
+[6.304s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:694:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.305s]   694 | void parseMultiLoopAngleControl1Response(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.305s]       |                                                                   [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.305s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseMultiLoopAngleControl2Response(const uint8_t*, BLDCMotor&)[m[K’:
+[6.305s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:709:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.305s]   709 | void parseMultiLoopAngleControl2Response(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.306s]       |                                                                   [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.306s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseSingleLoopAngleControl1Response(const uint8_t*, BLDCMotor&)[m[K’:
+[6.306s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:722:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.306s]   722 | void parseSingleLoopAngleControl1Response(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.307s]       |                                                                    [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.307s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseSingleLoopAngleControl2Response(const uint8_t*, BLDCMotor&)[m[K’:
+[6.307s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:734:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.307s]   734 | void parseSingleLoopAngleControl2Response(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.307s]       |                                                                    [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.308s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseIncrementAngleControlResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.308s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:746:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.308s]   746 | void parseIncrementAngleControlResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.308s]       |                                                                  [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.308s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.309s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:760:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.309s]   760 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K, BLDCMotor& motor){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.309s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.309s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:760:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.309s]   760 | void parseWritePIDParametersToROMResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.310s]       |                                                                    [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.310s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadPIDParametersResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.310s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:771:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.310s]   771 | void parseReadPIDParametersResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.310s]       |                                                              [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.311s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadAccelerationResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.311s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:790:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.311s]   790 | void parseReadAccelerationResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.311s]       |                                                             [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.311s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadEncoderResponse(const uint8_t*, BLDCMotor)[m[K’:
+[6.311s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:812:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.312s]   812 | void parseReadEncoderResponse(const uint8_t* response,[01;35m[KBLDCMotor motor[m[K){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {
+[6.312s]       |                                                       [01;35m[K~~~~~~~~~~^~~~~[m[K
+[6.312s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.312s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:836:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.312s]   836 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.313s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.313s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:836:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.313s]   836 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.313s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.313s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.314s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:848:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.314s]   848 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.314s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.314s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:848:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.314s]   848 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.315s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.315s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadMultiAngleLoopResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.315s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:860:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.315s]   860 | void parseReadMultiAngleLoopResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.315s]       |                                                               [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.316s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadSingleAngleLoopResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.316s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:867:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.316s]   867 | void parseReadSingleAngleLoopResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.316s]       |                                                                [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.316s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadMotorState1AndErrorStateResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.317s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:875:84:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.317s]   875 | void parseReadMotorState1AndErrorStateResponse(const uint8_t* response, [01;35m[KBLDCMotor& motor[m[K) {
+[6.317s]       |                                                                         [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.317s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseClearErrorStateResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[6.317s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:890:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.318s]   890 | void parseClearErrorStateResponse(const uint8_t* response,  [01;35m[KBLDCMotor& motor[m[K) {
+[6.318s]       |                                                             [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.318s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadMotorState2Response(const uint8_t*, BLDCMotor)[m[K’:
+[6.318s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:907:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.318s]   907 | void parseReadMotorState2Response(const uint8_t* response, [01;35m[KBLDCMotor motor[m[K) {
+[6.318s]       |                                                            [01;35m[K~~~~~~~~~~^~~~~[m[K
+[6.319s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[KBLDCMotor::MessageType BLDCMotor::parseResponse(const uint8_t*, BLDCMotor::MessageType, BLDCMotor&)[m[K’:
+[6.319s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:940:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KmessageType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.319s]   940 | MessageType parseResponse(const uint8_t* response, [01;35m[KMessageType messageType[m[K, BLDCMotor& motor) {
+[6.319s]       |                                                    [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[6.319s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:940:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.320s]   940 | MessageType parseResponse(const uint8_t* response, MessageType messageType, [01;35m[KBLDCMotor& motor[m[K) {
+[6.320s]       |                                                                             [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[6.320s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[6.320s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KDifferentialDriveNode[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.320s]  1152 |     [01;31m[KDifferentialDriveNode[m[K() : Node("differential_drive_node") {
+[6.321s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.321s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1185:28:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+[6.321s]  1185 |      ~DifferentialDriveNode[01;31m[K([m[K) {
+[6.321s]       |                            [01;31m[K^[m[K
+[6.424s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcan_msgs[m[K’?
+[6.424s]  1274 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr odom_publisher_;
+[6.424s]       |                       [01;31m[K^~~~~~~~[m[K
+[6.425s]       |                       [32m[Kcan_msgs[m[K
+[6.425s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.425s]  1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr odom_publisher_;
+[6.425s]       |                                              [01;31m[K^[m[K
+[6.425s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.426s]  1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K odom_publisher_;
+[6.426s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[6.426s]       |                                                          [32m[K;[m[K
+[6.430s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[6.431s]  1274 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kodom_publisher_[m[K;
+[6.431s]       |                                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[6.431s]       |                                                           [32m[Krmw_publisher_t[m[K
+[6.431s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kint DifferntialDrive::DifferentialDriveNode()[m[K’:
+[6.432s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:31:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[6.432s]  1152 |     DifferentialDriveNode() : [01;31m[KNode[m[K("differential_drive_node") {
+[6.432s]       |                               [01;31m[K^~~~[m[K
+[6.432s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1152:31:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KDifferntialDrive[m[K’ does not have any field named ‘[01m[KNode[m[K’
+[6.433s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.433s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.433s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.433s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.433s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.434s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.434s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.434s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.434s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.434s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.434s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.435s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.435s]  1156 |             RCLCPP_ERROR(this->[01;31m[Kget_logger[m[K(), "Failed to initialize CAN socket");
+[6.435s]       |                                [01;31m[K^~~~~~~~~~[m[K
+[6.435s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.436s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.436s]  1156 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "Failed to initialize CAN socket");
+[6.436s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.436s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.436s]  1156 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "Failed to initialize CAN socket");
+[6.437s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.437s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.437s]  1156 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "Failed to initialize CAN socket");
+[6.437s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.437s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.438s]  1156 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "Failed to initialize CAN socket");
+[6.438s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.438s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.438s]  1156 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "Failed to initialize CAN socket");
+[6.438s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.438s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.440s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.441s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.441s]  1156 |             RCLCPP_ERROR(this->[01;31m[Kget_logger[m[K(), "Failed to initialize CAN socket");
+[6.441s]       |                                [01;31m[K^~~~~~~~~~[m[K
+[6.441s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1156:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.442s]  1156 |             RCLCPP_ERROR(this->[01;31m[Kget_logger[m[K(), "Failed to initialize CAN socket");
+[6.442s]       |                                [01;31m[K^~~~~~~~~~[m[K
+[6.442s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:45:[m[K [01;31m[Kerror: [m[KISO C++ forbids taking the address of an unqualified or parenthesized non-static member function to form a pointer to member function.  Say ‘[01m[K&DifferntialDrive::DifferentialDriveNode[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.442s]  1160 |             can_read_thread_ = std::thread(&[01;31m[KDifferentialDriveNode[m[K::readCanMessages, this);
+[6.442s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.442s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:43:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+[6.443s]  1160 |             can_read_thread_ = std::thread[01;31m[K([m[K&DifferentialDriveNode::readCanMessages, this);
+[6.443s]       |                                           [01;31m[K^[m[K
+[6.443s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1160:45:[m[K [01;31m[Kerror: [m[K‘[01m[KDifferentialDriveNode[m[K’ is not a class, namespace, or enumeration
+[6.443s]  1160 |             can_read_thread_ = std::thread(&[01;31m[KDifferentialDriveNode[m[K::readCanMessages, this);
+[6.443s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.446s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_pub_[m[K’ was not declared in this scope
+[6.446s]  1163 |         [01;31m[Kcan_pub_[m[K = this->create_publisher<std_msgs::msg::String>("can_tx", 10);
+[6.447s]       |         [01;31m[K^~~~~~~~[m[K
+[6.447s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kcreate_publisher[m[K’
+[6.447s]  1163 |         can_pub_ = this->[01;31m[Kcreate_publisher[m[K<std_msgs::msg::String>("can_tx", 10);
+[6.447s]       |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.447s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[6.447s]  1163 |         can_pub_ = this->create_publisher<std_msgs::msg::String[01;31m[K>[m[K("can_tx", 10);
+[6.448s]       |                                                                [01;31m[K^[m[K
+[6.448s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1163:66:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.448s]  1163 |         can_pub_ = this->create_publisher<std_msgs::msg::String>([01;35m[K"can_tx"[m[K, 10);
+[6.448s]       |                                                                  [01;35m[K^~~~~~~~[m[K
+[6.448s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1167:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kcreate_subscription[m[K’
+[6.449s]  1167 |         subscription_ = this->[01;31m[Kcreate_subscription[m[K<geometry_msgs::msg::Twist>(
+[6.449s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.449s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1167:76:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[6.449s]  1167 |         subscription_ = this->create_subscription<geometry_msgs::msg::Twist[01;31m[K>[m[K(
+[6.449s]       |                                                                            [01;31m[K^[m[K
+[6.450s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1168:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.450s]  1168 |             [01;35m[K"cmd_vel"[m[K, 10, std::bind(&CanNode::velocity_callback, this, std::placeholders::_1));
+[6.450s]       |             [01;35m[K^~~~~~~~~[m[K
+[6.450s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1168:39:[m[K [01;31m[Kerror: [m[K‘[01m[KCanNode[m[K’ has not been declared
+[6.450s]  1168 |             "cmd_vel", 10, std::bind(&[01;31m[KCanNode[m[K::velocity_callback, this, std::placeholders::_1));
+[6.450s]       |                                       [01;31m[K^~~~~~~[m[K
+[6.463s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[6.464s]  1170 |         [01;31m[Kodom_publisher_[m[K = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
+[6.464s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[6.464s]       |         [32m[Krmw_publisher_t[m[K
+[6.464s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kcreate_publisher[m[K’
+[6.464s]  1170 |         odom_publisher_ = this->[01;31m[Kcreate_publisher[m[K<nav_msgs::msg::Odometry>("odom", 10);
+[6.465s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:50:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ has not been declared
+[6.465s]  1170 |         odom_publisher_ = this->create_publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>("odom", 10);
+[6.465s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1170:75:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.466s]  1170 |         odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>([01;35m[K"odom"[m[K, 10);
+[6.466s]       |                                                                           [01;35m[K^~~~~~[m[K
+[6.466s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1174:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kcreate_wall_timer[m[K’
+[6.467s]  1174 |         timer_ = this->[01;31m[Kcreate_wall_timer[m[K(
+[6.467s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[6.467s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1175:55:[m[K [01;31m[Kerror: [m[K‘[01m[KCanNode[m[K’ has not been declared
+[6.467s]  1175 |             std::chrono::milliseconds(10), std::bind(&[01;31m[KCanNode[m[K::loop_callback, this));
+[6.467s]       |                                                       [01;31m[K^~~~~~~[m[K
+[6.468s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1177:18:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(std::shared_ptr<BLDCMotor>) (int)[m[K’
+[6.468s]  1177 |         [01;31m[KleftMotor(1)[m[K;
+[6.468s]       |         [01;31m[K~~~~~~~~~^~~[m[K
+[6.468s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1178:19:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(std::shared_ptr<BLDCMotor>) (int)[m[K’
+[6.468s]  1178 |         [01;31m[KrightMotor(2)[m[K;
+[6.469s]       |         [01;31m[K~~~~~~~~~~^~~[m[K
+[6.469s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1179:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[6.469s]  1179 |     [01;35m[K}[m[K
+[6.469s]       |     [01;35m[K^[m[K
+[6.469s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.469s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.471s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.471s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.471s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.471s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.471s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferntialDrive::onCanMessageReceived(const can_frame&)[m[K’:
+[6.472s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.472s]  1243 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.472s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.472s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.472s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.473s]  1243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.473s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.473s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.474s]  1243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.474s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.474s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.474s]  1243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.475s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.476s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.476s]  1243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.476s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.476s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.477s]  1243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.477s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.477s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.479s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.479s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.479s]  1243 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.480s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.480s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.480s]  1243 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received CAN message with ID: 0x%X", frame.can_id);
+[6.480s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.480s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.481s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.482s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.482s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.482s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.482s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.482s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferntialDrive::velocityCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.483s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.483s]  1255 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.483s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.483s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.483s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.483s]  1255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.484s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.484s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.484s]  1255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.484s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.484s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.485s]  1255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.485s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.485s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.485s]  1255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.485s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.486s]  1255 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.486s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.486s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.487s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.488s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.489s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.489s]  1255 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.489s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.489s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.489s]  1255 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.490s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.490s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.490s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.490s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.490s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.492s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.492s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.492s]  1257 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.492s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.492s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.493s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.493s]  1257 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.493s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.493s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.493s]  1257 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.494s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.494s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.494s]  1257 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.494s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.494s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.495s]  1257 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.495s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.495s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.495s]  1257 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received velocity command");
+[6.495s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[6.495s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.498s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.498s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.498s]  1257 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.498s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.498s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass DifferntialDrive[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[6.499s]  1257 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "Received velocity command");
+[6.499s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[6.499s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.499s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1280:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.499s]  1280 |     [01;31m[Kros[m[K::init(argc, argv, "differential_drive_node");
+[6.499s]       |     [01;31m[K^~~[m[K
+[6.500s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1282:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.500s]  1282 |     [01;31m[Kros[m[K::NodeHandle nh;
+[6.500s]       |     [01;31m[K^~~[m[K
+[6.500s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1285:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::BLDCMotor()[m[K’
+[6.500s]  1285 |     BLDCMotor [01;31m[KleftMotor[m[K, rightMotor;
+[6.501s]       |               [01;31m[K^~~~~~~~~[m[K
+[6.501s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:994:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KBLDCMotor::BLDCMotor(uint8_t)[m[K’
+[6.501s]   994 |     [01;36m[KBLDCMotor[m[K(uint8_t motorId) : motorId_(motorId) {}
+[6.501s]       |     [01;36m[K^~~~~~~~~[m[K
+[6.501s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:994:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.502s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::BLDCMotor(const BLDCMotor&)[m[K’
+[6.502s]    24 | class [01;36m[KBLDCMotor[m[K {
+[6.502s]       |       [01;36m[K^~~~~~~~~[m[K
+[6.502s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.502s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::BLDCMotor(BLDCMotor&&)[m[K’
+[6.502s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.503s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1285:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::BLDCMotor()[m[K’
+[6.503s]  1285 |     BLDCMotor leftMotor, [01;31m[KrightMotor[m[K;
+[6.503s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[6.503s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:994:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KBLDCMotor::BLDCMotor(uint8_t)[m[K’
+[6.503s]   994 |     [01;36m[KBLDCMotor[m[K(uint8_t motorId) : motorId_(motorId) {}
+[6.504s]       |     [01;36m[K^~~~~~~~~[m[K
+[6.504s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:994:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.504s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::BLDCMotor(const BLDCMotor&)[m[K’
+[6.504s]    24 | class [01;36m[KBLDCMotor[m[K {
+[6.504s]       |       [01;36m[K^~~~~~~~~[m[K
+[6.505s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.505s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::BLDCMotor(BLDCMotor&&)[m[K’
+[6.505s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:24:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.505s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1292:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.505s]  1292 |     [01;31m[Kros[m[K::Rate loop_rate(10); // 10 Hz
+[6.506s]       |     [01;31m[K^~~[m[K
+[6.506s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1293:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.506s]  1293 |     while ([01;31m[Kros[m[K::ok()) {
+[6.506s]       |            [01;31m[K^~~[m[K
+[6.506s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1296:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.506s]  1296 |         [01;31m[Kros[m[K::spinOnce();
+[6.507s]       |         [01;31m[K^~~[m[K
+[6.507s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1297:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+[6.507s]  1297 |         [01;31m[Kloop_rate[m[K.sleep();
+[6.507s]       |         [01;31m[K^~~~~~~~~[m[K
+[6.507s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1285:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KleftMotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.508s]  1285 |     BLDCMotor [01;35m[KleftMotor[m[K, rightMotor;
+[6.508s]       |               [01;35m[K^~~~~~~~~[m[K
+[6.508s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1285:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KrightMotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.508s]  1285 |     BLDCMotor leftMotor, [01;35m[KrightMotor[m[K;
+[6.508s]       |                          [01;35m[K^~~~~~~~~~[m[K
+[7.502s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[7.503s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[7.503s] gmake: *** [Makefile:146: all] Error 2
+[7.509s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

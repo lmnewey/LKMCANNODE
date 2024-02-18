@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/TransformStamped.h: No such file or directory
+   10 | #include [01;31m[K<geometry_msgs/msg/TransformStamped.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

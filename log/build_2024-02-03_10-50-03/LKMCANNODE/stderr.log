@@ -1,0 +1,58 @@
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:769:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  769 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+      |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:845:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  845 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:845:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  845 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  857 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  857 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseClearErrorStateResponse(const uint8_t*, BLDCMotor&)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:899:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  899 | void parseClearErrorStateResponse(const uint8_t* response,  [01;35m[KBLDCMotor& motor[m[K) {
+      |                                                             [01;35m[K~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseReadMotorState2Response(const uint8_t*, BLDCMotor)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:916:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  916 | void parseReadMotorState2Response(const uint8_t* response, [01;35m[KBLDCMotor motor[m[K) {
+      |                                                            [01;35m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[KBLDCMotor::MessageType BLDCMotor::parseResponse(const uint8_t*)[m[K’:
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:988:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kresposne[m[K’ was not declared in this scope; did you mean ‘[01m[Kresponse[m[K’?
+  988 |             this->parseReadAccelerationResponse([01;31m[Kresposne[m[K);
+      |                                                 [01;31m[K^~~~~~~~[m[K
+      |                                                 [32m[Kresponse[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:991:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::parseWriteAccelerationToRAMResponse(const uint8_t*&)[m[K’
+  991 |             [01;31m[Kthis->parseWriteAccelerationToRAMResponse(response)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:806:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid BLDCMotor::parseWriteAccelerationToRAMResponse(const uint8_t*, uint32_t&)[m[K’
+  806 | void [01;36m[KparseWriteAccelerationToRAMResponse[m[K(const uint8_t* response, uint32_t& acceleration) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:806:6:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1010:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::parseReadMotorState2Response(const uint8_t*&)[m[K’
+ 1010 |             [01;31m[Kthis->parseReadMotorState2Response(response)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:916:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid BLDCMotor::parseReadMotorState2Response(const uint8_t*, BLDCMotor)[m[K’
+  916 | void [01;36m[KparseReadMotorState2Response[m[K(const uint8_t* response, BLDCMotor motor) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:916:6:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1013:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::parseReadMotorState3Response(const uint8_t*&)[m[K’
+ 1013 |             [01;31m[Kthis->parseReadMotorState3Response(response)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:935:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid BLDCMotor::parseReadMotorState3Response(const uint8_t*, int8_t&, int16_t&, int16_t&, int16_t&)[m[K’
+  935 | void [01;36m[KparseReadMotorState3Response[m[K(const uint8_t* response, int8_t& temperature, int16_t& iA, int16_t& iB, int16_t& iC) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:935:6:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 1 provided
+[01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1021:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+ 1021 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

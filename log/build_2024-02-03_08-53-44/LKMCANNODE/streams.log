@@ -1,0 +1,24 @@
+[0.179s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.279s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.333s] [100%] Built target lkmcannode
+[0.358s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.431s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/LKMCANNODE/build/LKMCANNODE
+[0.448s] -- Install configuration: ""
+[0.449s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/lib/LKMCANNODE/lkmcannode
+[0.450s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/package_run_dependencies/LKMCANNODE
+[0.450s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/parent_prefix_path/LKMCANNODE
+[0.450s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/ament_prefix_path.sh
+[0.450s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/ament_prefix_path.dsv
+[0.451s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/path.sh
+[0.451s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/environment/path.dsv
+[0.451s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.bash
+[0.451s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.sh
+[0.452s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.zsh
+[0.452s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/local_setup.dsv
+[0.452s] -- Installing: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.dsv
+[0.452s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/ament_index/resource_index/packages/LKMCANNODE
+[0.452s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.452s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/cmake/LKMCANNODEConfig.cmake
+[0.453s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/cmake/LKMCANNODEConfig-version.cmake
+[0.453s] -- Up-to-date: /home/luke/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.xml
+[0.456s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/LKMCANNODE/build/LKMCANNODE

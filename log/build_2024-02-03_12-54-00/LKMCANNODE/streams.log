@@ -1,0 +1,58 @@
+[0.180s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.279s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.333s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.432s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In constructor ‘[01m[KBLDCMotor::SpeedClosedLoopControlCommand::SpeedClosedLoopControlCommand(uint8_t, int32_t)[m[K’:
+[6.433s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:289:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct BLDCMotor::SpeedClosedLoopControlCommand[m[K’ has no member named ‘[01m[KmotorId_[m[K’
+[6.433s]   289 |         identifier = 0x141 + this->[01;31m[KmotorId_[m[K;
+[6.433s]       |                                    [01;31m[K^~~~~~~~[m[K
+[6.433s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:287:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KmotorId_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.433s]   287 |     SpeedClosedLoopControlCommand([01;35m[Kuint8_t motorId_[m[K, int32_t speedControl) {
+[6.434s]       |                                   [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[6.453s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kint BLDCMotor::calculateDelta(int)[m[K’:
+[6.453s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:643:40:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialTicks[m[K’ was not declared in this scope; did you mean ‘[01m[KinitialTicksSet[m[K’?
+[6.454s]   643 |             int delta = currentTicks - [01;31m[KinitialTicks[m[K;
+[6.454s]       |                                        [01;31m[K^~~~~~~~~~~~[m[K
+[6.454s]       |                                        [32m[KinitialTicksSet[m[K
+[6.458s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.458s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:877:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.458s]   877 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.459s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.459s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.459s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:946:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.459s]   946 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.460s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.460s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:946:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.460s]   946 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.460s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.460s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.461s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:958:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.461s]   958 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.461s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.462s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:958:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.462s]   958 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.462s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.462s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[KBLDCMotor::SpeedClosedLoopControlCommand BLDCMotor::createSpeedClosedLoopControlCommand(int32_t)[m[K’:
+[6.462s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1176:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBLDCMotor::SpeedClosedLoopControlCommand::SpeedClosedLoopControlCommand(int32_t&)[m[K’
+[6.463s]  1176 |         return SpeedClosedLoopControlCommand(speedControl[01;31m[K)[m[K;
+[6.463s]       |                                                          [01;31m[K^[m[K
+[6.463s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:287:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KBLDCMotor::SpeedClosedLoopControlCommand::SpeedClosedLoopControlCommand(uint8_t, int32_t)[m[K’
+[6.464s]   287 |     [01;36m[KSpeedClosedLoopControlCommand[m[K(uint8_t motorId_, int32_t speedControl) {
+[6.464s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.464s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:287:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[6.464s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:272:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::SpeedClosedLoopControlCommand::SpeedClosedLoopControlCommand(const BLDCMotor::SpeedClosedLoopControlCommand&)[m[K’
+[6.464s]   272 | struct [01;36m[KSpeedClosedLoopControlCommand[m[K {
+[6.465s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:272:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint32_t[m[K’ {aka ‘[01m[Kint[m[K’} to ‘[01m[Kconst BLDCMotor::SpeedClosedLoopControlCommand&[m[K’
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:272:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr BLDCMotor::SpeedClosedLoopControlCommand::SpeedClosedLoopControlCommand(BLDCMotor::SpeedClosedLoopControlCommand&&)[m[K’
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:272:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint32_t[m[K’ {aka ‘[01m[Kint[m[K’} to ‘[01m[KBLDCMotor::SpeedClosedLoopControlCommand&&[m[K’
+[6.634s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[6.635s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1444:92:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kuint8_t BLDCMotor::getMotorId() const[m[K’
+[6.635s]  1444 |         auto leftspeedCommand =  leftMotor->createSpeedClosedLoopControlCommand([01;31m[KleftMotor->getMotorId[m[K,1200);
+[6.635s]       |                                                                                 [01;31m[K~~~~~~~~~~~^~~~~~~~~~[m[K
+[6.636s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1211:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.636s]  1211 |     uint8_t [01;36m[KgetMotorId[m[K() const { return motorId_; }
+[6.636s]       |             [01;36m[K^~~~~~~~~~[m[K
+[12.631s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[12.632s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[12.633s] gmake: *** [Makefile:146: all] Error 2
+[12.636s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

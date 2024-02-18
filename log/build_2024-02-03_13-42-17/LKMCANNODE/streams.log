@@ -1,0 +1,55 @@
+[0.210s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.317s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.514s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.514s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:893:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.514s]   893 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.514s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.515s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.515s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:962:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.515s]   962 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.515s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.516s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:962:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.516s]   962 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.516s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.516s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.516s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:975:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.517s]   975 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.517s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.517s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:975:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.517s]   975 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.517s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.708s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[6.708s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1516:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheelbase[m[K’ was not declared in this scope
+[6.708s]  1516 |         double dTheta = (rightDistanceMoved - leftDistanceMoved) / [01;31m[Kwheelbase[m[K;
+[6.709s]       |                                                                    [01;31m[K^~~~~~~~~[m[K
+[6.718s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1523:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+[6.718s]  1523 |         [01;31m[Kx[m[K += dDistance * std::cos(theta + dTheta / 2.0);
+[6.718s]       |         [01;31m[K^[m[K
+[6.728s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1523:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktheta[m[K’ was not declared in this scope; did you mean ‘[01m[KdTheta[m[K’?
+[6.729s]  1523 |         x += dDistance * std::cos([01;31m[Ktheta[m[K + dTheta / 2.0);
+[6.729s]       |                                   [01;31m[K^~~~~[m[K
+[6.729s]       |                                   [32m[KdTheta[m[K
+[6.738s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1524:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[6.739s]  1524 |         [01;31m[Ky[m[K += dDistance * std::sin(theta + dTheta / 2.0);
+[6.739s]       |         [01;31m[K^[m[K
+[6.739s]       |         [32m[Kyn[m[K
+[6.741s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1539:29:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[6.742s]  1539 |         geometry_msgs::msg::[01;31m[KTransformStamped[m[K transformStamped;
+[6.742s]       |                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.765s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1541:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformStamped[m[K’ was not declared in this scope
+[6.765s]  1541 |         [01;31m[KtransformStamped[m[K.header.stamp = this->get_clock()->now();
+[6.766s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.766s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1549:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+[6.766s]  1549 |         [01;31m[Ktf2[m[K::Quaternion q;
+[6.766s]       |         [01;31m[K^~~[m[K
+[6.774s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1550:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+[6.774s]  1550 |         [01;31m[Kq[m[K.setRPY(0, 0, theta); // Roll, Pitch, Yaw
+[6.774s]       |         [01;31m[K^[m[K
+[6.791s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1557:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtfBroadcaster_[m[K’ was not declared in this scope
+[6.792s]  1557 |         [01;31m[KtfBroadcaster_[m[K.sendTransform(transformStamped);
+[6.792s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.825s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[12.826s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[12.826s] gmake: *** [Makefile:146: all] Error 2
+[12.830s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

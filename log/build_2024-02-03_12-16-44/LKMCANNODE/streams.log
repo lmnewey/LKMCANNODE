@@ -1,0 +1,810 @@
+[0.186s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.339s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.465s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:379:1:[m[K [01;31m[Kerror: [m[Knew types may not be defined in a return type
+[6.466s]   379 | [01;31m[Kstruct[m[K SingleLoopAngleControl1Command {
+[6.466s]       | [01;31m[K^~~~~~[m[K
+[6.466s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:379:1:[m[K [01;36m[Knote: [m[K(perhaps a semicolon is missing after the definition of ‘[01m[KBLDCMotor::SingleLoopAngleControl1Command[m[K’)
+[6.485s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[KBLDCMotor::SingleLoopAngleControl1Command BLDCMotor::SingleLoopAngleControl1Command(uint8_t, uint8_t, uint32_t)[m[K’:
+[6.485s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:399:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kidentifier[m[K’ was not declared in this scope
+[6.485s]   399 |             [01;31m[Kidentifier[m[K = 0x140 + motorId;
+[6.485s]       |             [01;31m[K^~~~~~~~~~[m[K
+[6.498s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:403:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kidentifier[m[K’ was not declared in this scope
+[6.499s]   403 |             [01;31m[Kidentifier[m[K = 0x140; // Default to motor ID 1
+[6.499s]       |             [01;31m[K^~~~~~~~~~[m[K
+[6.500s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:407:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::data[m[K’?
+[6.501s]   407 |         [01;31m[Kdata[m[K[0] = 0xA5;
+[6.501s]       |         [01;31m[K^~~~[m[K
+[6.501s]       |         [32m[Kstd::data[m[K
+[6.501s] In file included from [01m[K/usr/include/c++/11/array:41[m[K,
+[6.501s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[6.502s]                  from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[6.502s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[6.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[6.502s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[6.502s] [01m[K/usr/include/c++/11/bits/range_access.h:319:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::data[m[K’ declared here
+[6.502s]   319 |     [01;36m[Kdata[m[K(initializer_list<_Tp> __il) noexcept
+[6.503s]       |     [01;36m[K^~~~[m[K
+[6.503s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:415:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[6.503s]   415 |     [01;35m[K}[m[K
+[6.503s]       |     [01;35m[K^[m[K
+[6.518s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid SingleLoopAngleControl2Command::serialize(uint8_t*)[m[K’:
+[6.519s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:426:42:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderOffset[m[K’ was not declared in this scope
+[6.519s]   426 |         buffer[6] = static_cast<uint8_t>([01;31m[KencoderOffset[m[K);
+[6.519s]       |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[6.539s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseGeneralStatusResponse(const uint8_t*)[m[K’:
+[6.539s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:791:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.539s]   791 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.539s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.550s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:792:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorPower[m[K’ was not declared in this scope
+[6.551s]   792 |     [01;31m[KsetMotorPower[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.551s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.563s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:793:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.563s]   793 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.563s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.578s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:794:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.578s]   794 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[6.578s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.590s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseTorqueClosedLoopControlResponse(const uint8_t*)[m[K’:
+[6.590s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:799:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.590s]   799 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.591s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.601s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:802:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorPower[m[K’ was not declared in this scope
+[6.602s]   802 |     [01;31m[KsetMotorPower[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.602s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.613s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:804:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.613s]   804 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.613s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.627s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:806:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.628s]   806 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[6.628s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.639s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseSpeedClosedLoopControlResponse(const uint8_t*)[m[K’:
+[6.640s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:811:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.640s]   811 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.640s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.651s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:814:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.652s]   814 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24)));
+[6.652s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.666s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:818:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.666s]   818 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[8] | (response[9] << 8)));
+[6.666s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.678s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseMultiLoopAngleControl1Response(const uint8_t*)[m[K’:
+[6.678s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:823:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.679s]   823 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.679s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.690s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:830:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.690s]   830 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.690s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.704s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:833:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.704s]   833 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[8] | (response[9] << 8)));
+[6.704s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.716s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseMultiLoopAngleControl2Response(const uint8_t*)[m[K’:
+[6.716s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:843:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.716s]   843 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.716s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.730s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:844:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTorqueCurrent[m[K’ was not declared in this scope
+[6.730s]   844 |     [01;31m[KsetTorqueCurrent[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.730s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.742s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:845:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.742s]   845 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.742s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.757s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:846:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.757s]   846 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[10] | (response[11] << 8)));
+[6.757s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.770s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseSingleLoopAngleControl1Response(const uint8_t*)[m[K’:
+[6.770s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:855:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.770s]   855 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.770s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.784s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:856:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTorqueCurrent[m[K’ was not declared in this scope
+[6.784s]   856 |     [01;31m[KsetTorqueCurrent[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.785s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.796s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.796s]   857 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.796s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.810s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:858:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.810s]   858 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[6.810s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.822s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseSingleLoopAngleControl2Response(const uint8_t*)[m[K’:
+[6.822s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:864:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.823s]   864 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.823s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.836s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:865:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTorqueCurrent[m[K’ was not declared in this scope
+[6.836s]   865 |     [01;31m[KsetTorqueCurrent[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.836s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.847s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:866:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.848s]   866 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.848s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.862s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:867:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.862s]   867 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[6.862s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.874s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseIncrementAngleControlResponse(const uint8_t*)[m[K’:
+[6.874s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:876:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[6.875s]   876 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[6.875s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.888s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:879:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTorqueCurrent[m[K’ was not declared in this scope
+[6.888s]   879 |     [01;31m[KsetTorqueCurrent[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[6.888s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.899s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:882:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorSpeed[m[K’ was not declared in this scope
+[6.899s]   882 |     [01;31m[KsetMotorSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[6.900s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.913s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:885:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[6.914s]   885 |     [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[6.914s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.914s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.914s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:888:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.914s]   888 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.914s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.925s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadPIDParametersResponse(const uint8_t*)[m[K’:
+[6.925s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:907:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetAnglePidKp[m[K’ was not declared in this scope
+[6.925s]   907 |     [01;31m[KsetAnglePidKp[m[K(static_cast<double>(response[2]));
+[6.925s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.936s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:908:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetAnglePidKi[m[K’ was not declared in this scope
+[6.937s]   908 |     [01;31m[KsetAnglePidKi[m[K(static_cast<double>(response[3]));
+[6.937s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.948s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:911:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetSpeedPidKp[m[K’ was not declared in this scope
+[6.949s]   911 |     [01;31m[KsetSpeedPidKp[m[K(static_cast<double>(response[4]));
+[6.949s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.960s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:912:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetSpeedPidKi[m[K’ was not declared in this scope
+[6.960s]   912 |     [01;31m[KsetSpeedPidKi[m[K(static_cast<double>(response[5]));
+[6.960s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[6.970s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:914:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetIqPidKp[m[K’ was not declared in this scope
+[6.971s]   914 |     [01;31m[KsetIqPidKp[m[K(static_cast<double>(response[6]));
+[6.971s]       |     [01;31m[K^~~~~~~~~~[m[K
+[6.981s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:915:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetIqPidKi[m[K’ was not declared in this scope
+[6.981s]   915 |     [01;31m[KsetIqPidKi[m[K(static_cast<double>(response[7]));
+[6.981s]       |     [01;31m[K^~~~~~~~~~[m[K
+[6.994s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadAccelerationResponse(const uint8_t*)[m[K’:
+[6.994s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:921:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetAcceleration[m[K’ was not declared in this scope
+[6.995s]   921 |     [01;31m[KsetAcceleration[m[K(static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24)));
+[6.995s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.006s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseWriteAccelerationToRAMResponse(const uint8_t*)[m[K’:
+[7.006s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:929:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kacceleration_[m[K’ was not declared in this scope
+[7.006s]   929 |         [01;31m[Kacceleration_[m[K = static_cast<uint32_t>(response[4]) |
+[7.007s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[7.018s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:935:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kacceleration_[m[K’ was not declared in this scope
+[7.018s]   935 |         [01;31m[Kacceleration_[m[K = 0;
+[7.018s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[7.032s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadEncoderResponse(const uint8_t*)[m[K’:
+[7.032s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:946:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderPosition[m[K’ was not declared in this scope
+[7.032s]   946 |         [01;31m[KsetEncoderPosition[m[K(static_cast<uint16_t>(response[2]) | (static_cast<uint16_t>(response[3]) << 8));
+[7.033s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.044s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:949:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderRaw[m[K’ was not declared in this scope
+[7.044s]   949 |         [01;31m[KsetEncoderRaw[m[K(static_cast<uint16_t>(response[4]) | (static_cast<uint16_t>(response[5]) << 8));
+[7.044s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[7.058s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:952:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoderOffset[m[K’ was not declared in this scope
+[7.059s]   952 |         [01;31m[KsetEncoderOffset[m[K(static_cast<uint16_t>(response[6]) | (static_cast<uint16_t>(response[7]) << 8));
+[7.059s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.059s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[7.059s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:957:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.059s]   957 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[7.060s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.060s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:957:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.060s]   957 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[7.060s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[7.060s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[7.060s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:969:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.061s]   969 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[7.061s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.061s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:969:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.061s]   969 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[7.061s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[7.070s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadMultiAngleLoopResponse(const uint8_t*)[m[K’:
+[7.070s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:984:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetMotorAngle[m[K’ was not declared in this scope
+[7.070s]   984 |     [01;31m[KsetMotorAngle[m[K(*(int64_t*)(response + 1));
+[7.071s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[7.081s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadSingleAngleLoopResponse(const uint8_t*)[m[K’:
+[7.082s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:991:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetCicleAngle[m[K’ was not declared in this scope
+[7.082s]   991 |     [01;31m[KsetCicleAngle[m[K(*((uint32_t*)(response + 4)));
+[7.082s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[7.093s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadMotorState1AndErrorStateResponse(const uint8_t*)[m[K’:
+[7.094s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1005:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[7.094s]  1005 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[7.094s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.103s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1006:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetVoltage[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[7.103s]  1006 |     [01;31m[KsetVoltage[m[K(*(uint16_t*)(response + 3) );
+[7.103s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.104s]       |     [32m[Ksetstate[m[K
+[7.114s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1007:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetErrorState[m[K’ was not declared in this scope
+[7.114s]  1007 |     [01;31m[KsetErrorState[m[K(response[7]);
+[7.114s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[7.126s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseClearErrorStateResponse(const uint8_t*)[m[K’:
+[7.126s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1021:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[7.126s]  1021 |     [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[7.126s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.135s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1022:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetVoltage[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[7.135s]  1022 |     [01;31m[KsetVoltage[m[K(*(uint16_t*)(response + 3) );
+[7.136s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.136s]       |     [32m[Ksetstate[m[K
+[7.146s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1023:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsetErrorState[m[K’ was not declared in this scope
+[7.146s]  1023 |     [01;31m[KsetErrorState[m[K(response[7]);
+[7.147s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[7.159s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadMotorState2Response(const uint8_t*)[m[K’:
+[7.159s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1034:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTemperature[m[K’ was not declared in this scope
+[7.159s]  1034 |         [01;31m[KsetTemperature[m[K(static_cast<int8_t>(response[1]));
+[7.159s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.168s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1036:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetTorque[m[K’ was not declared in this scope
+[7.168s]  1036 |         [01;31m[KsetTorque[m[K(static_cast<int16_t>(response[2] | (response[3] << 8)));
+[7.169s]       |         [01;31m[K^~~~~~~~~[m[K
+[7.177s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1038:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetSpeed[m[K’ was not declared in this scope
+[7.178s]  1038 |         [01;31m[KsetSpeed[m[K(static_cast<int16_t>(response[4] | (response[5] << 8)));
+[7.178s]       |         [01;31m[K^~~~~~~~[m[K
+[7.188s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1040:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetEncoder[m[K’ was not declared in this scope
+[7.188s]  1040 |         [01;31m[KsetEncoder[m[K(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+[7.188s]       |         [01;31m[K^~~~~~~~~~[m[K
+[7.196s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseReadMotorState3Response(const uint8_t*)[m[K’:
+[7.196s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1052:9:[m[K [01;31m[Kerror: [m[K‘[01m[KiA_[m[K’ was not declared in this scope
+[7.196s]  1052 |         [01;31m[KiA_[m[K = static_cast<int16_t>(response[2] | (response[3] << 8));
+[7.197s]       |         [01;31m[K^~~[m[K
+[7.203s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1053:9:[m[K [01;31m[Kerror: [m[K‘[01m[KiB_[m[K’ was not declared in this scope
+[7.204s]  1053 |         [01;31m[KiB_[m[K = static_cast<int16_t>(response[4] | (response[5] << 8));
+[7.204s]       |         [01;31m[K^~~[m[K
+[7.211s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1054:9:[m[K [01;31m[Kerror: [m[K‘[01m[KiC_[m[K’ was not declared in this scope
+[7.212s]  1054 |         [01;31m[KiC_[m[K = static_cast<int16_t>(response[6] | (response[7] << 8));
+[7.212s]       |         [01;31m[K^~~[m[K
+[7.212s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1055:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.213s]  1055 |         [01;31m[Kthis[m[K->temperature_ = static_cast<int8_t>(response[1]);
+[7.213s]       |         [01;31m[K^~~~[m[K
+[7.213s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid parseResponse(const uint8_t*)[m[K’:
+[7.213s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1065:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.213s]  1065 |             [01;31m[Kthis[m[K->parseGeneralStatusResponse(response);
+[7.213s]       |             [01;31m[K^~~~[m[K
+[7.214s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1069:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.214s]  1069 |             [01;31m[Kthis[m[K->parseTorqueClosedLoopControlResponse(response);
+[7.214s]       |             [01;31m[K^~~~[m[K
+[7.214s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1073:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.214s]  1073 |             [01;31m[Kthis[m[K->parseTorqueClosedLoopControlResponse(response);
+[7.215s]       |             [01;31m[K^~~~[m[K
+[7.215s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1077:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.215s]  1077 |             [01;31m[Kthis[m[K->parseMultiLoopAngleControl1Response(response);return;
+[7.215s]       |             [01;31m[K^~~~[m[K
+[7.215s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1080:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.215s]  1080 |             [01;31m[Kthis[m[K->parseMultiLoopAngleControl2Response(response);
+[7.216s]       |             [01;31m[K^~~~[m[K
+[7.216s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1084:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.216s]  1084 |             [01;31m[Kthis[m[K->parseSingleLoopAngleControl1Response(response);
+[7.216s]       |             [01;31m[K^~~~[m[K
+[7.216s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1088:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.217s]  1088 |             [01;31m[Kthis[m[K->parseSingleLoopAngleControl2Response(response);
+[7.217s]       |             [01;31m[K^~~~[m[K
+[7.217s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1092:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.217s]  1092 |             [01;31m[Kthis[m[K->parseIncrementAngleControlResponse(response);
+[7.217s]       |             [01;31m[K^~~~[m[K
+[7.217s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1096:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.218s]  1096 |             [01;31m[Kthis[m[K->parseIncrementAngleControlResponse(response); // there should be two of these but im not sure what happened ??
+[7.218s]       |             [01;31m[K^~~~[m[K
+[7.218s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1100:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.218s]  1100 |             [01;31m[Kthis[m[K->parseReadPIDParametersResponse(response);
+[7.218s]       |             [01;31m[K^~~~[m[K
+[7.219s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1108:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.219s]  1108 |             [01;31m[Kthis[m[K->parseWritePIDParametersToROMResponse(response);
+[7.219s]       |             [01;31m[K^~~~[m[K
+[7.219s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1112:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.219s]  1112 |             [01;31m[Kthis[m[K->parseReadAccelerationResponse(response);
+[7.220s]       |             [01;31m[K^~~~[m[K
+[7.220s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1116:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.220s]  1116 |             [01;31m[Kthis[m[K->parseWriteAccelerationToRAMResponse(response);
+[7.220s]       |             [01;31m[K^~~~[m[K
+[7.220s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1120:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.221s]  1120 |             [01;31m[Kthis[m[K->parseReadEncoderResponse(response);
+[7.221s]       |             [01;31m[K^~~~[m[K
+[7.221s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1125:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.221s]  1125 |             [01;31m[Kthis[m[K->parseReadMultiAngleLoopResponse(response);
+[7.221s]       |             [01;31m[K^~~~[m[K
+[7.221s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1129:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.222s]  1129 |             [01;31m[Kthis[m[K->parseReadMultiAngleLoopResponse(response);
+[7.222s]       |             [01;31m[K^~~~[m[K
+[7.222s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1137:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.222s]  1137 |             [01;31m[Kthis[m[K->parseReadMotorState1AndErrorStateResponse(response);
+[7.222s]       |             [01;31m[K^~~~[m[K
+[7.223s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1141:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.223s]  1141 |             [01;31m[Kthis[m[K->parseReadMotorState2Response(response);
+[7.223s]       |             [01;31m[K^~~~[m[K
+[7.223s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1145:13:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.223s]  1145 |             [01;31m[Kthis[m[K->parseReadMotorState3Response(response);
+[7.224s]       |             [01;31m[K^~~~[m[K
+[7.224s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.224s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1158:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KBLDCMotor[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[7.224s]  1158 |     [01;31m[KBLDCMotor[m[K(uint8_t motorId) : motorId_(motorId) {}
+[7.224s]       |     [01;31m[K^~~~~~~~~[m[K
+[7.224s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint BLDCMotor(uint8_t)[m[K’:
+[7.225s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1158:34:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[7.225s]  1158 |     BLDCMotor(uint8_t motorId) : [01;31m[KmotorId_[m[K(motorId) {}
+[7.225s]       |                                  [01;31m[K^~~~~~~~[m[K
+[7.225s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1158:53:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[7.225s]  1158 |     BLDCMotor(uint8_t motorId) : motorId_(motorId) {[01;35m[K}[m[K
+[7.226s]       |                                                     [01;35m[K^[m[K
+[7.226s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.226s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1161:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorOffCommand[m[K’ does not name a type
+[7.226s]  1161 |     [01;31m[KMotorOffCommand[m[K createMotorOffCommand() {
+[7.226s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.226s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1167:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorOnCommand[m[K’ does not name a type
+[7.227s]  1167 |     [01;31m[KMotorOnCommand[m[K createMotorOnCommand() {
+[7.227s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.230s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1173:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorStopCommand[m[K’ does not name a type; did you mean ‘[01m[KReadMotorState3Command[m[K’?
+[7.230s]  1173 |     [01;31m[KMotorStopCommand[m[K createMotorStopCommand() {
+[7.230s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.231s]       |     [32m[KReadMotorState3Command[m[K
+[7.238s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1179:5:[m[K [01;31m[Kerror: [m[K‘[01m[KOpenLoopControlCommand[m[K’ does not name a type
+[7.238s]  1179 |     [01;31m[KOpenLoopControlCommand[m[K createOpenLoopControlCommand(int16_t powerControl) {
+[7.238s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.247s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1185:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSpeedClosedLoopControlCommand[m[K’ does not name a type
+[7.247s]  1185 |     [01;31m[KSpeedClosedLoopControlCommand[m[K createSpeedClosedLoopControlCommand(int32_t speedControl) {
+[7.247s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.254s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1191:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiLoopAngleControl1Command[m[K’ does not name a type; did you mean ‘[01m[KSingleLoopAngleControl2Command[m[K’?
+[7.254s]  1191 |     [01;31m[KMultiLoopAngleControl1Command[m[K createMultiLoopAngleControl1Command(int32_t angleControl, int16_t maxSpeed) {
+[7.254s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.254s]       |     [32m[KSingleLoopAngleControl2Command[m[K
+[7.260s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1197:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMultiLoopAngleControl2Command[m[K’ does not name a type; did you mean ‘[01m[KSingleLoopAngleControl2Command[m[K’?
+[7.260s]  1197 |     [01;31m[KMultiLoopAngleControl2Command[m[K createMultiLoopAngleControl2Command(int32_t angleControl, uint16_t maxSpeed) {
+[7.260s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.260s]       |     [32m[KSingleLoopAngleControl2Command[m[K
+[7.264s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1203:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSingleLoopAngleControl1Command[m[K’ does not name a type; did you mean ‘[01m[KSingleLoopAngleControl2Command[m[K’?
+[7.264s]  1203 |     [01;31m[KSingleLoopAngleControl1Command[m[K createSingleLoopAngleControl1Command(uint8_t spinDirection, uint32_t angleControl) {
+[7.265s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.265s]       |     [32m[KSingleLoopAngleControl2Command[m[K
+[7.274s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[KSingleLoopAngleControl2Command createSingleLoopAngleControl2Command(uint8_t, uint32_t, uint16_t)[m[K’:
+[7.274s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1211:47:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorId_[m[K’ was not declared in this scope
+[7.274s]  1211 |         return SingleLoopAngleControl2Command([01;31m[KmotorId_[m[K, spinDirection, angleControl, maxSpeed);
+[7.274s]       |                                               [01;31m[K^~~~~~~~[m[K
+[7.275s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.275s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1221:30:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[KMotorType getMotorType()[m[K’ cannot have cv-qualifier
+[7.275s]  1221 |     MotorType getMotorType() [01;31m[Kconst[m[K { return motorType_; }
+[7.275s]       |                              [01;31m[K^~~~~[m[K
+[7.283s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[KMotorType getMotorType()[m[K’:
+[7.284s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1221:45:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorType_[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorType[m[K’?
+[7.284s]  1221 |     MotorType getMotorType() const { return [01;31m[KmotorType_[m[K; }
+[7.284s]       |                                             [01;31m[K^~~~~~~~~~[m[K
+[7.284s]       |                                             [32m[KMotorType[m[K
+[7.284s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.285s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1222:26:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint8_t getMotorId()[m[K’ cannot have cv-qualifier
+[7.285s]  1222 |     uint8_t getMotorId() [01;31m[Kconst[m[K { return motorId_; }
+[7.285s]       |                          [01;31m[K^~~~~[m[K
+[7.293s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint8_t getMotorId()[m[K’:
+[7.293s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1222:41:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorId_[m[K’ was not declared in this scope
+[7.293s]  1222 |     uint8_t getMotorId() const { return [01;31m[KmotorId_[m[K; }
+[7.294s]       |                                         [01;31m[K^~~~~~~~[m[K
+[7.302s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint32_t getMotorCANId()[m[K’:
+[7.303s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1223:47:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorId_[m[K’ was not declared in this scope
+[7.303s]  1223 |     uint32_t getMotorCANId() { return 0x140 + [01;31m[KmotorId_[m[K ; }
+[7.303s]       |                                               [01;31m[K^~~~~~~~[m[K
+[7.303s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.303s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1224:29:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint8_t getTemperature()[m[K’ cannot have cv-qualifier
+[7.304s]  1224 |     int8_t getTemperature() [01;31m[Kconst[m[K { return temperature_; }
+[7.304s]       |                             [01;31m[K^~~~~[m[K
+[7.313s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint8_t getTemperature()[m[K’:
+[7.313s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1224:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTemperature[m[K’?
+[7.314s]  1224 |     int8_t getTemperature() const { return [01;31m[Ktemperature_[m[K; }
+[7.314s]       |                                            [01;31m[K^~~~~~~~~~~~[m[K
+[7.314s]       |                                            [32m[KgetTemperature[m[K
+[7.314s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.314s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1225:29:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint16_t getMotorPower()[m[K’ cannot have cv-qualifier
+[7.315s]  1225 |     int16_t getMotorPower() [01;31m[Kconst[m[K { return motorPower_; }
+[7.315s]       |                             [01;31m[K^~~~~[m[K
+[7.323s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint16_t getMotorPower()[m[K’:
+[7.324s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1225:44:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPower_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetMotorPower[m[K’?
+[7.324s]  1225 |     int16_t getMotorPower() const { return [01;31m[KmotorPower_[m[K; }
+[7.324s]       |                                            [01;31m[K^~~~~~~~~~~[m[K
+[7.324s]       |                                            [32m[KgetMotorPower[m[K
+[7.324s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.324s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1226:29:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint16_t getMotorSpeed()[m[K’ cannot have cv-qualifier
+[7.325s]  1226 |     int16_t getMotorSpeed() [01;31m[Kconst[m[K { return motorSpeed_; }
+[7.325s]       |                             [01;31m[K^~~~~[m[K
+[7.334s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint16_t getMotorSpeed()[m[K’:
+[7.334s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1226:44:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorSpeed_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetMotorSpeed[m[K’?
+[7.334s]  1226 |     int16_t getMotorSpeed() const { return [01;31m[KmotorSpeed_[m[K; }
+[7.334s]       |                                            [01;31m[K^~~~~~~~~~~[m[K
+[7.334s]       |                                            [32m[KgetMotorSpeed[m[K
+[7.335s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.335s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1227:35:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint16_t getEncoderPosition()[m[K’ cannot have cv-qualifier
+[7.335s]  1227 |     uint16_t getEncoderPosition() [01;31m[Kconst[m[K { return encoderPosition_; }
+[7.335s]       |                                   [01;31m[K^~~~~[m[K
+[7.346s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint16_t getEncoderPosition()[m[K’:
+[7.347s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1227:50:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderPosition_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetEncoderPosition[m[K’?
+[7.347s]  1227 |     uint16_t getEncoderPosition() const { return [01;31m[KencoderPosition_[m[K; }
+[7.347s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.347s]       |                                                  [32m[KgetEncoderPosition[m[K
+[7.347s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.348s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1228:32:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint16_t getTorqueCurrent()[m[K’ cannot have cv-qualifier
+[7.348s]  1228 |     int16_t getTorqueCurrent() [01;31m[Kconst[m[K { return torqueCurrent_; }
+[7.348s]       |                                [01;31m[K^~~~~[m[K
+[7.359s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint16_t getTorqueCurrent()[m[K’:
+[7.359s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1228:47:[m[K [01;31m[Kerror: [m[K‘[01m[KtorqueCurrent_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTorqueCurrent[m[K’?
+[7.359s]  1228 |     int16_t getTorqueCurrent() const { return [01;31m[KtorqueCurrent_[m[K; }
+[7.359s]       |                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.359s]       |                                               [32m[KgetTorqueCurrent[m[K
+[7.360s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.360s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1229:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getAnglePidKp()[m[K’ cannot have cv-qualifier
+[7.360s]  1229 |     double getAnglePidKp() [01;31m[Kconst[m[K { return anglePidKp_; }
+[7.360s]       |                            [01;31m[K^~~~~[m[K
+[7.370s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getAnglePidKp()[m[K’:
+[7.370s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1229:43:[m[K [01;31m[Kerror: [m[K‘[01m[KanglePidKp_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetAnglePidKp[m[K’?
+[7.370s]  1229 |     double getAnglePidKp() const { return [01;31m[KanglePidKp_[m[K; }
+[7.370s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[7.370s]       |                                           [32m[KgetAnglePidKp[m[K
+[7.371s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.371s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1230:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getAnglePidKi()[m[K’ cannot have cv-qualifier
+[7.371s]  1230 |     double getAnglePidKi() [01;31m[Kconst[m[K { return anglePidKi_; }
+[7.371s]       |                            [01;31m[K^~~~~[m[K
+[7.380s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getAnglePidKi()[m[K’:
+[7.381s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1230:43:[m[K [01;31m[Kerror: [m[K‘[01m[KanglePidKi_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetAnglePidKi[m[K’?
+[7.381s]  1230 |     double getAnglePidKi() const { return [01;31m[KanglePidKi_[m[K; }
+[7.381s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[7.381s]       |                                           [32m[KgetAnglePidKi[m[K
+[7.381s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.381s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getSpeedPidKp()[m[K’ cannot have cv-qualifier
+[7.382s]  1231 |     double getSpeedPidKp() [01;31m[Kconst[m[K { return speedPidKp_; }
+[7.382s]       |                            [01;31m[K^~~~~[m[K
+[7.392s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getSpeedPidKp()[m[K’:
+[7.393s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1231:43:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedPidKp_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetSpeedPidKp[m[K’?
+[7.393s]  1231 |     double getSpeedPidKp() const { return [01;31m[KspeedPidKp_[m[K; }
+[7.393s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[7.393s]       |                                           [32m[KgetSpeedPidKp[m[K
+[7.393s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.394s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getSpeedPidKi()[m[K’ cannot have cv-qualifier
+[7.394s]  1232 |     double getSpeedPidKi() [01;31m[Kconst[m[K { return speedPidKi_; }
+[7.394s]       |                            [01;31m[K^~~~~[m[K
+[7.402s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getSpeedPidKi()[m[K’:
+[7.403s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1232:43:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedPidKi_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetSpeedPidKi[m[K’?
+[7.403s]  1232 |     double getSpeedPidKi() const { return [01;31m[KspeedPidKi_[m[K; }
+[7.403s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[7.403s]       |                                           [32m[KgetSpeedPidKi[m[K
+[7.403s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.404s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1233:25:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getIqPidKp()[m[K’ cannot have cv-qualifier
+[7.404s]  1233 |     double getIqPidKp() [01;31m[Kconst[m[K { return iqPidKp_; }
+[7.404s]       |                         [01;31m[K^~~~~[m[K
+[7.412s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getIqPidKp()[m[K’:
+[7.412s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1233:40:[m[K [01;31m[Kerror: [m[K‘[01m[KiqPidKp_[m[K’ was not declared in this scope
+[7.412s]  1233 |     double getIqPidKp() const { return [01;31m[KiqPidKp_[m[K; }
+[7.413s]       |                                        [01;31m[K^~~~~~~~[m[K
+[7.413s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.413s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1234:25:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kdouble getIqPidKi()[m[K’ cannot have cv-qualifier
+[7.413s]  1234 |     double getIqPidKi() [01;31m[Kconst[m[K { return iqPidKi_; }
+[7.413s]       |                         [01;31m[K^~~~~[m[K
+[7.421s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kdouble getIqPidKi()[m[K’:
+[7.422s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1234:40:[m[K [01;31m[Kerror: [m[K‘[01m[KiqPidKi_[m[K’ was not declared in this scope
+[7.422s]  1234 |     double getIqPidKi() const { return [01;31m[KiqPidKi_[m[K; }
+[7.422s]       |                                        [01;31m[K^~~~~~~~[m[K
+[7.422s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.422s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1235:31:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint32_t getAcceleration()[m[K’ cannot have cv-qualifier
+[7.423s]  1235 |     int32_t getAcceleration() [01;31m[Kconst[m[K { return acceleration_; }
+[7.423s]       |                               [01;31m[K^~~~~[m[K
+[7.433s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint32_t getAcceleration()[m[K’:
+[7.433s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1235:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kacceleration_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetAcceleration[m[K’?
+[7.433s]  1235 |     int32_t getAcceleration() const { return [01;31m[Kacceleration_[m[K; }
+[7.433s]       |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[7.433s]       |                                              [32m[KgetAcceleration[m[K
+[7.434s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.434s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1236:30:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint16_t getEncoderRaw()[m[K’ cannot have cv-qualifier
+[7.434s]  1236 |     uint16_t getEncoderRaw() [01;31m[Kconst[m[K { return encoderRaw_; }
+[7.434s]       |                              [01;31m[K^~~~~[m[K
+[7.443s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint16_t getEncoderRaw()[m[K’:
+[7.444s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1236:45:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderRaw_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetEncoderRaw[m[K’?
+[7.444s]  1236 |     uint16_t getEncoderRaw() const { return [01;31m[KencoderRaw_[m[K; }
+[7.444s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[7.444s]       |                                             [32m[KgetEncoderRaw[m[K
+[7.444s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.445s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1237:33:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint16_t getEncoderOffset()[m[K’ cannot have cv-qualifier
+[7.445s]  1237 |     uint16_t getEncoderOffset() [01;31m[Kconst[m[K { return encoderOffset_; }
+[7.445s]       |                                 [01;31m[K^~~~~[m[K
+[7.456s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint16_t getEncoderOffset()[m[K’:
+[7.456s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1237:48:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderOffset_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetEncoderOffset[m[K’?
+[7.456s]  1237 |     uint16_t getEncoderOffset() const { return [01;31m[KencoderOffset_[m[K; }
+[7.456s]       |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.456s]       |                                                [32m[KgetEncoderOffset[m[K
+[7.457s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.457s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1238:29:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint64_t getMotorAngle()[m[K’ cannot have cv-qualifier
+[7.457s]  1238 |     int64_t getMotorAngle() [01;31m[Kconst[m[K { return motorAngle_; }
+[7.457s]       |                             [01;31m[K^~~~~[m[K
+[7.466s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint64_t getMotorAngle()[m[K’:
+[7.466s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1238:44:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorAngle_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetMotorAngle[m[K’?
+[7.466s]  1238 |     int64_t getMotorAngle() const { return [01;31m[KmotorAngle_[m[K; }
+[7.467s]       |                                            [01;31m[K^~~~~~~~~~~[m[K
+[7.467s]       |                                            [32m[KgetMotorAngle[m[K
+[7.467s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.467s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1239:30:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint32_t getCicleAngle()[m[K’ cannot have cv-qualifier
+[7.467s]  1239 |     uint32_t getCicleAngle() [01;31m[Kconst[m[K { return cicleAngle_; }
+[7.468s]       |                              [01;31m[K^~~~~[m[K
+[7.476s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint32_t getCicleAngle()[m[K’:
+[7.477s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1239:45:[m[K [01;31m[Kerror: [m[K‘[01m[KcicleAngle_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetCicleAngle[m[K’?
+[7.477s]  1239 |     uint32_t getCicleAngle() const { return [01;31m[KcicleAngle_[m[K; }
+[7.477s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[7.477s]       |                                             [32m[KgetCicleAngle[m[K
+[7.477s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.478s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1240:27:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint16_t getVoltage()[m[K’ cannot have cv-qualifier
+[7.478s]  1240 |     uint16_t getVoltage() [01;31m[Kconst[m[K { return voltage_; }
+[7.478s]       |                           [01;31m[K^~~~~[m[K
+[7.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint16_t getVoltage()[m[K’:
+[7.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1240:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoltage_[m[K’ was not declared in this scope
+[7.486s]  1240 |     uint16_t getVoltage() const { return [01;31m[Kvoltage_[m[K; }
+[7.486s]       |                                          [01;31m[K^~~~~~~~[m[K
+[7.486s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.487s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1241:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint8_t getErrorState()[m[K’ cannot have cv-qualifier
+[7.487s]  1241 |     int8_t getErrorState() [01;31m[Kconst[m[K { return errorState_; }
+[7.487s]       |                            [01;31m[K^~~~~[m[K
+[7.496s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint8_t getErrorState()[m[K’:
+[7.496s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1241:43:[m[K [01;31m[Kerror: [m[K‘[01m[KerrorState_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetErrorState[m[K’?
+[7.496s]  1241 |     int8_t getErrorState() const { return [01;31m[KerrorState_[m[K; }
+[7.497s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[7.497s]       |                                           [32m[KgetErrorState[m[K
+[7.497s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.497s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1242:28:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool isVoltageNormal()[m[K’ cannot have cv-qualifier
+[7.497s]  1242 |     bool isVoltageNormal() [01;31m[Kconst[m[K { return isVoltageNormal_; }
+[7.497s]       |                            [01;31m[K^~~~~[m[K
+[7.506s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kbool isVoltageNormal()[m[K’:
+[7.507s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1242:43:[m[K [01;31m[Kerror: [m[K‘[01m[KisVoltageNormal_[m[K’ was not declared in this scope; did you mean ‘[01m[KisVoltageNormal[m[K’?
+[7.507s]  1242 |     bool isVoltageNormal() const { return [01;31m[KisVoltageNormal_[m[K; }
+[7.507s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.507s]       |                                           [32m[KisVoltageNormal[m[K
+[7.507s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.508s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:34:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool isUnderVoltageProtect()[m[K’ cannot have cv-qualifier
+[7.508s]  1243 |     bool isUnderVoltageProtect() [01;31m[Kconst[m[K { return isUnderVoltageProtect_; }
+[7.508s]       |                                  [01;31m[K^~~~~[m[K
+[7.518s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kbool isUnderVoltageProtect()[m[K’:
+[7.518s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1243:49:[m[K [01;31m[Kerror: [m[K‘[01m[KisUnderVoltageProtect_[m[K’ was not declared in this scope; did you mean ‘[01m[KisUnderVoltageProtect[m[K’?
+[7.518s]  1243 |     bool isUnderVoltageProtect() const { return [01;31m[KisUnderVoltageProtect_[m[K; }
+[7.519s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.519s]       |                                                 [32m[KisUnderVoltageProtect[m[K
+[7.519s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.519s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1244:32:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool isTemperatureNormal()[m[K’ cannot have cv-qualifier
+[7.519s]  1244 |     bool isTemperatureNormal() [01;31m[Kconst[m[K { return isTemperatureNormal_; }
+[7.520s]       |                                [01;31m[K^~~~~[m[K
+[7.529s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kbool isTemperatureNormal()[m[K’:
+[7.529s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1244:47:[m[K [01;31m[Kerror: [m[K‘[01m[KisTemperatureNormal_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTemperatureNormal[m[K’?
+[7.529s]  1244 |     bool isTemperatureNormal() const { return [01;31m[KisTemperatureNormal_[m[K; }
+[7.530s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.530s]       |                                               [32m[KisTemperatureNormal[m[K
+[7.530s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.530s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1245:37:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool isOverTemperatureProtect()[m[K’ cannot have cv-qualifier
+[7.530s]  1245 |     bool isOverTemperatureProtect() [01;31m[Kconst[m[K { return isOverTemperatureProtect_; }
+[7.531s]       |                                     [01;31m[K^~~~~[m[K
+[7.541s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kbool isOverTemperatureProtect()[m[K’:
+[7.541s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1245:52:[m[K [01;31m[Kerror: [m[K‘[01m[KisOverTemperatureProtect_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOverTemperatureProtect[m[K’?
+[7.541s]  1245 |     bool isOverTemperatureProtect() const { return [01;31m[KisOverTemperatureProtect_[m[K; }
+[7.542s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.542s]       |                                                    [32m[KisOverTemperatureProtect[m[K
+[7.542s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.542s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1246:25:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint16_t getTorque()[m[K’ cannot have cv-qualifier
+[7.542s]  1246 |     int16_t getTorque() [01;31m[Kconst[m[K { return torque_; }
+[7.543s]       |                         [01;31m[K^~~~~[m[K
+[7.550s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint16_t getTorque()[m[K’:
+[7.551s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1246:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorque_[m[K’ was not declared in this scope
+[7.551s]  1246 |     int16_t getTorque() const { return [01;31m[Ktorque_[m[K; }
+[7.551s]       |                                        [01;31m[K^~~~~~~[m[K
+[7.551s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.551s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1247:24:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kint16_t getSpeed()[m[K’ cannot have cv-qualifier
+[7.552s]  1247 |     int16_t getSpeed() [01;31m[Kconst[m[K { return speed_; }
+[7.552s]       |                        [01;31m[K^~~~~[m[K
+[7.559s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kint16_t getSpeed()[m[K’:
+[7.559s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1247:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+[7.560s]  1247 |     int16_t getSpeed() const { return [01;31m[Kspeed_[m[K; }
+[7.560s]       |                                       [01;31m[K^~~~~~[m[K
+[7.560s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.560s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1248:27:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kuint16_t getEncoder()[m[K’ cannot have cv-qualifier
+[7.560s]  1248 |     uint16_t getEncoder() [01;31m[Kconst[m[K { return encoder_; }
+[7.560s]       |                           [01;31m[K^~~~~[m[K
+[7.569s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kuint16_t getEncoder()[m[K’:
+[7.569s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1248:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetEncoder[m[K’?
+[7.569s]  1248 |     uint16_t getEncoder() const { return [01;31m[Kencoder_[m[K; }
+[7.569s]       |                                          [01;31m[K^~~~~~~~[m[K
+[7.569s]       |                                          [32m[KgetEncoder[m[K
+[7.578s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setMotorType(MotorType)[m[K’:
+[7.578s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1251:40:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorType_[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorType[m[K’?
+[7.578s]  1251 |     void setMotorType(MotorType val) { [01;31m[KmotorType_[m[K = val; }
+[7.578s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[7.579s]       |                                        [32m[KMotorType[m[K
+[7.587s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setMotorId(uint8_t)[m[K’:
+[7.587s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1252:36:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorId_[m[K’ was not declared in this scope
+[7.587s]  1252 |     void setMotorId(uint8_t val) { [01;31m[KmotorId_[m[K = val; }
+[7.588s]       |                                    [01;31m[K^~~~~~~~[m[K
+[7.598s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setTemperature(int8_t)[m[K’:
+[7.598s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1253:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetTemperature[m[K’?
+[7.598s]  1253 |     void setTemperature(int8_t val) { [01;31m[Ktemperature_[m[K = val; }
+[7.599s]       |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[7.599s]       |                                       [32m[KsetTemperature[m[K
+[7.609s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setMotorPower(int16_t)[m[K’:
+[7.609s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1254:39:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPower_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetMotorPower[m[K’?
+[7.609s]  1254 |     void setMotorPower(int16_t val) { [01;31m[KmotorPower_[m[K = val; }
+[7.609s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[7.610s]       |                                       [32m[KsetMotorPower[m[K
+[7.619s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setMotorSpeed(int16_t)[m[K’:
+[7.619s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1255:39:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorSpeed_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetMotorSpeed[m[K’?
+[7.620s]  1255 |     void setMotorSpeed(int16_t val) { [01;31m[KmotorSpeed_[m[K = val; }
+[7.620s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[7.620s]       |                                       [32m[KsetMotorSpeed[m[K
+[7.630s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setEncoderPosition(uint16_t)[m[K’:
+[7.630s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1256:45:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderPosition_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetEncoderPosition[m[K’?
+[7.630s]  1256 |     void setEncoderPosition(uint16_t val) { [01;31m[KencoderPosition_[m[K = val; }
+[7.631s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.631s]       |                                             [32m[KsetEncoderPosition[m[K
+[7.641s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setTorqueCurrent(int16_t)[m[K’:
+[7.641s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1257:42:[m[K [01;31m[Kerror: [m[K‘[01m[KtorqueCurrent_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetTorqueCurrent[m[K’?
+[7.641s]  1257 |     void setTorqueCurrent(int16_t val) { [01;31m[KtorqueCurrent_[m[K = val; }
+[7.641s]       |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.641s]       |                                          [32m[KsetTorqueCurrent[m[K
+[7.651s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setAnglePidKp(double)[m[K’:
+[7.651s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1258:38:[m[K [01;31m[Kerror: [m[K‘[01m[KanglePidKp_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetAnglePidKp[m[K’?
+[7.652s]  1258 |     void setAnglePidKp(double val) { [01;31m[KanglePidKp_[m[K = val; }
+[7.652s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[7.652s]       |                                      [32m[KsetAnglePidKp[m[K
+[7.662s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setAnglePidKi(double)[m[K’:
+[7.662s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1259:38:[m[K [01;31m[Kerror: [m[K‘[01m[KanglePidKi_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetAnglePidKi[m[K’?
+[7.662s]  1259 |     void setAnglePidKi(double val) { [01;31m[KanglePidKi_[m[K = val; }
+[7.662s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[7.662s]       |                                      [32m[KsetAnglePidKi[m[K
+[7.671s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setSpeedPidKp(double)[m[K’:
+[7.672s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1260:38:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedPidKp_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetSpeedPidKp[m[K’?
+[7.672s]  1260 |     void setSpeedPidKp(double val) { [01;31m[KspeedPidKp_[m[K = val; }
+[7.672s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[7.672s]       |                                      [32m[KsetSpeedPidKp[m[K
+[7.682s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setSpeedPidKi(double)[m[K’:
+[7.682s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1261:38:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedPidKi_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetSpeedPidKi[m[K’?
+[7.682s]  1261 |     void setSpeedPidKi(double val) { [01;31m[KspeedPidKi_[m[K = val; }
+[7.682s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[7.682s]       |                                      [32m[KsetSpeedPidKi[m[K
+[7.691s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setIqPidKp(double)[m[K’:
+[7.691s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1262:35:[m[K [01;31m[Kerror: [m[K‘[01m[KiqPidKp_[m[K’ was not declared in this scope
+[7.691s]  1262 |     void setIqPidKp(double val) { [01;31m[KiqPidKp_[m[K = val; }
+[7.691s]       |                                   [01;31m[K^~~~~~~~[m[K
+[7.700s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setIqPidKi(double)[m[K’:
+[7.700s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1263:35:[m[K [01;31m[Kerror: [m[K‘[01m[KiqPidKi_[m[K’ was not declared in this scope
+[7.700s]  1263 |     void setIqPidKi(double val) { [01;31m[KiqPidKi_[m[K = val; }
+[7.701s]       |                                   [01;31m[K^~~~~~~~[m[K
+[7.711s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setAcceleration(int32_t)[m[K’:
+[7.711s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1264:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kacceleration_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetAcceleration[m[K’?
+[7.711s]  1264 |     void setAcceleration(int32_t val) { [01;31m[Kacceleration_[m[K = val; }
+[7.712s]       |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[7.712s]       |                                         [32m[KsetAcceleration[m[K
+[7.721s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setEncoderRaw(uint16_t)[m[K’:
+[7.721s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1265:40:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderRaw_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetEncoderRaw[m[K’?
+[7.721s]  1265 |     void setEncoderRaw(uint16_t val) { [01;31m[KencoderRaw_[m[K = val; }
+[7.721s]       |                                        [01;31m[K^~~~~~~~~~~[m[K
+[7.721s]       |                                        [32m[KsetEncoderRaw[m[K
+[7.731s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setEncoderOffset(uint16_t)[m[K’:
+[7.732s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1266:43:[m[K [01;31m[Kerror: [m[K‘[01m[KencoderOffset_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetEncoderOffset[m[K’?
+[7.732s]  1266 |     void setEncoderOffset(uint16_t val) { [01;31m[KencoderOffset_[m[K = val; }
+[7.732s]       |                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.732s]       |                                           [32m[KsetEncoderOffset[m[K
+[7.741s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setMotorAngle(int64_t)[m[K’:
+[7.742s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1267:39:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorAngle_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetMotorAngle[m[K’?
+[7.742s]  1267 |     void setMotorAngle(int64_t val) { [01;31m[KmotorAngle_[m[K = val; }
+[7.742s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[7.742s]       |                                       [32m[KsetMotorAngle[m[K
+[7.752s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setCicleAngle(uint32_t)[m[K’:
+[7.752s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1268:40:[m[K [01;31m[Kerror: [m[K‘[01m[KcicleAngle_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetCicleAngle[m[K’?
+[7.752s]  1268 |     void setCicleAngle(uint32_t val) { [01;31m[KcicleAngle_[m[K = val; }
+[7.753s]       |                                        [01;31m[K^~~~~~~~~~~[m[K
+[7.753s]       |                                        [32m[KsetCicleAngle[m[K
+[7.762s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setVoltage(uint16_t)[m[K’:
+[7.762s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1269:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoltage_[m[K’ was not declared in this scope
+[7.762s]  1269 |     void setVoltage(uint16_t val) { [01;31m[Kvoltage_[m[K = val; }
+[7.762s]       |                                     [01;31m[K^~~~~~~~[m[K
+[7.772s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setErrorState(int8_t)[m[K’:
+[7.772s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1271:9:[m[K [01;31m[Kerror: [m[K‘[01m[KerrorState_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetErrorState[m[K’?
+[7.772s]  1271 |         [01;31m[KerrorState_[m[K = val;
+[7.772s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[7.773s]       |         [32m[KsetErrorState[m[K
+[7.787s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1273:9:[m[K [01;31m[Kerror: [m[K‘[01m[KisVoltageNormal_[m[K’ was not declared in this scope; did you mean ‘[01m[KisVoltageNormal[m[K’?
+[7.787s]  1273 |         [01;31m[KisVoltageNormal_[m[K = (errorState_ & 0x01) != 0;
+[7.787s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.787s]       |         [32m[KisVoltageNormal[m[K
+[7.794s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1274:9:[m[K [01;31m[Kerror: [m[K‘[01m[KisUnderVoltageProtect_[m[K’ was not declared in this scope; did you mean ‘[01m[KisUnderVoltageProtect[m[K’?
+[7.794s]  1274 |         [01;31m[KisUnderVoltageProtect_[m[K = (errorState_ & 0x02) != 0;
+[7.794s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.794s]       |         [32m[KisUnderVoltageProtect[m[K
+[7.805s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1275:9:[m[K [01;31m[Kerror: [m[K‘[01m[KisTemperatureNormal_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTemperatureNormal[m[K’?
+[7.806s]  1275 |         [01;31m[KisTemperatureNormal_[m[K = (errorState_ & 0x04) != 0;
+[7.806s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.806s]       |         [32m[KisTemperatureNormal[m[K
+[7.818s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1276:9:[m[K [01;31m[Kerror: [m[K‘[01m[KisOverTemperatureProtect_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOverTemperatureProtect[m[K’?
+[7.818s]  1276 |         [01;31m[KisOverTemperatureProtect_[m[K = (errorState_ & 0x08) != 0;
+[7.818s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.818s]       |         [32m[KisOverTemperatureProtect[m[K
+[7.827s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setTorque(int16_t)[m[K’:
+[7.827s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1278:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorque_[m[K’ was not declared in this scope
+[7.827s]  1278 |     void setTorque(int16_t val) { [01;31m[Ktorque_[m[K = val; }
+[7.827s]       |                                   [01;31m[K^~~~~~~[m[K
+[7.835s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setSpeed(int16_t)[m[K’:
+[7.835s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1279:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+[7.835s]  1279 |     void setSpeed(int16_t val) { [01;31m[Kspeed_[m[K = val; }
+[7.836s]       |                                  [01;31m[K^~~~~~[m[K
+[7.845s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In function ‘[01m[Kvoid setEncoder(uint16_t)[m[K’:
+[7.845s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1280:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder_[m[K’ was not declared in this scope; did you mean ‘[01m[KsetEncoder[m[K’?
+[7.845s]  1280 |     void setEncoder(uint16_t val) { [01;31m[Kencoder_[m[K = val; }
+[7.845s]       |                                     [01;31m[K^~~~~~~~[m[K
+[7.845s]       |                                     [32m[KsetEncoder[m[K
+[7.846s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K At global scope:
+[7.846s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1284:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[7.846s]  1284 | [01;31m[K}[m[K;
+[7.846s]       | [01;31m[K^[m[K
+[7.846s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1341:30:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+[7.847s]  1341 |     std::shared_ptr<BLDCMotor[01;31m[K>[m[K leftMotor;
+[7.847s]       |                              [01;31m[K^[m[K
+[7.847s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1341:30:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KBLDCMotor[m[K’
+[7.847s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1342:30:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+[7.847s]  1342 |     std::shared_ptr<BLDCMotor[01;31m[K>[m[K rightMotor;
+[7.848s]       |                              [01;31m[K^[m[K
+[7.848s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1342:30:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KBLDCMotor[m[K’
+[7.949s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In constructor ‘[01m[KDifferentialDriveNode::DifferentialDriveNode()[m[K’:
+[7.949s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1291:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<BLDCMotor>(int)[m[K’
+[7.949s]  1291 |         leftMotor = [01;31m[Kstd::make_shared<BLDCMotor>(1)[m[K;
+[7.949s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.949s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[7.950s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[7.950s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[7.950s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[7.950s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[7.950s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[7.950s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.951s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1291:48:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[7.951s]  1291 |         leftMotor = [01;31m[Kstd::make_shared<BLDCMotor>(1)[m[K;
+[7.951s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.951s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1291:48:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KBLDCMotor[m[K’
+[7.951s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1292:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<BLDCMotor>(int)[m[K’
+[7.952s]  1292 |         rightMotor = [01;31m[Kstd::make_shared<BLDCMotor>(2)[m[K;
+[7.952s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.952s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[7.952s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[7.952s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[7.953s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[7.953s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[7.953s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[7.953s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.953s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1292:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[7.954s]  1292 |         rightMotor = [01;31m[Kstd::make_shared<BLDCMotor>(2)[m[K;
+[7.954s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.954s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1292:49:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KBLDCMotor[m[K’
+[8.002s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::onCanMessageReceived(const can_frame&)[m[K’:
+[8.003s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1415:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.003s]  1415 |          leftMotor[01;31m[K->[m[KparseResponse(frame.data);
+[8.003s]       |                   [01;31m[K^~[m[K
+[8.003s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1419:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.004s]  1419 |         rightMotor[01;31m[K->[m[KparseResponse(frame.data);
+[8.004s]       |                   [01;31m[K^~[m[K
+[8.009s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::velocityCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.010s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1429:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.010s]  1429 |         leftMotor[01;31m[K->[m[KsetSpeed(leftSpeed);
+[8.010s]       |                  [01;31m[K^~[m[K
+[8.010s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1430:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.010s]  1430 |         rightMotor[01;31m[K->[m[KsetSpeed(rightSpeed);
+[8.011s]       |                   [01;31m[K^~[m[K
+[8.011s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[8.011s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1443:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.012s]  1443 |         auto leftEncoderCommand = leftMotor[01;31m[K->[m[KreadEncoderValuesCommand();
+[8.012s]       |                                            [01;31m[K^~[m[K
+[8.012s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1444:46:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.012s]  1444 |         auto rightEncoderCommand = rightMotor[01;31m[K->[m[KreadEncoderValuesCommand();
+[8.012s]       |                                              [01;31m[K^~[m[K
+[8.013s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.015s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.015s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.015s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.015s]                  from [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[8.015s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1463:81:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.016s]  1463 |         RCLCPP_INFO(this->get_logger(), "left motor encoder ticks %i", leftMotor[01;31m[K->[m[KgetEncoderRaw());
+[8.016s]       |                                                                                 [01;31m[K^~[m[K
+[8.016s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1464:83:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.016s]  1464 |         RCLCPP_INFO(this->get_logger(), "right motor encoder ticks %i", rightMotor[01;31m[K->[m[KgetEncoderRaw());
+[8.016s]       |                                                                                   [01;31m[K^~[m[K
+[8.017s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1466:81:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.017s]  1466 |         RCLCPP_INFO(this->get_logger(), "left motor encoder ticks %i", leftMotor[01;31m[K->[m[KgetEncoderPosition());
+[8.017s]       |                                                                                 [01;31m[K^~[m[K
+[8.017s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1467:83:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.018s]  1467 |         RCLCPP_INFO(this->get_logger(), "right motor encoder ticks %i", rightMotor[01;31m[K->[m[KgetEncoderPosition());
+[8.018s]       |                                                                                   [01;31m[K^~[m[K
+[8.018s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1469:81:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.018s]  1469 |         RCLCPP_INFO(this->get_logger(), "left motor encoder ticks %i", leftMotor[01;31m[K->[m[KgetEncoderPosition());
+[8.018s]       |                                                                                 [01;31m[K^~[m[K
+[8.019s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1470:83:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[8.019s]  1470 |         RCLCPP_INFO(this->get_logger(), "right motor encoder ticks %i", rightMotor[01;31m[K->[m[KgetEncoderPosition());
+[8.019s]       |                                                                                   [01;31m[K^~[m[K
+[14.047s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[14.048s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[14.048s] gmake: *** [Makefile:146: all] Error 2
+[14.052s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

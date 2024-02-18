@@ -1,0 +1,284 @@
+[0.000000] (-) TimerEvent: {}
+[0.001753] (lkmcannode) JobQueued: {'identifier': 'lkmcannode', 'dependencies': OrderedDict()}
+[0.001822] (lkmcannode) JobStarted: {'identifier': 'lkmcannode'}
+[0.099944] (-) TimerEvent: {}
+[0.173006] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'cmake'}
+[0.174372] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'build'}
+[0.175680] (lkmcannode) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luke/lkmcannode/build/lkmcannode', '--', '-j4', '-l4'], 'cwd': '/home/luke/lkmcannode/build/lkmcannode', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 54283 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-11edb56f-b90f-4cce-95f5-c3ebb8e32cc3.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/luke/lkmcannode/install:/home/luke/LKMCANNODE/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/luke/lkmcannode/install/lkmcannode:/home/luke/LKMCANNODE/install/LKMCANNODE:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/lkmcannode/build/lkmcannode'), ('SSH_CONNECTION', '192.168.3.59 54283 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/luke/lkmcannode/install/lkmcannode:/home/luke/LKMCANNODE/install/LKMCANNODE:/opt/ros/humble')]), 'shell': False}
+[0.200137] (-) TimerEvent: {}
+[0.279338] (lkmcannode) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lkmcannode\x1b[0m\n'}
+[0.301945] (-) TimerEvent: {}
+[0.338439] (lkmcannode) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o\x1b[0m\n'}
+[0.402122] (-) TimerEvent: {}
+[0.502686] (-) TimerEvent: {}
+[0.603245] (-) TimerEvent: {}
+[0.703811] (-) TimerEvent: {}
+[0.804388] (-) TimerEvent: {}
+[0.904931] (-) TimerEvent: {}
+[1.005475] (-) TimerEvent: {}
+[1.106063] (-) TimerEvent: {}
+[1.206664] (-) TimerEvent: {}
+[1.307245] (-) TimerEvent: {}
+[1.407834] (-) TimerEvent: {}
+[1.508409] (-) TimerEvent: {}
+[1.608968] (-) TimerEvent: {}
+[1.709546] (-) TimerEvent: {}
+[1.810129] (-) TimerEvent: {}
+[1.910698] (-) TimerEvent: {}
+[2.011297] (-) TimerEvent: {}
+[2.111858] (-) TimerEvent: {}
+[2.212446] (-) TimerEvent: {}
+[2.313010] (-) TimerEvent: {}
+[2.414395] (-) TimerEvent: {}
+[2.515000] (-) TimerEvent: {}
+[2.615563] (-) TimerEvent: {}
+[2.716118] (-) TimerEvent: {}
+[2.816693] (-) TimerEvent: {}
+[2.917260] (-) TimerEvent: {}
+[3.017832] (-) TimerEvent: {}
+[3.118418] (-) TimerEvent: {}
+[3.218988] (-) TimerEvent: {}
+[3.319569] (-) TimerEvent: {}
+[3.420135] (-) TimerEvent: {}
+[3.520684] (-) TimerEvent: {}
+[3.621221] (-) TimerEvent: {}
+[3.721793] (-) TimerEvent: {}
+[3.822356] (-) TimerEvent: {}
+[3.922871] (-) TimerEvent: {}
+[4.023451] (-) TimerEvent: {}
+[4.124045] (-) TimerEvent: {}
+[4.224601] (-) TimerEvent: {}
+[4.325181] (-) TimerEvent: {}
+[4.425776] (-) TimerEvent: {}
+[4.526328] (-) TimerEvent: {}
+[4.626882] (-) TimerEvent: {}
+[4.736058] (-) TimerEvent: {}
+[4.836605] (-) TimerEvent: {}
+[4.937211] (-) TimerEvent: {}
+[5.037790] (-) TimerEvent: {}
+[5.138373] (-) TimerEvent: {}
+[5.238967] (-) TimerEvent: {}
+[5.339541] (-) TimerEvent: {}
+[5.440106] (-) TimerEvent: {}
+[5.540672] (-) TimerEvent: {}
+[5.641274] (-) TimerEvent: {}
+[5.741854] (-) TimerEvent: {}
+[5.842452] (-) TimerEvent: {}
+[5.943028] (-) TimerEvent: {}
+[6.043620] (-) TimerEvent: {}
+[6.144187] (-) TimerEvent: {}
+[6.244776] (-) TimerEvent: {}
+[6.345341] (-) TimerEvent: {}
+[6.445939] (-) TimerEvent: {}
+[6.546516] (-) TimerEvent: {}
+[6.610170] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.610603] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:901:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.610815] (lkmcannode) StderrLine: {'line': b'  901 | void parseWritePIDParametersToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[6.611011] (lkmcannode) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.611407] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.611619] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:970:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.611807] (lkmcannode) StderrLine: {'line': b'  970 | void parseWriteEncoderValueToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.611988] (lkmcannode) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.612168] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:970:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.612355] (lkmcannode) StderrLine: {'line': b'  970 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.612534] (lkmcannode) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.612764] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.612947] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:983:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.613132] (lkmcannode) StderrLine: {'line': b'  983 | void parseWriteCurrentPositionToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[6.613312] (lkmcannode) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.613490] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/lkmcannode/src/lkmcannode.cpp:983:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.613672] (lkmcannode) StderrLine: {'line': b'  983 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[6.613851] (lkmcannode) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.646710] (-) TimerEvent: {}
+[6.747290] (-) TimerEvent: {}
+[6.847879] (-) TimerEvent: {}
+[6.948449] (-) TimerEvent: {}
+[7.049030] (-) TimerEvent: {}
+[7.149591] (-) TimerEvent: {}
+[7.250180] (-) TimerEvent: {}
+[7.350774] (-) TimerEvent: {}
+[7.451350] (-) TimerEvent: {}
+[7.551899] (-) TimerEvent: {}
+[7.652447] (-) TimerEvent: {}
+[7.753057] (-) TimerEvent: {}
+[7.853673] (-) TimerEvent: {}
+[7.954273] (-) TimerEvent: {}
+[8.054860] (-) TimerEvent: {}
+[8.155439] (-) TimerEvent: {}
+[8.256008] (-) TimerEvent: {}
+[8.356579] (-) TimerEvent: {}
+[8.457169] (-) TimerEvent: {}
+[8.557767] (-) TimerEvent: {}
+[8.658459] (-) TimerEvent: {}
+[8.759120] (-) TimerEvent: {}
+[8.859705] (-) TimerEvent: {}
+[8.960305] (-) TimerEvent: {}
+[9.060920] (-) TimerEvent: {}
+[9.161508] (-) TimerEvent: {}
+[9.262110] (-) TimerEvent: {}
+[9.362689] (-) TimerEvent: {}
+[9.463289] (-) TimerEvent: {}
+[9.563891] (-) TimerEvent: {}
+[9.664471] (-) TimerEvent: {}
+[9.765083] (-) TimerEvent: {}
+[9.865660] (-) TimerEvent: {}
+[9.966256] (-) TimerEvent: {}
+[10.066842] (-) TimerEvent: {}
+[10.167443] (-) TimerEvent: {}
+[10.268006] (-) TimerEvent: {}
+[10.368570] (-) TimerEvent: {}
+[10.469123] (-) TimerEvent: {}
+[10.569708] (-) TimerEvent: {}
+[10.670262] (-) TimerEvent: {}
+[10.770892] (-) TimerEvent: {}
+[10.871432] (-) TimerEvent: {}
+[10.972009] (-) TimerEvent: {}
+[11.072558] (-) TimerEvent: {}
+[11.173137] (-) TimerEvent: {}
+[11.273730] (-) TimerEvent: {}
+[11.374351] (-) TimerEvent: {}
+[11.474965] (-) TimerEvent: {}
+[11.575505] (-) TimerEvent: {}
+[11.676077] (-) TimerEvent: {}
+[11.776670] (-) TimerEvent: {}
+[11.877255] (-) TimerEvent: {}
+[11.977815] (-) TimerEvent: {}
+[12.078411] (-) TimerEvent: {}
+[12.179041] (-) TimerEvent: {}
+[12.279667] (-) TimerEvent: {}
+[12.380260] (-) TimerEvent: {}
+[12.480849] (-) TimerEvent: {}
+[12.581435] (-) TimerEvent: {}
+[12.682002] (-) TimerEvent: {}
+[12.782565] (-) TimerEvent: {}
+[12.883130] (-) TimerEvent: {}
+[12.983676] (-) TimerEvent: {}
+[13.084259] (-) TimerEvent: {}
+[13.184813] (-) TimerEvent: {}
+[13.285371] (-) TimerEvent: {}
+[13.385943] (-) TimerEvent: {}
+[13.486518] (-) TimerEvent: {}
+[13.587223] (-) TimerEvent: {}
+[13.687808] (-) TimerEvent: {}
+[13.788336] (-) TimerEvent: {}
+[13.888932] (-) TimerEvent: {}
+[13.989488] (-) TimerEvent: {}
+[14.090018] (-) TimerEvent: {}
+[14.190782] (-) TimerEvent: {}
+[14.291312] (-) TimerEvent: {}
+[14.391855] (-) TimerEvent: {}
+[14.492413] (-) TimerEvent: {}
+[14.592954] (-) TimerEvent: {}
+[14.693514] (-) TimerEvent: {}
+[14.794088] (-) TimerEvent: {}
+[14.894700] (-) TimerEvent: {}
+[14.995266] (-) TimerEvent: {}
+[15.095806] (-) TimerEvent: {}
+[15.196368] (-) TimerEvent: {}
+[15.296934] (-) TimerEvent: {}
+[15.397480] (-) TimerEvent: {}
+[15.498043] (-) TimerEvent: {}
+[15.598618] (-) TimerEvent: {}
+[15.699161] (-) TimerEvent: {}
+[15.799688] (-) TimerEvent: {}
+[15.900248] (-) TimerEvent: {}
+[16.000852] (-) TimerEvent: {}
+[16.101415] (-) TimerEvent: {}
+[16.201993] (-) TimerEvent: {}
+[16.302549] (-) TimerEvent: {}
+[16.403126] (-) TimerEvent: {}
+[16.503689] (-) TimerEvent: {}
+[16.604256] (-) TimerEvent: {}
+[16.704806] (-) TimerEvent: {}
+[16.805364] (-) TimerEvent: {}
+[16.905936] (-) TimerEvent: {}
+[17.006485] (-) TimerEvent: {}
+[17.107039] (-) TimerEvent: {}
+[17.207656] (-) TimerEvent: {}
+[17.308244] (-) TimerEvent: {}
+[17.408800] (-) TimerEvent: {}
+[17.509374] (-) TimerEvent: {}
+[17.609938] (-) TimerEvent: {}
+[17.710444] (-) TimerEvent: {}
+[17.810979] (-) TimerEvent: {}
+[17.911517] (-) TimerEvent: {}
+[18.012070] (-) TimerEvent: {}
+[18.112601] (-) TimerEvent: {}
+[18.213167] (-) TimerEvent: {}
+[18.313696] (-) TimerEvent: {}
+[18.414260] (-) TimerEvent: {}
+[18.514843] (-) TimerEvent: {}
+[18.615362] (-) TimerEvent: {}
+[18.715909] (-) TimerEvent: {}
+[18.816446] (-) TimerEvent: {}
+[18.917005] (-) TimerEvent: {}
+[19.017557] (-) TimerEvent: {}
+[19.118131] (-) TimerEvent: {}
+[19.218707] (-) TimerEvent: {}
+[19.319391] (-) TimerEvent: {}
+[19.420236] (-) TimerEvent: {}
+[19.520898] (-) TimerEvent: {}
+[19.621508] (-) TimerEvent: {}
+[19.722057] (-) TimerEvent: {}
+[19.822624] (-) TimerEvent: {}
+[19.923190] (-) TimerEvent: {}
+[20.023757] (-) TimerEvent: {}
+[20.124322] (-) TimerEvent: {}
+[20.224895] (-) TimerEvent: {}
+[20.325488] (-) TimerEvent: {}
+[20.426099] (-) TimerEvent: {}
+[20.526693] (-) TimerEvent: {}
+[20.627273] (-) TimerEvent: {}
+[20.727825] (-) TimerEvent: {}
+[20.828364] (-) TimerEvent: {}
+[20.911034] (lkmcannode) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lkmcannode\x1b[0m\n'}
+[20.928544] (-) TimerEvent: {}
+[21.029116] (-) TimerEvent: {}
+[21.129668] (-) TimerEvent: {}
+[21.230184] (-) TimerEvent: {}
+[21.330837] (-) TimerEvent: {}
+[21.431410] (-) TimerEvent: {}
+[21.531993] (-) TimerEvent: {}
+[21.632554] (-) TimerEvent: {}
+[21.733186] (-) TimerEvent: {}
+[21.833718] (-) TimerEvent: {}
+[21.934282] (-) TimerEvent: {}
+[22.034869] (-) TimerEvent: {}
+[22.135469] (-) TimerEvent: {}
+[22.236061] (-) TimerEvent: {}
+[22.336666] (-) TimerEvent: {}
+[22.437235] (-) TimerEvent: {}
+[22.537837] (-) TimerEvent: {}
+[22.638393] (-) TimerEvent: {}
+[22.738984] (-) TimerEvent: {}
+[22.755326] (lkmcannode) StdoutLine: {'line': b'[100%] Built target lkmcannode\n'}
+[22.796365] (lkmcannode) CommandEnded: {'returncode': 0}
+[22.839117] (-) TimerEvent: {}
+[22.847919] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'install'}
+[22.869434] (lkmcannode) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luke/lkmcannode/build/lkmcannode'], 'cwd': '/home/luke/lkmcannode/build/lkmcannode', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 54283 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-11edb56f-b90f-4cce-95f5-c3ebb8e32cc3.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/luke/lkmcannode/install:/home/luke/LKMCANNODE/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/luke/lkmcannode/install/lkmcannode:/home/luke/LKMCANNODE/install/LKMCANNODE:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/lkmcannode/build/lkmcannode'), ('SSH_CONNECTION', '192.168.3.59 54283 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/luke/lkmcannode/install/lkmcannode:/home/luke/LKMCANNODE/install/LKMCANNODE:/opt/ros/humble')]), 'shell': False}
+[22.887535] (lkmcannode) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.888154] (lkmcannode) StdoutLine: {'line': b'-- Installing: /home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode\n'}
+[22.903847] (lkmcannode) StdoutLine: {'line': b'-- Set runtime path of "/home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode" to ""\n'}
+[22.904231] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/package_run_dependencies/lkmcannode\n'}
+[22.904590] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/parent_prefix_path/lkmcannode\n'}
+[22.904938] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.sh\n'}
+[22.905130] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.dsv\n'}
+[22.905319] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.sh\n'}
+[22.905609] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.dsv\n'}
+[22.905892] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.bash\n'}
+[22.906079] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.sh\n'}
+[22.906261] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.zsh\n'}
+[22.906438] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.dsv\n'}
+[22.906614] (lkmcannode) StdoutLine: {'line': b'-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.dsv\n'}
+[22.906828] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/packages/lkmcannode\n'}
+[22.907008] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.907183] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig.cmake\n'}
+[22.907358] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig-version.cmake\n'}
+[22.907534] (lkmcannode) StdoutLine: {'line': b'-- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.xml\n'}
+[22.909226] (lkmcannode) CommandEnded: {'returncode': 0}
+[22.939245] (-) TimerEvent: {}
+[23.041045] (-) TimerEvent: {}
+[23.141702] (-) TimerEvent: {}
+[23.242188] (-) TimerEvent: {}
+[23.299167] (lkmcannode) JobEnded: {'identifier': 'lkmcannode', 'rc': 0}
+[23.300630] (-) EventReactorShutdown: {}

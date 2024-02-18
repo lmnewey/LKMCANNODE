@@ -1,0 +1,52 @@
+[0.179s] Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.340s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.462s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:75:29:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[6.462s]    75 |     uint16_t deltaTicks = 0;[01;35m[K;[m[K
+[6.462s]       |                             [01;35m[K^[m[K
+[6.463s]       |                             [31m[K-[m[K
+[6.490s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kuint16_t BLDCMotor::calculateDelta()[m[K’:
+[6.490s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:645:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentTicks[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrentticks[m[K’?
+[6.490s]   645 |             LastTicks = [01;31m[KcurrentTicks[m[K;
+[6.490s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[6.490s]       |                         [32m[Kcurrentticks[m[K
+[6.502s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:652:16:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentTicks[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrentticks[m[K’?
+[6.502s]   652 |             if([01;31m[KcurrentTicks[m[K >= LastTicks) {
+[6.502s]       |                [01;31m[K^~~~~~~~~~~~[m[K
+[6.502s]       |                [32m[Kcurrentticks[m[K
+[6.514s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:661:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentTicks[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrentticks[m[K’?
+[6.514s]   661 |             LastTicks = [01;31m[KcurrentTicks[m[K;
+[6.514s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[6.515s]       |                         [32m[Kcurrentticks[m[K
+[6.515s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:642:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrentticks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.515s]   642 |         uint16_t [01;35m[Kcurrentticks[m[K =  encoderPosition_;
+[6.515s]       |                  [01;35m[K^~~~~~~~~~~~[m[K
+[6.518s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.519s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:893:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.519s]   893 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.519s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.520s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.520s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:962:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.520s]   962 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.520s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.520s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:962:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.521s]   962 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.521s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.521s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.521s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:974:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.521s]   974 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.522s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.522s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:974:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.522s]   974 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.522s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.699s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[6.699s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1468:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kleftdelta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.700s]  1468 |         uint16_t [01;35m[Kleftdelta[m[K = leftMotor->calculateDelta();
+[6.700s]       |                  [01;35m[K^~~~~~~~~[m[K
+[6.700s] [01m[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1469:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krightdelta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.700s]  1469 |         uint16_t [01;35m[Krightdelta[m[K = rightMotor->calculateDelta();
+[6.700s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[12.694s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[12.695s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[12.695s] gmake: *** [Makefile:146: all] Error 2
+[12.700s] Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

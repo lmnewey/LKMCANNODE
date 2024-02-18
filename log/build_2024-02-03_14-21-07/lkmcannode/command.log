@@ -1,0 +1,4 @@
+Invoking command in '/home/luke/lkmcannode/build/lkmcannode': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/lkmcannode/build/lkmcannode -- -j4 -l4
+Invoked command in '/home/luke/lkmcannode/build/lkmcannode' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/lkmcannode/build/lkmcannode -- -j4 -l4
+Invoking command in '/home/luke/lkmcannode/build/lkmcannode': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/lkmcannode/build/lkmcannode
+Invoked command in '/home/luke/lkmcannode/build/lkmcannode' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/lkmcannode/build/lkmcannode

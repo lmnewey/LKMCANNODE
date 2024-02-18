@@ -1,0 +1,639 @@
+[0.000000] (-) TimerEvent: {}
+[0.001404] (LKMCANNODE) JobQueued: {'identifier': 'LKMCANNODE', 'dependencies': OrderedDict()}
+[0.001479] (LKMCANNODE) JobStarted: {'identifier': 'LKMCANNODE'}
+[0.099400] (-) TimerEvent: {}
+[0.133312] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'cmake'}
+[0.134525] (LKMCANNODE) JobProgress: {'identifier': 'LKMCANNODE', 'progress': 'build'}
+[0.135958] (LKMCANNODE) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luke/LKMCANNODE/build/LKMCANNODE', '--', '-j4', '-l4'], 'cwd': '/home/luke/LKMCANNODE/build/LKMCANNODE', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luke'), ('SSH_CLIENT', '192.168.3.59 60746 22'), ('LC_TIME', 'en_AU.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-223fdd2f-818d-4bfd-9a10-ed17186038de.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luke/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d9c135f10c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luke/LKMCANNODE/build/LKMCANNODE'), ('SSH_CONNECTION', '192.168.3.59 60746 192.168.3.65 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199618] (-) TimerEvent: {}
+[0.238797] (LKMCANNODE) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lkmcannode\x1b[0m\n'}
+[0.292055] (LKMCANNODE) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o\x1b[0m\n'}
+[0.299797] (-) TimerEvent: {}
+[0.400396] (-) TimerEvent: {}
+[0.500954] (-) TimerEvent: {}
+[0.601504] (-) TimerEvent: {}
+[0.702079] (-) TimerEvent: {}
+[0.802670] (-) TimerEvent: {}
+[0.903233] (-) TimerEvent: {}
+[1.003807] (-) TimerEvent: {}
+[1.104379] (-) TimerEvent: {}
+[1.204968] (-) TimerEvent: {}
+[1.305605] (-) TimerEvent: {}
+[1.406199] (-) TimerEvent: {}
+[1.506793] (-) TimerEvent: {}
+[1.608689] (-) TimerEvent: {}
+[1.709289] (-) TimerEvent: {}
+[1.809993] (-) TimerEvent: {}
+[1.910621] (-) TimerEvent: {}
+[2.011220] (-) TimerEvent: {}
+[2.111872] (-) TimerEvent: {}
+[2.212498] (-) TimerEvent: {}
+[2.313116] (-) TimerEvent: {}
+[2.413733] (-) TimerEvent: {}
+[2.514342] (-) TimerEvent: {}
+[2.614895] (-) TimerEvent: {}
+[2.715493] (-) TimerEvent: {}
+[2.816116] (-) TimerEvent: {}
+[2.916764] (-) TimerEvent: {}
+[3.017369] (-) TimerEvent: {}
+[3.117981] (-) TimerEvent: {}
+[3.218568] (-) TimerEvent: {}
+[3.319170] (-) TimerEvent: {}
+[3.419768] (-) TimerEvent: {}
+[3.520355] (-) TimerEvent: {}
+[3.620966] (-) TimerEvent: {}
+[3.721537] (-) TimerEvent: {}
+[3.822152] (-) TimerEvent: {}
+[3.922774] (-) TimerEvent: {}
+[4.023315] (-) TimerEvent: {}
+[4.123918] (-) TimerEvent: {}
+[4.224665] (-) TimerEvent: {}
+[4.326072] (-) TimerEvent: {}
+[4.426672] (-) TimerEvent: {}
+[4.527315] (-) TimerEvent: {}
+[4.627927] (-) TimerEvent: {}
+[4.728555] (-) TimerEvent: {}
+[4.829144] (-) TimerEvent: {}
+[4.929744] (-) TimerEvent: {}
+[5.030327] (-) TimerEvent: {}
+[5.130961] (-) TimerEvent: {}
+[5.231588] (-) TimerEvent: {}
+[5.332218] (-) TimerEvent: {}
+[5.432773] (-) TimerEvent: {}
+[5.533350] (-) TimerEvent: {}
+[5.633952] (-) TimerEvent: {}
+[5.734590] (-) TimerEvent: {}
+[5.835193] (-) TimerEvent: {}
+[5.935797] (-) TimerEvent: {}
+[6.036385] (-) TimerEvent: {}
+[6.136974] (-) TimerEvent: {}
+[6.210525] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:20:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorOffCommand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.210968] (LKMCANNODE) StderrLine: {'line': b'   20 |     \x1b[01;31m\x1b[KMotorOffCommand\x1b[m\x1b[K createMotorOffCommand() {\n'}
+[6.211161] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.216308] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:26:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorOnCommand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.216655] (LKMCANNODE) StderrLine: {'line': b'   26 |     \x1b[01;31m\x1b[KMotorOnCommand\x1b[m\x1b[K createMotorOnCommand() {\n'}
+[6.216848] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.222746] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorStopCommand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.223078] (LKMCANNODE) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[KMotorStopCommand\x1b[m\x1b[K createMotorStopCommand() {\n'}
+[6.223270] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.231099] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:38:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOpenLoopControlCommand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.231468] (LKMCANNODE) StderrLine: {'line': b'   38 |     \x1b[01;31m\x1b[KOpenLoopControlCommand\x1b[m\x1b[K createOpenLoopControlCommand(int16_t powerControl) {\n'}
+[6.231661] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.237069] (-) TimerEvent: {}
+[6.241048] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:44:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSpeedClosedLoopControlCommand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.241382] (LKMCANNODE) StderrLine: {'line': b'   44 |     \x1b[01;31m\x1b[KSpeedClosedLoopControlCommand\x1b[m\x1b[K createSpeedClosedLoopControlCommand(int32_t speedControl) {\n'}
+[6.241576] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.251281] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:50:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMultiLoopAngleControl1Command\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.251670] (LKMCANNODE) StderrLine: {'line': b'   50 |     \x1b[01;31m\x1b[KMultiLoopAngleControl1Command\x1b[m\x1b[K createMultiLoopAngleControl1Command(int32_t angleControl, int16_t maxSpeed) {\n'}
+[6.251865] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.261360] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:56:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMultiLoopAngleControl2Command\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.261745] (LKMCANNODE) StderrLine: {'line': b'   56 |     \x1b[01;31m\x1b[KMultiLoopAngleControl2Command\x1b[m\x1b[K createMultiLoopAngleControl2Command(int32_t angleControl, uint16_t maxSpeed) {\n'}
+[6.261942] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.272401] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:62:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSingleLoopAngleControl1Command\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.272790] (LKMCANNODE) StderrLine: {'line': b'   62 |     \x1b[01;31m\x1b[KSingleLoopAngleControl1Command\x1b[m\x1b[K createSingleLoopAngleControl1Command(uint8_t spinDirection, uint32_t angleControl) {\n'}
+[6.272985] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.282602] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:68:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSingleLoopAngleControl2Command\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.282946] (LKMCANNODE) StderrLine: {'line': b'   68 |     \x1b[01;31m\x1b[KSingleLoopAngleControl2Command\x1b[m\x1b[K createSingleLoopAngleControl2Command(uint8_t spinDirection, uint32_t angleControl, uint16_t maxSpeed) {\n'}
+[6.283146] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.283622] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KBLDCMotor::BLDCMotor(uint8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.283830] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:17:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KBLDCMotor\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[KmotorId_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.284038] (LKMCANNODE) StderrLine: {'line': b'   17 |     BLDCMotor(uint8_t motorId) : \x1b[01;31m\x1b[KmotorId_\x1b[m\x1b[K(motorId) {}\n'}
+[6.284251] (LKMCANNODE) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.298595] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::sendClearErrorStateCommand()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.299003] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:76:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KClearErrorStateCommand\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsendClearErrorStateCommand\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.299213] (LKMCANNODE) StderrLine: {'line': b'   76 |     \x1b[01;31m\x1b[KClearErrorStateCommand\x1b[m\x1b[K command;\n'}
+[6.299399] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.299585] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[32m\x1b[KsendClearErrorStateCommand\x1b[m\x1b[K\n'}
+[6.309527] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:77:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommand\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.309942] (LKMCANNODE) StderrLine: {'line': b'   77 |     \x1b[01;31m\x1b[Kcommand\x1b[m\x1b[K.commandByte = 0x9B;\n'}
+[6.310142] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.325147] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::sendReadMotorState2Command()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.325565] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:86:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KReadMotorState2Command\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsendReadMotorState2Command\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.325763] (LKMCANNODE) StderrLine: {'line': b'   86 |     \x1b[01;31m\x1b[KReadMotorState2Command\x1b[m\x1b[K command;\n'}
+[6.325950] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.326134] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[32m\x1b[KsendReadMotorState2Command\x1b[m\x1b[K\n'}
+[6.336405] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:88:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommand\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.336774] (LKMCANNODE) StderrLine: {'line': b'   88 |     memset(\x1b[01;31m\x1b[Kcommand\x1b[m\x1b[K.padding, 0x00, sizeof(command.padding));\n'}
+[6.336965] (LKMCANNODE) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.337150] (-) TimerEvent: {}
+[6.351407] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::sendReadMotorState3Command()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.351800] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:95:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KReadMotorState3Command\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsendReadMotorState3Command\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.352026] (LKMCANNODE) StderrLine: {'line': b'   95 |     \x1b[01;31m\x1b[KReadMotorState3Command\x1b[m\x1b[K command;\n'}
+[6.352220] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.352405] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[32m\x1b[KsendReadMotorState3Command\x1b[m\x1b[K\n'}
+[6.362803] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:97:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommand\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.363216] (LKMCANNODE) StderrLine: {'line': b'   97 |     memset(\x1b[01;31m\x1b[Kcommand\x1b[m\x1b[K.padding, 0x00, sizeof(command.padding));\n'}
+[6.363407] (LKMCANNODE) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.374062] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KMotorType BLDCMotor::getMotorType() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.374437] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:103:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorType_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.374631] (LKMCANNODE) StderrLine: {'line': b'  103 |     MotorType getMotorType() const { return \x1b[01;31m\x1b[KmotorType_\x1b[m\x1b[K; }\n'}
+[6.374818] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.375002] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KMotorType\x1b[m\x1b[K\n'}
+[6.386866] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint8_t BLDCMotor::getMotorId() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.387256] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:104:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorId_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.387449] (LKMCANNODE) StderrLine: {'line': b'  104 |     uint8_t getMotorId() const { return \x1b[01;31m\x1b[KmotorId_\x1b[m\x1b[K; }\n'}
+[6.387637] (LKMCANNODE) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.400239] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint8_t BLDCMotor::getTemperature() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.400619] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:105:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.400813] (LKMCANNODE) StderrLine: {'line': b'  105 |     int8_t getTemperature() const { return \x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K; }\n'}
+[6.401000] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.401185] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[6.413181] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint16_t BLDCMotor::getMotorPower() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.413568] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:106:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorPower_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorPower\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.413763] (LKMCANNODE) StderrLine: {'line': b'  106 |     int16_t getMotorPower() const { return \x1b[01;31m\x1b[KmotorPower_\x1b[m\x1b[K; }\n'}
+[6.413950] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.414135] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[KgetMotorPower\x1b[m\x1b[K\n'}
+[6.425960] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint16_t BLDCMotor::getMotorSpeed() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.426338] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:107:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.426552] (LKMCANNODE) StderrLine: {'line': b'  107 |     int16_t getMotorSpeed() const { return \x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K; }\n'}
+[6.426750] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.426934] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[6.437323] (-) TimerEvent: {}
+[6.439906] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t BLDCMotor::getEncoderPosition() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.440285] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:108:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.440480] (LKMCANNODE) StderrLine: {'line': b'  108 |     uint16_t getEncoderPosition() const { return \x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K; }\n'}
+[6.440667] (LKMCANNODE) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.440853] (LKMCANNODE) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[6.454348] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint16_t BLDCMotor::getTorqueCurrent() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.454742] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:109:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtorqueCurrent_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.454935] (LKMCANNODE) StderrLine: {'line': b'  109 |     int16_t getTorqueCurrent() const { return \x1b[01;31m\x1b[KtorqueCurrent_\x1b[m\x1b[K; }\n'}
+[6.455123] (LKMCANNODE) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.455307] (LKMCANNODE) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\n'}
+[6.467245] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getAnglePidKp() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.467622] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:110:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KanglePidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAnglePidKp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.467816] (LKMCANNODE) StderrLine: {'line': b'  110 |     double getAnglePidKp() const { return \x1b[01;31m\x1b[KanglePidKp_\x1b[m\x1b[K; }\n'}
+[6.468026] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.468218] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KgetAnglePidKp\x1b[m\x1b[K\n'}
+[6.479788] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getAnglePidKi() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.480181] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:111:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KanglePidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAnglePidKi\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.480378] (LKMCANNODE) StderrLine: {'line': b'  111 |     double getAnglePidKi() const { return \x1b[01;31m\x1b[KanglePidKi_\x1b[m\x1b[K; }\n'}
+[6.480565] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.480750] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KgetAnglePidKi\x1b[m\x1b[K\n'}
+[6.492298] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getSpeedPidKp() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.492672] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:112:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KspeedPidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetSpeedPidKp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.492884] (LKMCANNODE) StderrLine: {'line': b'  112 |     double getSpeedPidKp() const { return \x1b[01;31m\x1b[KspeedPidKp_\x1b[m\x1b[K; }\n'}
+[6.493071] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.493256] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KsetSpeedPidKp\x1b[m\x1b[K\n'}
+[6.505124] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getSpeedPidKi() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.538048] (-) TimerEvent: {}
+[6.538318] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:113:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KspeedPidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetSpeedPidKi\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.538535] (LKMCANNODE) StderrLine: {'line': b'  113 |     double getSpeedPidKi() const { return \x1b[01;31m\x1b[KspeedPidKi_\x1b[m\x1b[K; }\n'}
+[6.538735] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.538931] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KsetSpeedPidKi\x1b[m\x1b[K\n'}
+[6.539129] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getIqPidKp() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.539327] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:114:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KiqPidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.539545] (LKMCANNODE) StderrLine: {'line': b'  114 |     double getIqPidKp() const { return \x1b[01;31m\x1b[KiqPidKp_\x1b[m\x1b[K; }\n'}
+[6.539748] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.539940] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble BLDCMotor::getIqPidKi() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.540317] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:115:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KiqPidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.540608] (LKMCANNODE) StderrLine: {'line': b'  115 |     double getIqPidKi() const { return \x1b[01;31m\x1b[KiqPidKi_\x1b[m\x1b[K; }\n'}
+[6.540801] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.549867] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint32_t BLDCMotor::getAcceleration() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.550271] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:116:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kacceleration_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAcceleration\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.550472] (LKMCANNODE) StderrLine: {'line': b'  116 |     int32_t getAcceleration() const { return \x1b[01;31m\x1b[Kacceleration_\x1b[m\x1b[K; }\n'}
+[6.550661] (LKMCANNODE) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.550849] (LKMCANNODE) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[KgetAcceleration\x1b[m\x1b[K\n'}
+[6.564690] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t BLDCMotor::getEncoderRaw() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.565080] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:117:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderRaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderRaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.565279] (LKMCANNODE) StderrLine: {'line': b'  117 |     uint16_t getEncoderRaw() const { return \x1b[01;31m\x1b[KencoderRaw_\x1b[m\x1b[K; }\n'}
+[6.565472] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.565661] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KgetEncoderRaw\x1b[m\x1b[K\n'}
+[6.580281] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t BLDCMotor::getEncoderOffset() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.580667] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:118:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderOffset_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderOffset\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.580863] (LKMCANNODE) StderrLine: {'line': b'  118 |     uint16_t getEncoderOffset() const { return \x1b[01;31m\x1b[KencoderOffset_\x1b[m\x1b[K; }\n'}
+[6.581051] (LKMCANNODE) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.581237] (LKMCANNODE) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[KgetEncoderOffset\x1b[m\x1b[K\n'}
+[6.593722] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint64_t BLDCMotor::getMotorAngle() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.594109] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:119:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorAngle_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorAngle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.594338] (LKMCANNODE) StderrLine: {'line': b'  119 |     int64_t getMotorAngle() const { return \x1b[01;31m\x1b[KmotorAngle_\x1b[m\x1b[K; }\n'}
+[6.594534] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.594719] (LKMCANNODE) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[KgetMotorAngle\x1b[m\x1b[K\n'}
+[6.606811] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint32_t BLDCMotor::getCicleAngle() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.607196] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:120:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcicleAngle_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetCicleAngle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.607390] (LKMCANNODE) StderrLine: {'line': b'  120 |     uint32_t getCicleAngle() const { return \x1b[01;31m\x1b[KcicleAngle_\x1b[m\x1b[K; }\n'}
+[6.607578] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.607763] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KgetCicleAngle\x1b[m\x1b[K\n'}
+[6.618601] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t BLDCMotor::getVoltage() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.618974] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:121:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoltage_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.619167] (LKMCANNODE) StderrLine: {'line': b'  121 |     uint16_t getVoltage() const { return \x1b[01;31m\x1b[Kvoltage_\x1b[m\x1b[K; }\n'}
+[6.619355] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.631120] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint8_t BLDCMotor::getErrorState() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.631583] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:122:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KerrorState_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetErrorState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.631820] (LKMCANNODE) StderrLine: {'line': b'  122 |     int8_t getErrorState() const { return \x1b[01;31m\x1b[KerrorState_\x1b[m\x1b[K; }\n'}
+[6.632086] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.632277] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KgetErrorState\x1b[m\x1b[K\n'}
+[6.638190] (-) TimerEvent: {}
+[6.641251] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool BLDCMotor::isVoltageNormal() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.641624] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:123:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisVoltageNormal_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisVoltageNormal\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.641817] (LKMCANNODE) StderrLine: {'line': b'  123 |     bool isVoltageNormal() const { return \x1b[01;31m\x1b[KisVoltageNormal_\x1b[m\x1b[K; }\n'}
+[6.642004] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.642188] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KisVoltageNormal\x1b[m\x1b[K\n'}
+[6.652734] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool BLDCMotor::isUnderVoltageProtect() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.653131] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:124:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisUnderVoltageProtect_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisUnderVoltageProtect\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.653325] (LKMCANNODE) StderrLine: {'line': b'  124 |     bool isUnderVoltageProtect() const { return \x1b[01;31m\x1b[KisUnderVoltageProtect_\x1b[m\x1b[K; }\n'}
+[6.653513] (LKMCANNODE) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.653697] (LKMCANNODE) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[KisUnderVoltageProtect\x1b[m\x1b[K\n'}
+[6.663142] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool BLDCMotor::isTemperatureNormal() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.663530] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:125:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisTemperatureNormal_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisTemperatureNormal\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.663724] (LKMCANNODE) StderrLine: {'line': b'  125 |     bool isTemperatureNormal() const { return \x1b[01;31m\x1b[KisTemperatureNormal_\x1b[m\x1b[K; }\n'}
+[6.663912] (LKMCANNODE) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.664124] (LKMCANNODE) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[KisTemperatureNormal\x1b[m\x1b[K\n'}
+[6.673818] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool BLDCMotor::isOverTemperatureProtect() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.674195] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:126:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisOverTemperatureProtect_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisOverTemperatureProtect\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.674389] (LKMCANNODE) StderrLine: {'line': b'  126 |     bool isOverTemperatureProtect() const { return \x1b[01;31m\x1b[KisOverTemperatureProtect_\x1b[m\x1b[K; }\n'}
+[6.674577] (LKMCANNODE) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.674762] (LKMCANNODE) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[KisOverTemperatureProtect\x1b[m\x1b[K\n'}
+[6.684960] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint16_t BLDCMotor::getTorque() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.685338] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:127:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktorque_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.685533] (LKMCANNODE) StderrLine: {'line': b'  127 |     int16_t getTorque() const { return \x1b[01;31m\x1b[Ktorque_\x1b[m\x1b[K; }\n'}
+[6.685720] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.695762] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint16_t BLDCMotor::getSpeed() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.696231] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:128:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspeed_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.696427] (LKMCANNODE) StderrLine: {'line': b'  128 |     int16_t getSpeed() const { return \x1b[01;31m\x1b[Kspeed_\x1b[m\x1b[K; }\n'}
+[6.696615] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.707344] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t BLDCMotor::getEncoder() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.707724] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:129:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kencoder_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoder\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.707952] (LKMCANNODE) StderrLine: {'line': b'  129 |     uint16_t getEncoder() const { return \x1b[01;31m\x1b[Kencoder_\x1b[m\x1b[K; }\n'}
+[6.708166] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.708353] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[KgetEncoder\x1b[m\x1b[K\n'}
+[6.718921] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setMotorType(MotorType)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.719310] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:132:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorType_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.719503] (LKMCANNODE) StderrLine: {'line': b'  132 |     void setMotorType(MotorType val) { \x1b[01;31m\x1b[KmotorType_\x1b[m\x1b[K = val; }\n'}
+[6.719691] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.719879] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KMotorType\x1b[m\x1b[K\n'}
+[6.731867] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setMotorId(uint8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.732288] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:133:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorId_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.732482] (LKMCANNODE) StderrLine: {'line': b'  133 |     void setMotorId(uint8_t val) { \x1b[01;31m\x1b[KmotorId_\x1b[m\x1b[K = val; }\n'}
+[6.732670] (LKMCANNODE) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.738317] (-) TimerEvent: {}
+[6.745573] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setTemperature(int8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.745968] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:134:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.746171] (LKMCANNODE) StderrLine: {'line': b'  134 |     void setTemperature(int8_t val) { \x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = val; }\n'}
+[6.746385] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.746572] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[6.759934] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setMotorPower(int16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.760347] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:135:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorPower_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorPower\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.760575] (LKMCANNODE) StderrLine: {'line': b'  135 |     void setMotorPower(int16_t val) { \x1b[01;31m\x1b[KmotorPower_\x1b[m\x1b[K = val; }\n'}
+[6.760777] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.760964] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[KgetMotorPower\x1b[m\x1b[K\n'}
+[6.774369] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setMotorSpeed(int16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.774769] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:136:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.774968] (LKMCANNODE) StderrLine: {'line': b'  136 |     void setMotorSpeed(int16_t val) { \x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = val; }\n'}
+[6.775159] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.775364] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[6.789676] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setEncoderPosition(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.790067] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:137:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.790261] (LKMCANNODE) StderrLine: {'line': b'  137 |     void setEncoderPosition(uint16_t val) { \x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = val; }\n'}
+[6.790448] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.790632] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[6.804562] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setTorqueCurrent(int16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.804954] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:138:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtorqueCurrent_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.805154] (LKMCANNODE) StderrLine: {'line': b'  138 |     void setTorqueCurrent(int16_t val) { \x1b[01;31m\x1b[KtorqueCurrent_\x1b[m\x1b[K = val; }\n'}
+[6.805368] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.805567] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\n'}
+[6.819349] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setAnglePidKp(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.819742] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:139:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KanglePidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAnglePidKp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.819940] (LKMCANNODE) StderrLine: {'line': b'  139 |     void setAnglePidKp(double val) { \x1b[01;31m\x1b[KanglePidKp_\x1b[m\x1b[K = val; }\n'}
+[6.820164] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.820353] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KgetAnglePidKp\x1b[m\x1b[K\n'}
+[6.833716] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setAnglePidKi(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.834115] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:140:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KanglePidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAnglePidKi\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.834313] (LKMCANNODE) StderrLine: {'line': b'  140 |     void setAnglePidKi(double val) { \x1b[01;31m\x1b[KanglePidKi_\x1b[m\x1b[K = val; }\n'}
+[6.834504] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.834694] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KgetAnglePidKi\x1b[m\x1b[K\n'}
+[6.838482] (-) TimerEvent: {}
+[6.847851] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setSpeedPidKp(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.848287] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:141:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KspeedPidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetSpeedPidKp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.848489] (LKMCANNODE) StderrLine: {'line': b'  141 |     void setSpeedPidKp(double val) { \x1b[01;31m\x1b[KspeedPidKp_\x1b[m\x1b[K = val; }\n'}
+[6.848681] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.848871] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KsetSpeedPidKp\x1b[m\x1b[K\n'}
+[6.861418] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setSpeedPidKi(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.861819] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:142:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KspeedPidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetSpeedPidKi\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.862023] (LKMCANNODE) StderrLine: {'line': b'  142 |     void setSpeedPidKi(double val) { \x1b[01;31m\x1b[KspeedPidKi_\x1b[m\x1b[K = val; }\n'}
+[6.862215] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.862403] (LKMCANNODE) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KsetSpeedPidKi\x1b[m\x1b[K\n'}
+[6.874917] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setIqPidKp(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.875316] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:143:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KiqPidKp_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.875514] (LKMCANNODE) StderrLine: {'line': b'  143 |     void setIqPidKp(double val) { \x1b[01;31m\x1b[KiqPidKp_\x1b[m\x1b[K = val; }\n'}
+[6.875706] (LKMCANNODE) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.888497] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setIqPidKi(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.888902] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:144:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KiqPidKi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.889110] (LKMCANNODE) StderrLine: {'line': b'  144 |     void setIqPidKi(double val) { \x1b[01;31m\x1b[KiqPidKi_\x1b[m\x1b[K = val; }\n'}
+[6.889311] (LKMCANNODE) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.903625] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setAcceleration(int32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.904037] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:145:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kacceleration_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetAcceleration\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.904238] (LKMCANNODE) StderrLine: {'line': b'  145 |     void setAcceleration(int32_t val) { \x1b[01;31m\x1b[Kacceleration_\x1b[m\x1b[K = val; }\n'}
+[6.904429] (LKMCANNODE) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.904617] (LKMCANNODE) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[KgetAcceleration\x1b[m\x1b[K\n'}
+[6.917568] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setEncoderRaw(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.917971] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:146:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderRaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderRaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.918191] (LKMCANNODE) StderrLine: {'line': b'  146 |     void setEncoderRaw(uint16_t val) { \x1b[01;31m\x1b[KencoderRaw_\x1b[m\x1b[K = val; }\n'}
+[6.918387] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.918572] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KgetEncoderRaw\x1b[m\x1b[K\n'}
+[6.933113] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setEncoderOffset(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.933508] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:147:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KencoderOffset_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderOffset\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.933726] (LKMCANNODE) StderrLine: {'line': b'  147 |     void setEncoderOffset(uint16_t val) { \x1b[01;31m\x1b[KencoderOffset_\x1b[m\x1b[K = val; }\n'}
+[6.933915] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.934100] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[KgetEncoderOffset\x1b[m\x1b[K\n'}
+[6.938626] (-) TimerEvent: {}
+[6.947915] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setMotorAngle(int64_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.948335] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:148:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmotorAngle_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorAngle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.948534] (LKMCANNODE) StderrLine: {'line': b'  148 |     void setMotorAngle(int64_t val) { \x1b[01;31m\x1b[KmotorAngle_\x1b[m\x1b[K = val; }\n'}
+[6.948724] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.948911] (LKMCANNODE) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[KgetMotorAngle\x1b[m\x1b[K\n'}
+[6.962818] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setCicleAngle(uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.963220] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:149:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcicleAngle_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetCicleAngle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.963423] (LKMCANNODE) StderrLine: {'line': b'  149 |     void setCicleAngle(uint32_t val) { \x1b[01;31m\x1b[KcicleAngle_\x1b[m\x1b[K = val; }\n'}
+[6.963625] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.963819] (LKMCANNODE) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KgetCicleAngle\x1b[m\x1b[K\n'}
+[6.977000] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setVoltage(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.977400] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:150:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoltage_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.977602] (LKMCANNODE) StderrLine: {'line': b'  150 |     void setVoltage(uint16_t val) { \x1b[01;31m\x1b[Kvoltage_\x1b[m\x1b[K = val; }\n'}
+[6.977800] (LKMCANNODE) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.992639] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setErrorState(int8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.993042] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:152:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KerrorState_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetErrorState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.993253] (LKMCANNODE) StderrLine: {'line': b'  152 |         \x1b[01;31m\x1b[KerrorState_\x1b[m\x1b[K = val;\n'}
+[6.993449] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.993646] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[KgetErrorState\x1b[m\x1b[K\n'}
+[7.005180] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:154:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisVoltageNormal_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisVoltageNormal\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.005581] (LKMCANNODE) StderrLine: {'line': b'  154 |         \x1b[01;31m\x1b[KisVoltageNormal_\x1b[m\x1b[K = (errorState_ & 0x01) != 0;\n'}
+[7.005781] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.005975] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[KisVoltageNormal\x1b[m\x1b[K\n'}
+[7.018551] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:155:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisUnderVoltageProtect_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisUnderVoltageProtect\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.018947] (LKMCANNODE) StderrLine: {'line': b'  155 |         \x1b[01;31m\x1b[KisUnderVoltageProtect_\x1b[m\x1b[K = (errorState_ & 0x02) != 0;\n'}
+[7.019139] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.019328] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[KisUnderVoltageProtect\x1b[m\x1b[K\n'}
+[7.031308] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:156:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisTemperatureNormal_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisTemperatureNormal\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.031722] (LKMCANNODE) StderrLine: {'line': b'  156 |         \x1b[01;31m\x1b[KisTemperatureNormal_\x1b[m\x1b[K = (errorState_ & 0x04) != 0;\n'}
+[7.031931] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.032179] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[KisTemperatureNormal\x1b[m\x1b[K\n'}
+[7.038846] (-) TimerEvent: {}
+[7.044507] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:157:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisOverTemperatureProtect_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KisOverTemperatureProtect\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.044951] (LKMCANNODE) StderrLine: {'line': b'  157 |         \x1b[01;31m\x1b[KisOverTemperatureProtect_\x1b[m\x1b[K = (errorState_ & 0x08) != 0;\n'}
+[7.045156] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.045356] (LKMCANNODE) StderrLine: {'line': b'      |         \x1b[32m\x1b[KisOverTemperatureProtect\x1b[m\x1b[K\n'}
+[7.058278] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setTorque(int16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.058691] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:159:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktorque_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.058893] (LKMCANNODE) StderrLine: {'line': b'  159 |     void setTorque(int16_t val) { \x1b[01;31m\x1b[Ktorque_\x1b[m\x1b[K = val; }\n'}
+[7.059093] (LKMCANNODE) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.071423] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setSpeed(int16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.071815] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:160:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspeed_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.072077] (LKMCANNODE) StderrLine: {'line': b'  160 |     void setSpeed(int16_t val) { \x1b[01;31m\x1b[Kspeed_\x1b[m\x1b[K = val; }\n'}
+[7.072277] (LKMCANNODE) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.085378] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BLDCMotor::setEncoder(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.085775] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:161:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kencoder_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoder\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.085980] (LKMCANNODE) StderrLine: {'line': b'  161 |     void setEncoder(uint16_t val) { \x1b[01;31m\x1b[Kencoder_\x1b[m\x1b[K = val; }\n'}
+[7.086177] (LKMCANNODE) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.086374] (LKMCANNODE) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[KgetEncoder\x1b[m\x1b[K\n'}
+[7.086757] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.086959] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:164:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.087157] (LKMCANNODE) StderrLine: {'line': b'  164 | \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[7.087351] (LKMCANNODE) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.087547] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:190:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint8_t temperature_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.087740] (LKMCANNODE) StderrLine: {'line': b'  190 |     int8_t \x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K ;\n'}
+[7.087932] (LKMCANNODE) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.088159] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:168:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint8_t temperature_\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[7.088356] (LKMCANNODE) StderrLine: {'line': b'  168 |     int8_t \x1b[01;36m\x1b[Ktemperature_\x1b[m\x1b[K;   // Motor temperature (1\xe2\x84\x83/LSB)\n'}
+[7.088551] (LKMCANNODE) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.097718] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseGeneralStatusResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.098123] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:793:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.098338] (LKMCANNODE) StderrLine: {'line': b'  793 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.098537] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.098739] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.099450] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:794:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorPower_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorPower\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.100051] (LKMCANNODE) StderrLine: {'line': b'  794 |     motor.\x1b[01;31m\x1b[KmotorPower_\x1b[m\x1b[K = static_cast<int16_t>(response[2] | (response[3] << 8));\n'}
+[7.100582] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.101004] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorPower\x1b[m\x1b[K\n'}
+[7.101483] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:795:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.101848] (LKMCANNODE) StderrLine: {'line': b'  795 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[4] | (response[5] << 8));\n'}
+[7.102043] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.102232] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.102444] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:796:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.102648] (LKMCANNODE) StderrLine: {'line': b'  796 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[6] | (response[7] << 8));\n'}
+[7.102840] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.103032] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.104054] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseTorqueClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.104313] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:801:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.104511] (LKMCANNODE) StderrLine: {'line': b'  801 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.104726] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.104917] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.105103] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:802:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorPower_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorPower\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.105295] (LKMCANNODE) StderrLine: {'line': b'  802 |     motor.\x1b[01;31m\x1b[KmotorPower_\x1b[m\x1b[K = static_cast<int16_t>(response[2] | (response[3] << 8));\n'}
+[7.105484] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.105670] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorPower\x1b[m\x1b[K\n'}
+[7.105856] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:803:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.106061] (LKMCANNODE) StderrLine: {'line': b'  803 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[4] | (response[5] << 8));\n'}
+[7.106248] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.106432] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.106616] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:804:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.106807] (LKMCANNODE) StderrLine: {'line': b'  804 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[6] | (response[7] << 8));\n'}
+[7.106993] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.107178] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.107379] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseSpeedClosedLoopControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.107569] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:809:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.107756] (LKMCANNODE) StderrLine: {'line': b'  809 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.107942] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.108159] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.108343] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:810:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KspeedControl_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.108531] (LKMCANNODE) StderrLine: {'line': b'  810 |     motor.\x1b[01;31m\x1b[KspeedControl_\x1b[m\x1b[K = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));\n'}
+[7.108717] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.108901] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:811:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.109089] (LKMCANNODE) StderrLine: {'line': b'  811 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[2] | (response[3] << 8));\n'}
+[7.109274] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.109458] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.109640] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:812:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.109853] (LKMCANNODE) StderrLine: {'line': b'  812 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[8] | (response[9] << 8));\n'}
+[7.110039] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.110224] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.116424] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseMultiLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.116756] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:817:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.116956] (LKMCANNODE) StderrLine: {'line': b'  817 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.117148] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.117338] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.117542] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:818:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KangleControl_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.117737] (LKMCANNODE) StderrLine: {'line': b'  818 |     motor.\x1b[01;31m\x1b[KangleControl_\x1b[m\x1b[K = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));\n'}
+[7.117929] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.118116] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:819:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.118311] (LKMCANNODE) StderrLine: {'line': b'  819 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[2] | (response[3] << 8));\n'}
+[7.118500] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.118688] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.118875] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:820:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.119066] (LKMCANNODE) StderrLine: {'line': b'  820 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[8] | (response[9] << 8));\n'}
+[7.119709] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.119910] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.120141] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseMultiLoopAngleControl2Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.120335] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:825:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.120549] (LKMCANNODE) StderrLine: {'line': b'  825 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.120739] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.120927] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.121115] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:826:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmaxSpeed_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.121307] (LKMCANNODE) StderrLine: {'line': b'  826 |     motor.\x1b[01;31m\x1b[KmaxSpeed_\x1b[m\x1b[K = static_cast<uint16_t>(response[2] | (response[3] << 8));\n'}
+[7.121496] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.121686] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:827:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KangleControl_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.121877] (LKMCANNODE) StderrLine: {'line': b'  827 |     motor.\x1b[01;31m\x1b[KangleControl_\x1b[m\x1b[K = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));\n'}
+[7.122068] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.122256] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:828:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.122451] (LKMCANNODE) StderrLine: {'line': b'  828 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[8] | (response[9] << 8));\n'}
+[7.122640] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.122829] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.123018] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:829:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.123212] (LKMCANNODE) StderrLine: {'line': b'  829 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[10] | (response[11] << 8));\n'}
+[7.123402] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.123590] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.123776] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseSingleLoopAngleControl1Response(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.124018] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:834:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktemperature_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTemperature\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.124240] (LKMCANNODE) StderrLine: {'line': b'  834 |     motor.\x1b[01;31m\x1b[Ktemperature_\x1b[m\x1b[K = static_cast<int8_t>(response[1]);\n'}
+[7.124429] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.124612] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTemperature\x1b[m\x1b[K\n'}
+[7.124796] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:835:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KtorqueCurrent_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.124986] (LKMCANNODE) StderrLine: {'line': b'  835 |     motor.\x1b[01;31m\x1b[KtorqueCurrent_\x1b[m\x1b[K = static_cast<int16_t>(response[2] | (response[3] << 8));\n'}
+[7.125497] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.125694] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetTorqueCurrent\x1b[m\x1b[K\n'}
+[7.125879] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:836:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorSpeed_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorSpeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.126070] (LKMCANNODE) StderrLine: {'line': b'  836 |     motor.\x1b[01;31m\x1b[KmotorSpeed_\x1b[m\x1b[K = static_cast<int16_t>(response[4] | (response[5] << 8));\n'}
+[7.126256] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.126439] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorSpeed\x1b[m\x1b[K\n'}
+[7.126622] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:837:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KencoderPosition_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetEncoderPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.126825] (LKMCANNODE) StderrLine: {'line': b'  837 |     motor.\x1b[01;31m\x1b[KencoderPosition_\x1b[m\x1b[K = static_cast<uint16_t>(response[6] | (response[7] << 8));\n'}
+[7.127009] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.127193] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetEncoderPosition\x1b[m\x1b[K\n'}
+[7.127376] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.127591] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:841:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KparseSingleLoopAngleControl2Response\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[7.128045] (LKMCANNODE) StderrLine: {'line': b'  841 | void \x1b[01;31m\x1b[KparseSingleLoopAngleControl2Response\x1b[m\x1b[K(cconst uint8_t* response, BLDCMotor& motor) {\n'}
+[7.128681] (LKMCANNODE) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.129015] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:841:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcconst\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.129367] (LKMCANNODE) StderrLine: {'line': b'  841 | void parseSingleLoopAngleControl2Response(\x1b[01;31m\x1b[Kcconst\x1b[m\x1b[K uint8_t* response, BLDCMotor& motor) {\n'}
+[7.129565] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.129760] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:841:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.129975] (LKMCANNODE) StderrLine: {'line': b'  841 | void parseSingleLoopAngleControl2Response(cconst uint8_t* response, BLDCMotor\x1b[01;31m\x1b[K&\x1b[m\x1b[K motor) {\n'}
+[7.130502] (LKMCANNODE) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.130848] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:841:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.131210] (LKMCANNODE) StderrLine: {'line': b'  841 | void parseSingleLoopAngleControl2Response(cconst uint8_t* response, BLDCMotor& \x1b[01;31m\x1b[Kmotor\x1b[m\x1b[K) {\n'}
+[7.131868] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.132109] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseIncrementAngleControlResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.132304] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotors\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.132645] (LKMCANNODE) StderrLine: {'line': b'  857 |     \x1b[01;31m\x1b[Kmotors\x1b[m\x1b[K.setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8));)\n'}
+[7.132834] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.133021] (LKMCANNODE) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmotor\x1b[m\x1b[K\n'}
+[7.133209] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.133400] (LKMCANNODE) StderrLine: {'line': b'  857 |     motors.setMotorSpeed\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int16_t>(response[4] | (response[5] << 8))\x1b[01;31m\x1b[K;\x1b[m\x1b[K)\n'}
+[7.133591] (LKMCANNODE) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.133809] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.134001] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:857:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.134208] (LKMCANNODE) StderrLine: {'line': b'  857 |     motors.setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8));\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[7.134398] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.134586] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseWritePIDParametersToROMResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.134781] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:863:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.134986] (LKMCANNODE) StderrLine: {'line': b'  863 | void parseWritePIDParametersToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, BLDCMotor& motor){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[7.135179] (LKMCANNODE) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.135369] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:863:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.135564] (LKMCANNODE) StderrLine: {'line': b'  863 | void parseWritePIDParametersToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {\n'}
+[7.135760] (LKMCANNODE) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[7.135953] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseReadPIDParametersResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.136181] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:883:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KsetAnglePidKistatic_cast\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.136379] (LKMCANNODE) StderrLine: {'line': b'  883 |     motor.\x1b[01;31m\x1b[KsetAnglePidKistatic_cast\x1b[m\x1b[K<double>(response[3])\n'}
+[7.136574] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.136786] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:883:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.136981] (LKMCANNODE) StderrLine: {'line': b'  883 |     motor.setAnglePidKistatic_cast<\x1b[01;31m\x1b[Kdouble\x1b[m\x1b[K>(response[3])\n'}
+[7.137174] (LKMCANNODE) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.137369] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseReadAccelerationResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.137563] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:896:125:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.137759] (LKMCANNODE) StderrLine: {'line': b'  896 |     motor.setAcceleration\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24))\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.137954] (LKMCANNODE) StderrLine: {'line': b'      |                          \x1b[34m\x1b[K~\x1b[m\x1b[K                                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.138149] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                                                             \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.138345] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:896:126:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.138558] (LKMCANNODE) StderrLine: {'line': b'  896 |     motor.setAcceleration(static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.138755] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.138955] (-) TimerEvent: {}
+[7.139554] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.139781] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:939:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.140041] (LKMCANNODE) StderrLine: {'line': b'  939 | void parseWriteEncoderValueToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[7.140246] (LKMCANNODE) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.140442] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:939:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.140643] (LKMCANNODE) StderrLine: {'line': b'  939 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[7.140838] (LKMCANNODE) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.141033] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.141311] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:951:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.141514] (LKMCANNODE) StderrLine: {'line': b'  951 | void parseWriteCurrentPositionToROMResponse(\x1b[01;35m\x1b[Kconst uint8_t* response\x1b[m\x1b[K, uint16_t& encoderOffset) {\n'}
+[7.141710] (LKMCANNODE) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.141907] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:951:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KencoderOffset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.142108] (LKMCANNODE) StderrLine: {'line': b'  951 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, \x1b[01;35m\x1b[Kuint16_t& encoderOffset\x1b[m\x1b[K) {\n'}
+[7.142314] (LKMCANNODE) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.142524] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseReadMultiAngleLoopResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.142720] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:965:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass BLDCMotor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KmotorAngle_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetMotorAngle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.142919] (LKMCANNODE) StderrLine: {'line': b'  965 |     motor.\x1b[01;31m\x1b[KmotorAngle_\x1b[m\x1b[K = *(int64_t*)(response + 1);  // Assuming little-endian architecture\n'}
+[7.143115] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.143311] (LKMCANNODE) StderrLine: {'line': b'      |           \x1b[32m\x1b[KgetMotorAngle\x1b[m\x1b[K\n'}
+[7.143505] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseReadMotorState1AndErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.143704] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:987:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.143902] (LKMCANNODE) StderrLine: {'line': b'  987 |     motor.setTemperature\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int8_t>(response[1])\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.144121] (LKMCANNODE) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.144315] (LKMCANNODE) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.144507] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:987:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.144715] (LKMCANNODE) StderrLine: {'line': b'  987 |     motor.setTemperature(static_cast<int8_t>(response[1]);\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.144907] (LKMCANNODE) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.145113] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseClearErrorStateResponse(const uint8_t*, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.145307] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1003:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.145507] (LKMCANNODE) StderrLine: {'line': b' 1003 |     motor.setTemperature\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int8_t>(response[1])\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.145698] (LKMCANNODE) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.145888] (LKMCANNODE) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.146091] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1003:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.146298] (LKMCANNODE) StderrLine: {'line': b' 1003 |     motor.setTemperature(static_cast<int8_t>(response[1]);\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.146488] (LKMCANNODE) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.146688] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseReadMotorState2Response(const uint8_t*, BLDCMotor)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.146882] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1015:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.147078] (LKMCANNODE) StderrLine: {'line': b' 1015 |         motor.setTemperature\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int8_t>(response[1])\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.147270] (LKMCANNODE) StderrLine: {'line': b'      |                             \x1b[34m\x1b[K~\x1b[m\x1b[K                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.147461] (LKMCANNODE) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.147651] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1015:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.147844] (LKMCANNODE) StderrLine: {'line': b' 1015 |         motor.setTemperature(static_cast<int8_t>(response[1]);\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.148977] (LKMCANNODE) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.149230] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1017:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.149424] (LKMCANNODE) StderrLine: {'line': b' 1017 |         motor.setTorque\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int16_t>(response[2] | (response[3] << 8))\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.149639] (LKMCANNODE) StderrLine: {'line': b'      |                        \x1b[34m\x1b[K~\x1b[m\x1b[K                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.149841] (LKMCANNODE) StderrLine: {'line': b'      |                                                                               \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.150031] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1017:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.150223] (LKMCANNODE) StderrLine: {'line': b' 1017 |         motor.setTorque(static_cast<int16_t>(response[2] | (response[3] << 8));\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.150411] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.150597] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1019:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.150789] (LKMCANNODE) StderrLine: {'line': b' 1019 |         motor.setSpeed\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<int16_t>(response[4] | (response[5] << 8))\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.150979] (LKMCANNODE) StderrLine: {'line': b'      |                       \x1b[34m\x1b[K~\x1b[m\x1b[K                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.151175] (LKMCANNODE) StderrLine: {'line': b'      |                                                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.151364] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1019:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.151577] (LKMCANNODE) StderrLine: {'line': b' 1019 |         motor.setSpeed(static_cast<int16_t>(response[4] | (response[5] << 8));\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.151767] (LKMCANNODE) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.151956] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1021:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.153281] (LKMCANNODE) StderrLine: {'line': b' 1021 |         motor.setEncoder\x1b[34m\x1b[K(\x1b[m\x1b[Kstatic_cast<uint16_t>(response[6] | (response[7] << 8))\x1b[01;31m\x1b[K;\x1b[m\x1b[K);\n'}
+[7.153516] (LKMCANNODE) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.153713] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[7.153915] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1021:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.154113] (LKMCANNODE) StderrLine: {'line': b' 1021 |         motor.setEncoder(static_cast<uint16_t>(response[6] | (response[7] << 8));\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.154308] (LKMCANNODE) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.154501] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KMessageType parseResponse(const uint8_t*, MessageType, BLDCMotor&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.154698] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1042:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KmessageType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.154924] (LKMCANNODE) StderrLine: {'line': b' 1042 | MessageType parseResponse(const uint8_t* response, \x1b[01;35m\x1b[KMessageType messageType\x1b[m\x1b[K, BLDCMotor& motor) {\n'}
+[7.155119] (LKMCANNODE) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.155314] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1042:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.155512] (LKMCANNODE) StderrLine: {'line': b' 1042 | MessageType parseResponse(const uint8_t* response, MessageType messageType, \x1b[01;35m\x1b[KBLDCMotor& motor\x1b[m\x1b[K) {\n'}
+[7.155704] (LKMCANNODE) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[7.239159] (-) TimerEvent: {}
+[7.339779] (-) TimerEvent: {}
+[7.440419] (-) TimerEvent: {}
+[7.541027] (-) TimerEvent: {}
+[7.641648] (-) TimerEvent: {}
+[7.742253] (-) TimerEvent: {}
+[7.842852] (-) TimerEvent: {}
+[7.943466] (-) TimerEvent: {}
+[8.044163] (-) TimerEvent: {}
+[8.085395] (LKMCANNODE) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/LKMCANNODE/src/lkmcannode.cpp:1092:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.085819] (LKMCANNODE) StderrLine: {'line': b' 1092 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[8.086012] (LKMCANNODE) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.130168] (LKMCANNODE) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1\n'}
+[8.130767] (LKMCANNODE) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2\n'}
+[8.131096] (LKMCANNODE) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.135273] (LKMCANNODE) CommandEnded: {'returncode': 2}
+[8.144265] (-) TimerEvent: {}
+[8.244988] (-) TimerEvent: {}
+[8.346112] (-) TimerEvent: {}
+[8.368190] (LKMCANNODE) JobEnded: {'identifier': 'LKMCANNODE', 'rc': 2}
+[8.379430] (-) EventReactorShutdown: {}

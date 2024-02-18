@@ -1,4 +1,28 @@
 #include <cstdint> // Include for data types like uint8_t
+#include <rclcpp/rclcpp.hpp>
+#include <can_msgs/msg/frame.hpp>
+#include "std_msgs/msg/string.hpp" // Modify as necessary for actual CAN message type
+#include "geometry_msgs/msg/twist.hpp"
+#include "nav_msgs/msg/odometry.hpp"
+
+
+#include <tf2_ros/transform_broadcaster.h>
+#include "geometry_msgs/msg/transform_stamped.hpp"
+// #include <geometry_msgs/msg/transform_stamped.h>
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/transform_broadcaster.h"
+#include <tf2/LinearMath/Quaternion.h>
+
+
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#include <sys/socket.h>
+#include <sys/ioctl.h>
+#include <net/if.h>
+#include <unistd.h>
+#include <cstring>
+
+#include <rclcpp/time.hpp>
 
 // Enum to represent different motor types
 enum class MotorType {
@@ -9,103 +33,16 @@ enum class MotorType {
 };
 // Define a class to represent a BLDC motor
 class BLDCMotor {
-public:
-    // Constructor to initialize the motor with a unique ID
-    BLDCMotor(uint8_t motorId) : motorId_(motorId) {}
-
-    // Function to create a Motor Off command for this motor
-    MotorOffCommand createMotorOffCommand() {
-        // Create a Motor Off command with the motor's ID
-        return MotorOffCommand(motorId_);
-    }
-
-        // Function to create a Motor On command for this motor
-    MotorOnCommand createMotorOnCommand() {
-        // Create a Motor On command with the motor's ID
-        return MotorOnCommand(motorId_);
-    }
-
-    // Function to create a Motor Stop command for this motor
-    MotorStopCommand createMotorStopCommand() {
-    // Create a Motor Stop command with the motor's ID
-    return MotorStopCommand(motorId_);
-    }
-    // Function to create an Open Loop Control command for this motor
- 
-    OpenLoopControlCommand createOpenLoopControlCommand(int16_t powerControl) {
-    // Create an Open Loop Control command with the motor's ID and powerControl value
-    return OpenLoopControlCommand(powerControl);
-    }
-
-        // Function to create a Speed Closed Loop Control command for this motor
-    SpeedClosedLoopControlCommand createSpeedClosedLoopControlCommand(int32_t speedControl) {
-        // Create a Speed Closed Loop Control command with the motor's ID and speed control value
-        return SpeedClosedLoopControlCommand(speedControl);
-    }
-    
-        // Function to create Multi Loop Angle Control Command 1 for this motor
-    MultiLoopAngleControl1Command createMultiLoopAngleControl1Command(int32_t angleControl, int16_t maxSpeed) {
-        // Create a Multi Loop Angle Control Command 1 with the motor's ID, angleControl, and maxSpeed
-        return MultiLoopAngleControl1Command(motorId_, angleControl, maxSpeed);
-    }
-
-    // Function to create Multi Loop Angle Control Command 2 for this motor
-    MultiLoopAngleControl2Command createMultiLoopAngleControl2Command(int32_t angleControl, uint16_t maxSpeed) {
-        // Create a Multi Loop Angle Control Command 2 with the motor's ID, angleControl, and maxSpeed
-        return MultiLoopAngleControl2Command(motorId_, angleControl, maxSpeed);
-    }
-    
-    // Function to create Single Loop Angle Control Command 1 for this motor
-    SingleLoopAngleControl1Command createSingleLoopAngleControl1Command(uint8_t spinDirection, uint32_t angleControl) {
-        // Create a Single Loop Angle Control Command 1 with the motor's ID, spinDirection, and angleControl
-        return SingleLoopAngleControl1Command(motorId_, spinDirection, angleControl);
-    }
-
-    // Function to create Single Loop Angle Control Command 2 for this motor
-    SingleLoopAngleControl2Command createSingleLoopAngleControl2Command(uint8_t spinDirection, uint32_t angleControl, uint16_t maxSpeed) {
-        // Create a Single Loop Angle Control Command 2 with the motor's ID, spinDirection, angleControl, and maxSpeed
-        return SingleLoopAngleControl2Command(motorId_, spinDirection, angleControl, maxSpeed);
-    }
-    // Add more functions for other motor commands and operations as needed
-
-    // Function to send the "Clear motor error state" command
-    void sendClearErrorStateCommand() {
-    ClearErrorStateCommand command;
-    command.commandByte = 0x9B;
-    // Fill the padding with NULL bytes
-    //memset(command.padding, 0x00, sizeof(command.padding));
-
-    // Send the command over the communication interface
-    // (Implement this according to your specific communication protocol)
-    }
-    // Function to send the "Read motor state 2" command
-    void sendReadMotorState2Command() {
-    ReadMotorState2Command command;    
-    // Fill the padding with NULL bytes
-    memset(command.padding, 0x00, sizeof(command.padding));
-
-    // Send the command over the communication interface
-    // (Implement this according to your specific communication protocol)
-}
-
-    void sendReadMotorState3Command() {
-    ReadMotorState3Command command;    
-    // Fill the padding with NULL bytes
-    memset(command.padding, 0x00, sizeof(command.padding));
-
-    // Send the command over the communication interface
-    // (Implement this according to your specific communication protocol)
-    }
 
 private:
     MotorType motorType_; // Type of the motor
     uint8_t motorId_; // Unique ID for the motor
    
-    int8_t temperature_;   // Motor temperature (1℃/LSB)
-    int16_t motorPower_;   // Motor power (-850~850 or -2048~2048 depending on the command)
-    int16_t motorSpeed_;   // Motor speed (1dps/LSB)
-    uint16_t encoderPosition_; // Encoder position (14-bit, 15-bit, or 18-bit depending on the command)
-    int16_t torqueCurrent_;
+    int8_t temperature_  =0;   // Motor temperature (1℃/LSB)
+    int16_t motorPower_  =0;   // Motor power (-850~850 or -2048~2048 depending on the command)
+    int16_t motorSpeed_ =0;   // Motor speed (1dps/LSB)
+    uint16_t encoderPosition_ =0; // Encoder position (14-bit, 15-bit, or 18-bit depending on the command)
+    int16_t torqueCurrent_ =0;
 
     double anglePidKp_;
     double anglePidKi_;
@@ -123,8 +60,8 @@ private:
     int64_t motorAngle_;
     uint32_t cicleAngle_;
 
-    int8_t temperature_ ;
-    uint16_t voltage_ ;  // Assuming little-endian architecture
+    
+    uint16_t voltage_  =0 ;  // Assuming little-endian architecture
     int8_t errorState_; // will be parsed to errors below
 
     bool isVoltageNormal_;// = (errorState & 0x01) != 0;
@@ -132,16 +69,42 @@ private:
     bool isTemperatureNormal_;// = (errorState & 0x04) != 0;
     bool isOverTemperatureProtect_;// = (errorState & 0x08) != 0;
 
-    int16_t torque_;
-    int16_t speed_;
-    uint16_t encoder_;
+    int16_t torque_ =0;
+    int16_t speed_ =0;
+    uint16_t encoder_ =0;
 
-}
+    // Per Phase Current 
+    int16_t iA_ =0;
+    int16_t iB_ =0;
+    int16_t iC_ =0;
+
+    // startup boolean, for calculating the delta tick change
+    bool initialTicksSet;
+
+    uint16_t deltaTicks = 0;
+
+    // ticks for encoders
+    uint16_t LastTicks = 0;
+public:
 // Define a struct to represent the Motor Off command
 struct MotorOffCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
 
+        uint8_t commandByte = 0x80;    // Data field: 8 bytes
+
+            void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        // Set the encoderOffset bytes
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+        
+    }
     // Constructor to initialize the struct
     MotorOffCommand(uint8_t motorId) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -169,7 +132,20 @@ struct MotorOffCommand {
 struct MotorOnCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
+    uint8_t commandByte = 0x88;    // Data field: 8 bytes
 
+    void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        // Set the encoderOffset bytes
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+        
+    }
     // Constructor to initialize the struct
     MotorOnCommand(uint8_t motorId) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -198,7 +174,20 @@ struct MotorOnCommand {
 struct MotorStopCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
+    uint8_t commandByte = 0x81;    // Data field: 8 bytes
 
+    void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        // Set the encoderOffset bytes
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+        
+    }
     // Constructor to initialize the struct
     MotorStopCommand(uint8_t motorId) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -226,8 +215,18 @@ struct MotorStopCommand {
 struct OpenLoopControlCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
-    
-    
+    uint8_t commandByte = 0xA0;
+        void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+        
+    }
 
     // Constructor to initialize the struct
     OpenLoopControlCommand(int16_t powerControl) {
@@ -248,6 +247,17 @@ struct OpenLoopControlCommand {
 struct TorqueClosedLoopControlCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
+    uint8_t commandByte = 0xA1;
+
+    void serialize(uint8_t* buffer) {
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+    }
 
     // Constructor to initialize the struct
     TorqueClosedLoopControlCommand(uint8_t motorId, int16_t torqueControl) {
@@ -276,11 +286,21 @@ struct TorqueClosedLoopControlCommand {
 struct SpeedClosedLoopControlCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
-
+    uint8_t commandByte = 0xA2;
+    void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+    }
     // Constructor to initialize the struct
-    SpeedClosedLoopControlCommand(int32_t speedControl) {
+    SpeedClosedLoopControlCommand(uint8_t motorId_, int32_t speedControl) {
         // Set the data fields as per the Speed Closed Loop Control command format
-        identifier = 0xA2;
+        identifier = 0x141 + motorId_;
         data[0] = 0x00;
         data[1] = 0x00;
         data[2] = 0x00;
@@ -292,12 +312,27 @@ struct SpeedClosedLoopControlCommand {
     }
 };
 
+   SpeedClosedLoopControlCommand createSpeedClosedLoopControlCommand(uint8_t motorId_, int32_t speed) {
+        return SpeedClosedLoopControlCommand(motorId_,speed);
+    }
+
 
 // Define a struct to represent Multi Loop Angle Control Command 1
 struct MultiLoopAngleControl1Command {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
+    uint8_t commandByte = 0xA3;
 
+        void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+    }
     // Constructor to initialize the struct
     MultiLoopAngleControl1Command(uint8_t motorId, int32_t angleControl, int16_t maxSpeed) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -325,7 +360,18 @@ struct MultiLoopAngleControl1Command {
 struct MultiLoopAngleControl2Command {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
-
+    uint8_t commandByte = 0xA4;
+    
+    void serialize(uint8_t* buffer) {
+     buffer[0] = commandByte;
+     buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+    }
     // Constructor to initialize the struct
     MultiLoopAngleControl2Command(uint8_t motorId, int32_t angleControl, uint16_t maxSpeed) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -353,7 +399,19 @@ struct MultiLoopAngleControl2Command {
 struct SingleLoopAngleControl1Command {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
-
+        uint8_t commandByte = 0xA5;
+    void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;        
+        buffer[1] = data[1] ;
+        buffer[2] = data[2];
+        buffer[3] = data[3];
+        buffer[4] = data[4];
+        buffer[5] = data[5];
+        buffer[6] = data[6];
+        buffer[7] = data[7];
+        
+    }
+    
     // Constructor to initialize the struct
     SingleLoopAngleControl1Command(uint8_t motorId, uint8_t spinDirection, uint32_t angleControl) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -378,10 +436,18 @@ struct SingleLoopAngleControl1Command {
 };
 
 // Define a struct to represent the Single Loop Angle Control 2 command
-struct SingleLoopAngleControl2Command {
+struct SingleLoopAngleControl2Command {     // not fully implemented do not use. Need to do the encoder offset
+
+    uint8_t encoderOffset = 0;
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
-
+    uint8_t commandByte = 0xA6;
+        void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        // Set the encoderOffset bytes
+        buffer[6] = static_cast<uint8_t>(encoderOffset);
+        buffer[7] = static_cast<uint8_t>(encoderOffset >> 8);
+    }
     // Constructor to initialize the struct
     SingleLoopAngleControl2Command(uint8_t motorId, uint8_t spinDirection, uint32_t angleControl, uint16_t maxSpeed) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -405,11 +471,20 @@ struct SingleLoopAngleControl2Command {
     }
 };
 
-// Define a struct to represent the Increment Angle Control command
+// Define a struct to represent the Increment Angle Control command. Not fully implemented
 struct IncrementAngleControlCommand {
+
+    uint8_t encoderOffset = 0; // 
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
+    uint8_t commandByte = 0xA7;
 
+        void serialize(uint8_t* buffer) {
+        buffer[0] = commandByte;
+        // Set the encoderOffset bytes
+        buffer[6] = static_cast<uint8_t>(encoderOffset);
+        buffer[7] = static_cast<uint8_t>(encoderOffset >> 8);
+    }
     // Constructor to initialize the struct
     IncrementAngleControlCommand(uint8_t motorId, int32_t angleIncrement) {
         // Calculate the identifier based on the motor ID (1~32)
@@ -435,8 +510,8 @@ struct IncrementAngleControlCommand {
 
 // Command message to read PID parameters
 struct ReadPIDParametersCommand {
-    uint8_t commandByte;
-
+    
+    uint8_t commandByte = 0x00; // not implemented
     ReadPIDParametersCommand() : commandByte(0x30) {}
 
     std::vector<uint8_t> serialize() const {
@@ -450,9 +525,9 @@ struct ReadPIDParametersCommand {
 };
 
 
-// Command message to write PID parameters to RAM
+// Command message to write PID parameters to RAM // not fully implemented, Just what the script did. DO NOT USE
 struct WritePIDParametersToRAMCommand {
-    uint8_t commandByte;
+    uint8_t commandByte = 0x31;
     double anglePidKp;
     double anglePidKi;
     double speedPidKp;
@@ -571,20 +646,79 @@ struct WriteAccelerationToRAMCommand {
     }
 };
 
+int32_t calculateDelta() {
+    uint16_t currentTicks = encoderPosition_;
+    if (!initialTicksSet) {
+        LastTicks = currentTicks;
+        initialTicksSet = true;
+        return 0; // No delta on the first read
+    }
+
+    // Calculate the raw delta considering the unsigned nature of encoder values
+    int32_t rawDelta = static_cast<int32_t>(currentTicks) - static_cast<int32_t>(LastTicks);
+
+    // Correct the delta for underflow or overflow
+    if (rawDelta < -32768) {
+        // Underflow correction
+        rawDelta += 65536;
+    } else if (rawDelta > 32767) {
+        // Overflow correction
+        rawDelta -= 65536;
+    }
+
+    // Update LastTicks for the next calculation
+    LastTicks = currentTicks;
+
+    // Return the signed delta
+    return rawDelta;
+}
+//  // Call this method with the current encoder ticks
+//  uint16_t calculateDelta() {
+//         uint16_t currentTicks = encoderPosition_;//encoderRaw_;
+//         if (!initialTicksSet) {
+//             // First time receiving ticks, set LastTicks and mark as set            
+//             LastTicks = currentTicks;
+//             initialTicksSet = true;
+//             return 0; // Delta is 0 since this is the first measurement
+//         } else {
+//             // Calculate the raw delta difference, taking potential overflow into account
+//             uint16_t delta;
+            
+//             if(currentTicks >= LastTicks) {
+//                 // No overflow, or overflow in positive direction
+//                 delta = currentTicks - LastTicks;
+//             } else {
+//                 // Overflow occurred in negative direction
+//                 delta = static_cast<uint16_t>((65536 + currentTicks) - LastTicks);
+//             }
+
+//             // Update LastTicks for the next calculation
+//             LastTicks = currentTicks;
+//             deltaTicks = delta;
+//             return delta;
+//         }
+//     }
 // Define a struct for ReadEncoder command
 struct ReadEncoderCommand {
-    uint8_t commandByte = 0x90;
+    uint8_t commandByte = 0x90; // Command byte
+    uint8_t data[7]; // Adjusted to fit within an 8-byte limit including the command byte
 
-    // Function to serialize the command data into an array
-    void serialize(uint8_t* buffer) {
-        buffer[0] = commandByte;
+    // Corrected constructor to initialize data array
+    ReadEncoderCommand(uint8_t initialDataValue = 0) {
+        std::fill(std::begin(data), std::end(data), initialDataValue);
+    }
+
+    // Serialize the command data into the provided buffer, respecting the 8-byte limit
+    void serialize(uint8_t* buffer) const {
+        buffer[0] = commandByte; // Place the command byte at the beginning
+        memcpy(buffer + 1, data, sizeof(data)); // Copy the 7 bytes of data following the command byte
     }
 };
 
 // Command struct for Read Multi Angle Loop command
 struct ReadMultiAngleLoopCommand {
     uint8_t commandByte = 0x92;
-
+    uint8_t data[8];
     // Constructor
     ReadMultiAngleLoopCommand() = default;
 
@@ -601,7 +735,7 @@ struct ReadMultiAngleLoopCommand {
 // Command struct for Read Single Angle Loop command
 struct ReadSingleAngleLoopCommand {
     uint8_t commandByte = 0x94;
-
+    uint8_t data[8];
     // Constructor
     ReadSingleAngleLoopCommand() = default;
 
@@ -618,7 +752,7 @@ struct ReadSingleAngleLoopCommand {
 // Command struct for Clear Motor Angle Loop command
 struct ClearMotorAngleLoopCommand {
     uint8_t commandByte = 0x95;
-
+    uint8_t data[8];
     // Constructor
     ClearMotorAngleLoopCommand() = default;
 
@@ -635,7 +769,7 @@ struct ClearMotorAngleLoopCommand {
 // Command struct for Read Motor State 1 and Error State command
 struct ReadMotorState1AndErrorStateCommand {
     uint8_t commandByte = 0x9A;
-
+    uint8_t data[8];
     // Constructor
     ReadMotorState1AndErrorStateCommand() = default;
 
@@ -723,73 +857,75 @@ struct ReadMotorState3Command {
     }
 };
 
+// I extraced the description of the command messages and their responses to text and ran a script against it to generate the parser, But its resulted in some duplicates.. They will
+// need to be removed potentially to neaten up the code. but will be left in for the moment as that wont hurt anything
 
 // Function to parse a General Status message response and update member variables
-void parseGeneralStatusResponse(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.motorPower_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.motorSpeed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+void parseGeneralStatusResponse(const uint8_t* response) {    
+    setTemperature(static_cast<int8_t>(response[1]));
+    setMotorPower(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[6] | (response[7] << 8)));
 }
 
 // Function to parse a Torque Closed Loop Control message response and update member variables
-void parseTorqueClosedLoopControlResponse(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.motorPower_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.motorSpeed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+void parseTorqueClosedLoopControlResponse(const uint8_t* response) {
+    setTemperature(static_cast<int8_t>(response[1]));    
+    setMotorPower(static_cast<int16_t>(response[2] | (response[3] << 8)));    
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));    
+    setEncoderPosition(static_cast<uint16_t>(response[6] | (response[7] << 8)));
 }
 
 // Function to parse a Speed Closed Loop Control message response
-void parseSpeedClosedLoopControlResponse(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.speedControl_ = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));
-    motor.motorSpeed_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[8] | (response[9] << 8));
+void parseSpeedClosedLoopControlResponse(const uint8_t* response) {
+    setTemperature(static_cast<int8_t>(response[1]));    
+    setMotorSpeed(static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24)));
+    setMotorSpeed(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[8] | (response[9] << 8)));
 }
 
 // Function to parse a Multi Loop Angle Control 1 response
-void parseMultiLoopAngleControl1Response(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.angleControl_ = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));
-    motor.motorSpeed_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[8] | (response[9] << 8));
+void parseMultiLoopAngleControl1Response(const uint8_t* response) {
+    setTemperature(static_cast<int8_t>(response[1]));
+    setMotorSpeed(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[8] | (response[9] << 8)));
 }
 
 // Function to parse a Multi Loop Angle Control 2 response
-void parseMultiLoopAngleControl2Response(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.maxSpeed_ = static_cast<uint16_t>(response[2] | (response[3] << 8));
-    motor.angleControl_ = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));
-    motor.motorSpeed_ = static_cast<int16_t>(response[8] | (response[9] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[10] | (response[11] << 8));
+void parseMultiLoopAngleControl2Response(const uint8_t* response) {
+    setTemperature(static_cast<int8_t>(response[1]));
+    setTorqueCurrent(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[10] | (response[11] << 8)));
 }
 
 // Function to parse the Single Loop Angle Control 1 command response
-void parseSingleLoopAngleControl1Response(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.torqueCurrent_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.motorSpeed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+void parseSingleLoopAngleControl1Response(const uint8_t* response) {    
+    setTemperature(static_cast<int8_t>(response[1]));
+    setTorqueCurrent(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[6] | (response[7] << 8)));
 }
 
 // Function to parse the Single Loop Angle Control 2 command response
-void parseSingleLoopAngleControl2Response(cconst uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.torqueCurrent_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.motorSpeed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+void parseSingleLoopAngleControl2Response(const uint8_t* response) {    
+    setTemperature(static_cast<int8_t>(response[1]));
+    setTorqueCurrent(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[6] | (response[7] << 8)));
+    
 }
 
 // Function to parse an Increment Angle Control response
-void parseIncrementAngleControlResponse(const uint8_t* response, BLDCMotor& motor) {
-    motor.temperature_ = static_cast<int8_t>(response[1]);
-    motor.torqueCurrent_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-    motor.motorSpeed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-    motor.encoderPosition_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+void parseIncrementAngleControlResponse(const uint8_t* response) {
+    
+    setTemperature(static_cast<int8_t>(response[1]));    
+    setTorqueCurrent(static_cast<int16_t>(response[2] | (response[3] << 8)));
+    setMotorSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+    setEncoderPosition(static_cast<uint16_t>(response[6] | (response[7] << 8)));
 }
 
-void parseWritePIDParametersToROMResponse(const uint8_t* response, BLDCMotor& motor){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+void parseWritePIDParametersToROMResponse(const uint8_t* response){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
     // Parse the response based on the data field structure
     // anglePidKp = static_cast<uint16_t>(response[2] | (response[3] << 8));
     // anglePidKi = static_cast<uint16_t>(response[4] | (response[5] << 8));
@@ -800,50 +936,61 @@ void parseWritePIDParametersToROMResponse(const uint8_t* response, BLDCMotor& mo
 }
 
 // Parser for the response of the "Read PID parameter" message
-void parseReadPIDParametersResponse(const uint8_t* response, BLDCMotor& motor) {
-    motor.anglePidKp_ = static_cast<double>(response[2]);
-    motor.anglePidKi_ = static_cast<double>(response[3]);
-    motor.speedPidKp_ = static_cast<double>(response[4]);
-    motor.speedPidKi_ = static_cast<double>(response[5]);
-    motor.iqPidKp_ = static_cast<double>(response[6]);
-    motor.iqPidKi_ = static_cast<double>(response[7]);
+void parseReadPIDParametersResponse(const uint8_t* response) {
+    // motor.anglePidKp_ = static_cast<double>(response[2]);
+    // motor.anglePidKi_ = static_cast<double>(response[3]);
+    // speedPidKp_ = static_cast<double>(response[4]);
+    // speedPidKi_ = static_cast<double>(response[5]);
+    // motor.iqPidKp_ = static_cast<double>(response[6]);
+    // motor.iqPidKi_ = static_cast<double>(response[7]);
+
+    setAnglePidKp(static_cast<double>(response[2]));
+    setAnglePidKi(static_cast<double>(response[3]));
+    
+    
+    setSpeedPidKp(static_cast<double>(response[4]));
+    setSpeedPidKi(static_cast<double>(response[5]));
+    
+    setIqPidKp(static_cast<double>(response[6]));
+    setIqPidKi(static_cast<double>(response[7]));
 }
 
-void parseReadAccelerationResponse(const uint8_t* response, BLDCMotor& motor) {
+void parseReadAccelerationResponse(const uint8_t* response) {
     // Parse the response based on the data field structure
-    motor.acceleration_ = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));
+    //motor.acceleration_ = static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24));
+    setAcceleration(static_cast<int32_t>(response[4] | (response[5] << 8) | (response[6] << 16) | (response[7] << 24)));
 }
 
 // Function to parse WriteAccelerationToRAM response
-void parseWriteAccelerationToRAMResponse(const uint8_t* response, uint32_t& acceleration) {
+void parseWriteAccelerationToRAMResponse(const uint8_t* response) {
     // Check if the response length is valid
     if (response[0] == 0x34 && response[1] == 0x00 && response[2] == 0x00 && response[3] == 0x00) {
         // Extract acceleration from the response bytes
-        acceleration = static_cast<uint32_t>(response[4]) |
+        acceleration_ = static_cast<uint32_t>(response[4]) |
                       (static_cast<uint32_t>(response[5]) << 8) |
                       (static_cast<uint32_t>(response[6]) << 16) |
                       (static_cast<uint32_t>(response[7]) << 24);
     } else {
         // Handle invalid response
-        acceleration = 0;
+        acceleration_ = 0;
     }
 }
 
 // Function to parse ReadEncoder response
-void parseReadEncoderResponse(const uint8_t* response,BLDCMotor motor){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {
+void parseReadEncoderResponse(const uint8_t* response){ //} uint16_t& encoder, uint16_t& encoderRaw, uint16_t& encoderOffset) {
     // Check if the response length is valid
     
-    if (response[0] == 0x90 && response[1] == 0x00) {
+    
         // Extract encoder values from the response bytes
-        motor.encoderPosition_ = static_cast<uint16_t>(response[2]) | (static_cast<uint16_t>(response[3]) << 8);
-        motor.encoderRaw_ = static_cast<uint16_t>(response[4]) | (static_cast<uint16_t>(response[5]) << 8);
-        motor.encoderOffset_ = static_cast<uint16_t>(response[6]) | (static_cast<uint16_t>(response[7]) << 8);
-    } else {
-        // Handle invalid response
-        // encoder = 0;
-        // encoderRaw = 0;
-        // encoderOffset = 0;
-    }
+        //motor.encoderPosition_ = static_cast<uint16_t>(response[2]) | (static_cast<uint16_t>(response[3]) << 8);
+        setEncoderPosition(static_cast<uint16_t>(response[2]) | (static_cast<uint16_t>(response[3]) << 8));
+        
+        //motor.encoderRaw_ = static_cast<uint16_t>(response[4]) | (static_cast<uint16_t>(response[5]) << 8);
+        setEncoderRaw(static_cast<uint16_t>(response[4]) | (static_cast<uint16_t>(response[5]) << 8)); 
+        
+        //motor.encoderOffset_ = static_cast<uint16_t>(response[6]) | (static_cast<uint16_t>(response[7]) << 8);
+        setEncoderOffset(static_cast<uint16_t>(response[6]) | (static_cast<uint16_t>(response[7]) << 8));
+
 }
 
 // Function to parse WriteEncoderValueToROM response
@@ -856,6 +1003,7 @@ void parseWriteEncoderValueToROMResponse(const uint8_t* response, uint16_t& enco
     //     // Handle invalid response
     //     encoderOffset = 0;
     // }
+
 }
 
 // Function to parse WriteCurrentPositionToROM response
@@ -871,120 +1019,173 @@ void parseWriteCurrentPositionToROMResponse(const uint8_t* response, uint16_t& e
 }
 
 // Function to parse the response for Read Multi Angle Loop command
-void parseReadMultiAngleLoopResponse(const uint8_t* response, BLDCMotor& motor) {
+void parseReadMultiAngleLoopResponse(const uint8_t* response) {
     // Extract the motorAngle from the response bytes
-    motor.motorAngle_ = *(int64_t*)(response + 1);  // Assuming little-endian architecture
+    //motor.motorAngle_ = *(int64_t*)(response + 1);  // Assuming little-endian architecture
+    setMotorAngle(*(int64_t*)(response + 1));
 }
 
 // Function to parse the response for Read Single Angle Loop command
-void parseReadSingleAngleLoopResponse(const uint8_t* response, BLDCMotor& motor) {
+void parseReadSingleAngleLoopResponse(const uint8_t* response) {
     // Extract the circleAngle from the response bytes
-    motor.circleAngle_ = *((uint32_t*)(response + 4));  // Assuming little-endian architecture
+    //motor.circleAngle_ = *((uint32_t*)(response + 4));  // Assuming little-endian architecture
+    setCicleAngle(*((uint32_t*)(response + 4)));
 }
 
 
-// Function to parse the response for Read Motor State 1 and Error State command
-void parseReadMotorState1AndErrorStateResponse(const uint8_t* response, BLDCMotor& motor) {
+// Function to parse the response for Read Motor State 1 and Error State command // the documentation states there is a differnce in the response message but it only appears to be the command byte, Since i scripted the creation of this, there is now two. I will look at getting rid of one of them
+void parseReadMotorState1AndErrorStateResponse(const uint8_t* response) {
     // Extract temperature, voltage, and errorState from the response bytes
-    motor.temperature = static_cast<int8_t>(response[1]);
-    motor.voltage = *(uint16_t*)(response + 3);  // Assuming little-endian architecture
-    motor.errorState = response[7];
-
-
-    motor.isVoltageNormal_ = (motor.errorState & 0x01) != 0;
-    motor.isUnderVoltageProtect_ = (errorState & 0x02) != 0;
-    motor.isTemperatureNormal_ = (errorState & 0x04) != 0;
-    motor.isOverTemperatureProtect_ = (errorState & 0x08) != 0;
+    // motor.temperature = static_cast<int8_t>(response[1]);
+    // motor.voltage = *(uint16_t*)(response + 3);  // Assuming little-endian architecture
+    // motor.errorState = response[7];
+    // motor.isVoltageNormal_ = (motor.errorState & 0x01) != 0;
+    // motor.isUnderVoltageProtect_ = (errorState & 0x02) != 0;
+    // motor.isTemperatureNormal_ = (errorState & 0x04) != 0;
+    // motor.isOverTemperatureProtect_ = (errorState & 0x08) != 0;
+    setTemperature(static_cast<int8_t>(response[1]));
+    setVoltage(*(uint16_t*)(response + 3) );
+    setErrorState(response[7]);
 }
 
 // Function to parse the response of the "Clear motor error state" command
-void parseClearErrorStateResponse(const uint8_t* response,  BLDCMotor& motor) {
+void parseClearErrorStateResponse(const uint8_t* response) {
     // Check if the response has the correct command byte (0x9A)
-    motor.temperature = static_cast<int8_t>(response[1]);
-    motor.voltage = *(uint16_t*)(response + 3);  // Assuming little-endian architecture
-    motor.errorState = response[7];
+    // motor.temperature = static_cast<int8_t>(response[1]);
+    // motor.voltage = *(uint16_t*)(response + 3);  // Assuming little-endian architecture
+    // motor.errorState = response[7];
 
-    motor.isVoltageNormal_ = (motor.errorState & 0x01) != 0;
-    motor.isUnderVoltageProtect_ = (motor.errorState & 0x02) != 0;
-    motor.isTemperatureNormal_ = (motor.errorState & 0x04) != 0;
-    motor.isOverTemperatureProtect_ = (motor.errorState & 0x08) != 0;
+    // motor.isVoltageNormal_ = (motor.errorState & 0x01) != 0;
+    // motor.isUnderVoltageProtect_ = (motor.errorState & 0x02) != 0;
+    // motor.isTemperatureNormal_ = (motor.errorState & 0x04) != 0;
+    // motor.isOverTemperatureProtect_ = (motor.errorState & 0x08) != 0;
+    setTemperature(static_cast<int8_t>(response[1]));
+    setVoltage(*(uint16_t*)(response + 3) );
+    setErrorState(response[7]);
 
 }
 
 // Function to parse the response of the "Read motor state 2" command
-void parseReadMotorState2Response(const uint8_t* response, BLDCMotor motor) {
+void parseReadMotorState2Response(const uint8_t* response) {
     // Check if the response has the correct command byte (0x9C)
     if (response[0] == 0x9C) {
         // Parse the data fields
-        motor.temperature_ = static_cast<int8_t>(response[1]);
-        motor.torque_ = static_cast<int16_t>(response[2] | (response[3] << 8));
-        motor.speed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
-        motor.encoder_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
-
+        //motor.temperature_ = static_cast<int8_t>(response[1]);
+        
+        setTemperature(static_cast<int8_t>(response[1]));
+        //motor.torque_ = static_cast<int16_t>(response[2] | (response[3] << 8));
+        setTorque(static_cast<int16_t>(response[2] | (response[3] << 8)));
+        //speed_ = static_cast<int16_t>(response[4] | (response[5] << 8));
+        setSpeed(static_cast<int16_t>(response[4] | (response[5] << 8)));
+        //motor.encoder_ = static_cast<uint16_t>(response[6] | (response[7] << 8));
+        setEncoder(static_cast<uint16_t>(response[6] | (response[7] << 8)));
         // You can handle the data as needed here
     }
 }
 
 
 // Function to parse the response of the "Read motor state 3" command
-void parseReadMotorState3Response(const uint8_t* response, int8_t& temperature, int16_t& iA, int16_t& iB, int16_t& iC) {
+void parseReadMotorState3Response(const uint8_t* response) {
     // Check if the response has the correct command byte (0x9D)
     if (response[0] == 0x9D) {
         // Parse the data fields
-        temperature = static_cast<int8_t>(response[1]);
-        iA = static_cast<int16_t>(response[2] | (response[3] << 8));
-        iB = static_cast<int16_t>(response[4] | (response[5] << 8));
-        iC = static_cast<int16_t>(response[6] | (response[7] << 8));
-
+        
+        iA_ = static_cast<int16_t>(response[2] | (response[3] << 8));
+        iB_ = static_cast<int16_t>(response[4] | (response[5] << 8));
+        iC_ = static_cast<int16_t>(response[6] | (response[7] << 8));
+        this->temperature_ = static_cast<int8_t>(response[1]);
         // You can handle the data as needed here
     }
 }
 
 // Function to parse the response based on message type
-void parseResponse(const uint8_t* response, MessageType messageType, BLDCMotor& motor) {
-    switch (messageType) {
+//MessageType parseResponse(const uint8_t* response) { //, MessageType messageType, BLDCMotor& motor
+void parseResponse(const uint8_t* response) { //, MessageType messageType, BLDCMotor& motor
+    switch (response[0]) {
         case 0xA0:
-            return MessageType::GeneralStatus;
+            this->parseGeneralStatusResponse(response);
+            return;
+            //return MessageType::GeneralStatus;
         case 0xA1:
-            return MessageType::TorqueClosedLoopControl;
+            this->parseTorqueClosedLoopControlResponse(response);
+            return;
+            //            return MessageType::TorqueClosedLoopControl;            
         case 0xA2:
-            return MessageType::SpeedClosedLoopControl;
+            this->parseTorqueClosedLoopControlResponse(response);
+            return;
+            //            return MessageType::SpeedClosedLoopControl;
         case 0xA3:
-            return MessageType::MultiLoopAngleControl1;
+            this->parseMultiLoopAngleControl1Response(response);return;
+            //            return MessageType::MultiLoopAngleControl1;
         case 0xA4:
-            return MessageType::MultiLoopAngleControl2;
+            this->parseMultiLoopAngleControl2Response(response);
+            return;
+            //            return MessageType::MultiLoopAngleControl2;
         case 0xA5:
-            return MessageType::SingleLoopAngleControl1;
+            this->parseSingleLoopAngleControl1Response(response);
+            return;
+            //            return MessageType::SingleLoopAngleControl1;
         case 0xA6:
-            return MessageType::SingleLoopAngleControl2;
+            this->parseSingleLoopAngleControl2Response(response);
+            return;
+            //            return MessageType::SingleLoopAngleControl2;
         case 0xA7:
-            return MessageType::IncrementAngleControl1;
+            this->parseIncrementAngleControlResponse(response);
+            return;
+            //            return MessageType::IncrementAngleControl1;
         case 0xA8:
-            return MessageType::IncrementAngleControl2;
+            this->parseIncrementAngleControlResponse(response); // there should be two of these but im not sure what happened ??
+            return;
+            //            return MessageType::IncrementAngleControl2;
         case 0x30:
-            return MessageType::ReadPIDParameters;
+            this->parseReadPIDParametersResponse(response);
+            return;
+            //            return MessageType::ReadPIDParameters;
         case 0x31:
-            return MessageType::WritePIDParametersToRAM;
+            // not implemented
+            return;
+            //            return MessageType::WritePIDParametersToRAM;
         case 0x32:
-            return MessageType::WritePIDParametersToROM;
+            this->parseWritePIDParametersToROMResponse(response);
+            return;
+            //            return MessageType::WritePIDParametersToROM;
         case 0x33:
-            return MessageType::ReadAcceleration;
+            this->parseReadAccelerationResponse(response);
+            return;
+            //            return MessageType::ReadAcceleration;
         case 0x34:
-            return MessageType::WriteAccelerationToRAM; // New message type
+            this->parseWriteAccelerationToRAMResponse(response);
+            return;
+            //            return MessageType::WriteAccelerationToRAM; // New message type
         case 0x90:
-            return MessageType::ReadEncoder;
+            this->parseReadEncoderResponse(response);
+            //parseReadEncoderResponse(response);
+            return;
+            //            return MessageType::ReadEncoder;
         case 0x92:
-            return MessageType::ReadMultiAngleLoopCommand;
+            this->parseReadMultiAngleLoopResponse(response);
+            return;
+            //            return MessageType::ReadMultiAngleLoopCommand;
         case 0x94:
-            return MessageType::ReadSingleAngleLoopCommand;
+            this->parseReadMultiAngleLoopResponse(response);
+            return;
+            //            return MessageType::ReadSingleAngleLoopCommand;
         case 0x95:
-            return MessageType::ClearMotorAngleLoopCommand;
+            // not implemented
+            return;
+            //            return MessageType::ClearMotorAngleLoopCommand;
         case 0x9A:
-            return MessageType::ReadMotorState1AndErrorCommand;
+            this->parseReadMotorState1AndErrorStateResponse(response);
+            return;
+            //            return MessageType::ReadMotorState1AndErrorCommand;
         case 0x9C:
-            return MessageType::ReadMotorState2Command;
+            this->parseReadMotorState2Response(response);
+            return;
+            //            return MessageType::ReadMotorState2Command;
         case 0x9D:
-            return MessageType::ReadMotorState3Command;
+            this->parseReadMotorState3Response(response);
+            return;
+            //            return MessageType::ReadMotorState3Command;
                 
         // Add cases for other message types if needed
         default:
@@ -994,20 +1195,544 @@ void parseResponse(const uint8_t* response, MessageType messageType, BLDCMotor& 
 }
 
 
+    // Constructor to initialize the motor with a unique ID
+    BLDCMotor(uint8_t motorId) : motorId_(motorId) {}
 
+    // Function to create a Motor Off command for this motor
+    MotorOffCommand createMotorOffCommand() {
+        // Create a Motor Off command with the motor's ID
+        return MotorOffCommand(motorId_);
+    }
 
-int main() {
+        // Function to create a Motor On command for this motor
+    MotorOnCommand createMotorOnCommand() {
+        // Create a Motor On command with the motor's ID
+        return MotorOnCommand(motorId_);
+    }
 
+    // Function to create a Motor Stop command for this motor
+    MotorStopCommand createMotorStopCommand() {
+    // Create a Motor Stop command with the motor's ID
+    return MotorStopCommand(motorId_);
+    }
+    // Function to create an Open Loop Control command for this motor
+ 
+    OpenLoopControlCommand createOpenLoopControlCommand(int16_t powerControl) {
+    // Create an Open Loop Control command with the motor's ID and powerControl value
+    return OpenLoopControlCommand(powerControl);
+    }
+
+        // Function to create a Speed Closed Loop Control command for this motor //  shifted this function to close to the source
+    // SpeedClosedLoopControlCommand createSpeedClosedLoopControlCommand(int32_t speedControl) {
+    //     // Create a Speed Closed Loop Control command with the motor's ID and speed control value
+    //     return SpeedClosedLoopControlCommand(speedControl);
+    // }
     
-    // Create BLDCMotor instances with unique IDs
-    BLDCMotor leftMotor(1);  // ID for left motor is 1
-    BLDCMotor rightMotor(2); // ID for right motor is 2
+        // Function to create Multi Loop Angle Control Command 1 for this motor
+    MultiLoopAngleControl1Command createMultiLoopAngleControl1Command(int32_t angleControl, int16_t maxSpeed) {
+        // Create a Multi Loop Angle Control Command 1 with the motor's ID, angleControl, and maxSpeed
+        return MultiLoopAngleControl1Command(motorId_, angleControl, maxSpeed);
+    }
 
-    // Create Motor Off commands for left and right motors
-    //MotorOffCommand leftMotorOffCmd = leftMotor.createMotorOffCommand();
-    //MotorOffCommand rightMotorOffCmd = rightMotor.createMotorOffCommand();
+    // Function to create Multi Loop Angle Control Command 2 for this motor
+    MultiLoopAngleControl2Command createMultiLoopAngleControl2Command(int32_t angleControl, uint16_t maxSpeed) {
+        // Create a Multi Loop Angle Control Command 2 with the motor's ID, angleControl, and maxSpeed
+        return MultiLoopAngleControl2Command(motorId_, angleControl, maxSpeed);
+    }
+    
+    // Function to create Single Loop Angle Control Command 1 for this motor
+    SingleLoopAngleControl1Command createSingleLoopAngleControl1Command(uint8_t spinDirection, uint32_t angleControl) {
+        // Create a Single Loop Angle Control Command 1 with the motor's ID, spinDirection, and angleControl
+        return SingleLoopAngleControl1Command(motorId_, spinDirection, angleControl);
+    }
 
-    // Send motor commands over CAN bus (specific CAN communication code required)
+    // Function to create Single Loop Angle Control Command 2 for this motor
+    SingleLoopAngleControl2Command createSingleLoopAngleControl2Command(uint8_t spinDirection, uint32_t angleControl, uint16_t maxSpeed) {
+        // Create a Single Loop Angle Control Command 2 with the motor's ID, spinDirection, angleControl, and maxSpeed
+        return SingleLoopAngleControl2Command(motorId_, spinDirection, angleControl, maxSpeed);
+    }
 
+    ReadEncoderCommand readEncoderValuesCommand()
+    {
+
+        return ReadEncoderCommand();
+    }
+    
+  // Getters - these are for the current values not to communicate with the motor
+    MotorType getMotorType() const { return motorType_; }
+    uint8_t getMotorId() const { return motorId_; }
+    uint32_t getMotorCANId() { return 0x140 + motorId_ ; }
+    int8_t getTemperature() const { return temperature_; }
+    int16_t getMotorPower() const { return motorPower_; }
+    int16_t getMotorSpeed() const { return motorSpeed_; }
+    uint16_t getEncoderPosition() const { return encoderPosition_; }
+    int16_t getTorqueCurrent() const { return torqueCurrent_; }
+    double getAnglePidKp() const { return anglePidKp_; }
+    double getAnglePidKi() const { return anglePidKi_; }
+    double getSpeedPidKp() const { return speedPidKp_; }
+    double getSpeedPidKi() const { return speedPidKi_; }
+    double getIqPidKp() const { return iqPidKp_; }
+    double getIqPidKi() const { return iqPidKi_; }
+    int32_t getAcceleration() const { return acceleration_; }
+    uint16_t getEncoderRaw() const { return encoderRaw_; }
+    uint16_t getEncoderOffset() const { return encoderOffset_; }
+    int64_t getMotorAngle() const { return motorAngle_; }
+    uint32_t getCicleAngle() const { return cicleAngle_; }
+    uint16_t getVoltage() const { return voltage_; }
+    int8_t getErrorState() const { return errorState_; }
+    bool isVoltageNormal() const { return isVoltageNormal_; }
+    bool isUnderVoltageProtect() const { return isUnderVoltageProtect_; }
+    bool isTemperatureNormal() const { return isTemperatureNormal_; }
+    bool isOverTemperatureProtect() const { return isOverTemperatureProtect_; }
+    int16_t getTorque() const { return torque_; }
+    int16_t getSpeed() const { return speed_; }
+    uint16_t getEncoder() const { return encoder_; }
+
+    // Setters - these are for the current values not to communicate with the motor
+    void setMotorType(MotorType val) { motorType_ = val; }
+    void setMotorId(uint8_t val) { motorId_ = val; }
+    void setTemperature(int8_t val) { temperature_ = val; }
+    void setMotorPower(int16_t val) { motorPower_ = val; }
+    void setMotorSpeed(int16_t val) { motorSpeed_ = val; }
+    void setEncoderPosition(uint16_t val) { encoderPosition_ = val; }
+    void setTorqueCurrent(int16_t val) { torqueCurrent_ = val; }
+    void setAnglePidKp(double val) { anglePidKp_ = val; }
+    void setAnglePidKi(double val) { anglePidKi_ = val; }
+    void setSpeedPidKp(double val) { speedPidKp_ = val; }
+    void setSpeedPidKi(double val) { speedPidKi_ = val; }
+    void setIqPidKp(double val) { iqPidKp_ = val; }
+    void setIqPidKi(double val) { iqPidKi_ = val; }
+    void setAcceleration(int32_t val) { acceleration_ = val; }
+    void setEncoderRaw(uint16_t val) { encoderRaw_ = val; }
+    void setEncoderOffset(uint16_t val) { encoderOffset_ = val; }
+    void setMotorAngle(int64_t val) { motorAngle_ = val; }
+    void setCicleAngle(uint32_t val) { cicleAngle_ = val; }
+    void setVoltage(uint16_t val) { voltage_ = val; }
+    void setErrorState(int8_t val) { 
+        errorState_ = val; 
+        // Update boolean flags based on errorState_
+        isVoltageNormal_ = (errorState_ & 0x01) != 0;
+        isUnderVoltageProtect_ = (errorState_ & 0x02) != 0;
+        isTemperatureNormal_ = (errorState_ & 0x04) != 0;
+        isOverTemperatureProtect_ = (errorState_ & 0x08) != 0;
+    }
+    void setTorque(int16_t val) { torque_ = val; }
+    void setSpeed(int16_t val) { speed_ = val; }
+    void setEncoder(uint16_t val) { encoder_ = val; }
+
+
+
+};
+
+class DifferentialDriveNode : public rclcpp::Node {
+public:
+
+    double wheelbase = 0.415; // Example wheelbase in meters
+    double x = 0.0; // Current x position of the robot in meters
+    double y = 0.0; // Current y position of the robot in meters
+    double theta = 0.0; // Current orientation of the robot in radians
+    const double wheelDiameterMm = 183.0; // Wheel diameter in mm
+    const double pi = 3.14159265358979323846;
+    const double wheelCircumferenceMm = pi * wheelDiameterMm;
+    const double ticksPerRotation = 65535.0; // Number of encoder ticks per full rotation
+    const double distancePerTickMm = wheelCircumferenceMm / ticksPerRotation;
+    double leftSpeedSetpoint = 0; // commanded speed set point
+    double rightSpeedSetpoint = 0; // commanded speed set point
+    double leftSpeedError = 0;
+    double rightSpeedError = 0;
+    double errorScaleFactor = 0.5;
+    rclcpp::Time lastLoopTimestamp_;
+    bool isFirstLoop = true; // bool for setting the last loop time stamp to a default value.
+
+
+
+    DifferentialDriveNode() : Node("differential_drive_node") {
+
+        // Initialize CAN publisher
+
+
+        leftMotor = std::make_shared<BLDCMotor>(1);
+        rightMotor = std::make_shared<BLDCMotor>(2);
+        
+         if (!initCanSocket()) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to initialize CAN socket");
+            rclcpp::shutdown();
+        } else {
+            keep_reading_ = true;
+            can_read_thread_ = std::thread(&DifferentialDriveNode::readCanMessages, this);
+        }
+        
+        // Subscriber for CMD_VEL
+        subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
+             "cmd_vel", 10, std::bind(&DifferentialDriveNode::velocityCallback, this, std::placeholders::_1));
+         // Publisher for Odometry
+        odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
+
+        
+         // Timer to run loop at 100Hz
+        timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(10), std::bind(&DifferentialDriveNode::loop_callback, this));
+
+        
+    }
+
+    // New method for startup sequence
+    void startupProcedure() {
+
+    }
+     ~DifferentialDriveNode() {
+        keep_reading_ = false;
+        // leftMotor = std::make_shared<BLDCMotor>(1);
+        // rightMotor = std::make_shared<BLDCMotor>(2);
+        if (can_read_thread_.joinable()) {
+            can_read_thread_.join();
+        }
+        if (close(can_socket_) < 0) {
+            perror("Close");
+        }
+    }
+    // Other public methods
+private:
+    
+     std::shared_ptr<tf2_ros::TransformBroadcaster> tfBroadcaster_;
+    int can_socket_;
+    std::thread can_read_thread_;
+    std::atomic<bool> keep_reading_;    
+
+    std::shared_ptr<BLDCMotor> leftMotor;
+    std::shared_ptr<BLDCMotor> rightMotor;
+
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
+    
+    // rclcpp::Publisher<your_custom_msg::msg::MotorStats>::SharedPtr stats_publisher_;
+    rclcpp::TimerBase::SharedPtr timer_;
+
+    bool initCanSocket() {
+        struct sockaddr_can addr;
+        struct ifreq ifr;
+
+        if ((can_socket_ = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) {
+            perror("Socket");
+            return false;
+        }
+
+        strcpy(ifr.ifr_name, "can0");
+        ioctl(can_socket_, SIOCGIFINDEX, &ifr);
+
+        memset(&addr, 0, sizeof(addr));
+        addr.can_family = AF_CAN;
+        addr.can_ifindex = ifr.ifr_ifindex;
+
+        if (bind(can_socket_, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
+            perror("Bind");
+            return false;
+        }
+
+        return true;
+    }
+
+    void readCanMessages() {
+        struct can_frame frame;
+        while (keep_reading_) {
+            int nbytes = read(can_socket_, &frame, sizeof(struct can_frame));
+            if (nbytes < 0) {
+                perror("CAN read");
+                continue;
+            }
+            if (nbytes == sizeof(struct can_frame)) {
+                // Process the received frame
+                onCanMessageReceived(frame);
+            }
+        }
+    }
+
+void onCanMessageReceived(const struct can_frame &frame) {
+    // Log the CAN ID and DLC (Data Length Code)
+    //RCLCPP_INFO(this->get_logger(), "Received CAN message with ID: 0x%X, DLC: %d", frame.can_id, frame.can_dlc);
+    bool printDebug = false;
+
+    if(printDebug){
+    // Prepare strings for hex and int values
+    std::stringstream hexStream;
+    std::stringstream intStream;
+
+    hexStream << "Hex: ";
+    intStream << "Int: ";
+
+    // Iterate through the data bytes of the frame
+    for (int i = 0; i < frame.can_dlc; ++i) {
+        hexStream << std::hex << std::uppercase << std::setw(2) << std::setfill('0') << static_cast<int>(frame.data[i]) << " ";
+        intStream << std::dec << std::setw(3) << std::setfill(' ') << static_cast<int>(frame.data[i]) << " ";
+    }
+
+    // Log the hex and int values
+    RCLCPP_INFO(this->get_logger(), "%s", hexStream.str().c_str());
+    RCLCPP_INFO(this->get_logger(), "%s", intStream.str().c_str());
+    }
+
+    if(frame.can_id == 0x141)// right motor, come back and fix this when I figure out whats causing the fault
+    {
+         leftMotor->parseResponse(frame.data);
+    }
+    if(frame.can_id == 0x142) // right motor, come back and fix this when I figure out whats causing the fault
+    {
+        rightMotor->parseResponse(frame.data); 
+    }
+    
+}
+
+void calculateSpeedError() {
+    if(isFirstLoop)
+    {
+        leftSpeedError = 0;
+        rightSpeedError = 0;
+        return;
+    }
+    // Get the elapsed time since the last loop iteration
+    const rclcpp::Time now = this->get_clock()->now();
+    const auto elapsedTime = now - lastLoopTimestamp_;
+    const double dt = elapsedTime.seconds(); // Use elapsedTime directly
+
+
+    //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
+    // Calculate the commanded distance each wheel should have moved in the elapsed time
+    double leftCommandedDistance = leftSpeedSetpoint * dt;
+    double rightCommandedDistance = rightSpeedSetpoint * dt;
+
+    // Calculate the distance moved by each wheel based on their encoder ticks
+    int32_t leftdelta = leftMotor->calculateDelta();
+    int32_t rightdelta = -1 * rightMotor->calculateDelta(); // flip this one to be the opposite
+    double leftDistanceMovedMm = leftdelta * distancePerTickMm;
+    double rightDistanceMovedMm = rightdelta * distancePerTickMm;
+
+    // Convert mm to meters for calculation
+    double leftDistanceMoved = leftDistanceMovedMm / 1000.0;
+    double rightDistanceMoved = rightDistanceMovedMm / 1000.0;
+
+    // Calculate the percentage error for each motor for distance moved
+    double leftDistanceError = (leftDistanceMoved - leftCommandedDistance) / leftCommandedDistance * 100;
+    double rightDistanceError = (rightDistanceMoved - rightCommandedDistance) / rightCommandedDistance * 100;
+
+    //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
+
+    // Convert the distance error to a velocity error percentage
+    leftSpeedError = leftDistanceError / dt;
+    rightSpeedError = rightDistanceError / dt;
+
+    RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
+    RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
+
+
+    // Calculate the percentage error for each motor for distance moved
+    double leftDistanceErrorPercent = (leftDistanceMoved - leftCommandedDistance) / leftSpeedSetpoint * 100;
+    double rightDistanceErrorPercent = (rightDistanceMoved - rightCommandedDistance) / rightSpeedSetpoint * 100;
+
+    // Optionally, you can also scale the error by a factor before publishing it as feedback
+    leftSpeedError = leftDistanceErrorPercent;// * errorScaleFactor;
+    rightSpeedError = rightDistanceErrorPercent;// * errorScaleFactor;
+    RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
+    RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
+
+    lastLoopTimestamp_ = now;
+}
+
+   void velocityCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
+    // Calculate RPM from setpoint observation
+    double rotationsPerSecondObservation = 1 / 28.6; // One rotation per 28.6 seconds
+    double rpmObservation = rotationsPerSecondObservation * 60; // Convert to RPM
+
+    // Since 1200 setpoint gives rpmObservation, find conversion factor
+    double setpointPerRPM = 1200 / rpmObservation;
+
+    // Assuming msg->linear.x is in m/s and converting it to RPM
+    // First, calculate the wheel circumference
+    constexpr double wheelDiameterMm = 183.0; // Wheel diameter in mm
+    constexpr double wheelCircumferenceM = (wheelDiameterMm / 1000.0) * M_PI; // Convert mm to meters and calculate circumference
+
+    // Convert m/s to RPM
+    double linearSpeedRPM = (msg->linear.x / wheelCircumferenceM) * 60;
+
+    // Adjust for robot's differential drive
+    double leftSpeedRPM = linearSpeedRPM - msg->angular.z;
+    double rightSpeedRPM = -(linearSpeedRPM + msg->angular.z);
+
+    // Convert RPM to setpoint
+    leftSpeedSetpoint = leftSpeedRPM * setpointPerRPM;
+    rightSpeedSetpoint = rightSpeedRPM * setpointPerRPM;
+
+    // leftMotor->setSpeed(leftSpeedSetpoint);
+    // rightMotor->setSpeed(rightSpeedSetpoint);
+
+    RCLCPP_INFO(this->get_logger(), "Set left motor speed setpoint: %f", leftSpeedSetpoint);
+    RCLCPP_INFO(this->get_logger(), "Set right motor speed setpoint: %f", rightSpeedSetpoint);
+}
+
+     void loop_callback() {
+            if (isFirstLoop) {
+           lastLoopTimestamp_ = this->get_clock()->now();
+        isFirstLoop = false;
+        }
+        
+        
+        uint8_t leftSerializedData[8]; // Ensure the buffer is appropriately sized
+        uint8_t rightSerializedData[8];
+        
+        // Assuming readEncoderValuesCommand() returns a ReadEncoderCommand instance
+        auto leftEncoderCommand = leftMotor->readEncoderValuesCommand();
+        auto rightEncoderCommand = rightMotor->readEncoderValuesCommand();
+
+        // Populate local buffers with serialized data
+        leftEncoderCommand.serialize(leftSerializedData);
+        rightEncoderCommand.serialize(rightSerializedData);
+
+        // Send the serialized data over CAN // to do come back and fix this, so no segmentation fault on get ID 
+        sendCanMessage(0x141, leftSerializedData, sizeof(leftSerializedData));
+        sendCanMessage(0x142, rightSerializedData, sizeof(rightSerializedData));
+
+        calculateSpeedError();
+        double errorLeftCorrectedSpeedSetPoint = 0;
+        double errorRightCorrectedSpeedSetPoint = 0;
+        
+        // Disabling this for the moment since it adds no value (other thank taking off when it shouldnt)
+        if(leftSpeedError != NAN)
+        {
+            
+            errorLeftCorrectedSpeedSetPoint = leftSpeedSetpoint ;//* std::abs(leftSpeedError);
+        }
+        else
+        {
+            errorLeftCorrectedSpeedSetPoint = leftSpeedSetpoint;
+        }
+
+        
+        if(leftSpeedError != NAN)
+        {
+            errorRightCorrectedSpeedSetPoint = rightSpeedSetpoint ;//* std::abs(rightSpeedError);
+        }
+        else
+        {
+            errorRightCorrectedSpeedSetPoint = rightSpeedSetpoint;
+        }
+        //leftSpeedSetpoint * leftSpeedError;
+        //rightSpeedSetpoint;
+
+        // RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f, commanded speed %f ", leftSpeedError, leftSpeedSetpoint);
+        // RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f, commanded speed %f ", rightSpeedError, rightSpeedSetpoint);
+
+         
+
+        auto leftspeedCommand =  leftMotor->createSpeedClosedLoopControlCommand(leftMotor->getMotorId(),errorLeftCorrectedSpeedSetPoint );
+        uint8_t leftspeedmessageData[8];
+        leftspeedCommand.serialize(leftspeedmessageData);        
+        sendCanMessage(leftMotor->getMotorCANId(), leftspeedmessageData, sizeof(leftspeedmessageData));
+
+        auto rightspeedCommand =  rightMotor->createSpeedClosedLoopControlCommand(rightMotor->getMotorId(),errorRightCorrectedSpeedSetPoint);
+        uint8_t rightspeedmessageData[8];
+        rightspeedCommand.serialize(rightspeedmessageData);        
+        sendCanMessage(rightMotor->getMotorCANId(), rightspeedmessageData, sizeof(rightspeedmessageData));
+
+        // Calculate distance based on delta
+        int32_t leftdelta = leftMotor->calculateDelta();
+        int32_t rightdelta = -1 * rightMotor->calculateDelta(); // flip this one to be the opposite
+        bool encoderDebug = true;
+        
+        double leftDistanceMovedMm = leftdelta * distancePerTickMm;
+        double rightDistanceMovedMm = rightdelta * distancePerTickMm;
+       
+
+        if (!leftMotor && !rightMotor){
+             std::cerr << "Motors are uninitialized or nullptr!" << std::endl;             
+        }
+        else{        
+
+        }
+         // Convert mm to meters for calculation
+        double leftDistanceMoved = leftDistanceMovedMm / 1000.0;
+        double rightDistanceMoved = rightDistanceMovedMm / 1000.0;
+
+        // Calculate the change in orientation
+        double dTheta = (rightDistanceMoved - leftDistanceMoved) / wheelbase;
+        
+        if(encoderDebug){
+            if(leftdelta != 0 || rightdelta != 0){
+                RCLCPP_INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+            }
+            }
+        
+        // Calculate the average distance moved
+        //double dDistance = (leftDistanceMoved + rightDistanceMoved) / 2.0;
+        double dDistance = (rightDistanceMoved + leftDistanceMoved) / 2.0;
+
+        // Improved pose calculation
+        if (dTheta != 0) {
+            double radius = dDistance / dTheta;
+            double centerX = x - radius * sin(theta);
+            double centerY = y + radius * cos(theta);
+            x = centerX + radius * sin(theta + dTheta);
+            y = centerY - radius * cos(theta + dTheta);
+        } else {
+            // If dTheta is zero, the robot is moving straight
+            x += dDistance * cos(theta);
+            y += dDistance * sin(theta);
+        }
+        theta += dTheta;
+
+        // Normalize theta to the range [-pi, pi)
+        theta = atan2(sin(theta), cos(theta));
+        
+        // TODO: Calculate and publish odometry data
+
+        geometry_msgs::msg::TransformStamped transformStamped;
+
+        transformStamped.header.stamp = this->get_clock()->now();
+        transformStamped.header.frame_id = "odom";
+        transformStamped.child_frame_id = "base_link";
+
+        transformStamped.transform.translation.x = x;
+        transformStamped.transform.translation.y = y;
+        transformStamped.transform.translation.z = 0.0;
+
+        tf2::Quaternion q;
+        q.setRPY(0, 0, theta); // Roll, Pitch, Yaw
+        transformStamped.transform.rotation.x = q.x();
+        transformStamped.transform.rotation.y = q.y();
+        transformStamped.transform.rotation.z = q.z();
+        transformStamped.transform.rotation.w = q.w();
+
+        if (!tfBroadcaster_) {
+            tfBroadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(shared_from_this());
+        }
+        //tfBroadcaster_.sendTransform(transformStamped);
+        tfBroadcaster_->sendTransform(transformStamped);
+        //.sendTransform(transformStamped);
+        // TODO: Publish other motor statistics
+
+    }
+    
+    void sendCanMessage(uint32_t can_id, uint8_t* data, size_t size) {
+    struct can_frame frame;
+    memset(&frame, 0, sizeof(frame)); // Clear the frame structure
+    frame.can_id = can_id;
+    frame.can_dlc = size;
+    memcpy(frame.data, data, size);
+
+    if (write(can_socket_, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
+        perror("Write CAN message failed");
+        // Handle error
+    }
+}
+
+
+};
+
+int main(int argc, char **argv) {   
+    
+    
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<DifferentialDriveNode>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
     return 0;
 }
+

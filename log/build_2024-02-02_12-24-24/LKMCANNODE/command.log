@@ -1,0 +1,4 @@
+Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luke/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/home/luke/LKMCANNODE/install/LKMCANNODE
+Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luke/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/home/luke/LKMCANNODE/install/LKMCANNODE
+Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

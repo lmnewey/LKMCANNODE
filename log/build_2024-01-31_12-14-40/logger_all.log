@@ -1,0 +1,105 @@
+[1.615s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.616s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f83dac8e440>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f83dac8c070>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f83dac8c070>>)
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.717s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/c/temp/LKMCANNODE'
+[1.721s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.723s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.724s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.724s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.725s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.725s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.725s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.774s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'LKMCANNODE'
+[1.774s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.776s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.892s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[1.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.031s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_args' from command line to 'None'
+[2.032s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_target' from command line to 'None'
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_clean_cache' from command line to 'False'
+[2.033s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_clean_first' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'cmake_force_configure' from command line to 'False'
+[2.034s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'ament_cmake_args' from command line to 'None'
+[2.035s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'catkin_cmake_args' from command line to 'None'
+[2.035s] Level 5:colcon.colcon_core.verb:set package 'LKMCANNODE' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.036s] DEBUG:colcon.colcon_core.verb:Building package 'LKMCANNODE' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE', 'merge_install': False, 'path': '/mnt/c/temp/LKMCANNODE', 'symlink_install': False, 'test_result_base': None}
+[2.047s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.060s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.062s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/c/temp/LKMCANNODE' with build type 'ament_cmake'
+[2.062s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/c/temp/LKMCANNODE'
+[2.088s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.089s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+[55.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/c/temp/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/mnt/c/temp/LKMCANNODE/install/LKMCANNODE
+[55.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+[55.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/temp/LKMCANNODE/build/LKMCANNODE -- -j24 -l24
+[55.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+[57.092s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(LKMCANNODE)
+[57.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/c/temp/LKMCANNODE/build/LKMCANNODE' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/temp/LKMCANNODE/build/LKMCANNODE
+[57.114s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE' for CMake module files
+[57.239s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE' for CMake config files
+[57.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('LKMCANNODE', 'cmake_prefix_path')
+[57.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.ps1'
+[57.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.dsv'
+[57.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.sh'
+[57.425s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/bin'
+[57.427s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/lib/pkgconfig/LKMCANNODE.pc'
+[57.430s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/lib/python3.10/site-packages'
+[57.432s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/bin'
+[57.446s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.ps1'
+[57.464s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.dsv'
+[57.485s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.sh'
+[57.506s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.bash'
+[57.525s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.zsh'
+[57.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/colcon-core/packages/LKMCANNODE)
+[57.612s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(LKMCANNODE)
+[57.623s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE' for CMake module files
+[57.742s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE' for CMake config files
+[57.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('LKMCANNODE', 'cmake_prefix_path')
+[57.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.ps1'
+[57.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.dsv'
+[57.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/hook/cmake_prefix_path.sh'
+[57.918s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/bin'
+[57.921s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/lib/pkgconfig/LKMCANNODE.pc'
+[57.923s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/lib/python3.10/site-packages'
+[57.926s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/bin'
+[57.941s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.ps1'
+[57.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.dsv'
+[57.978s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.sh'
+[57.996s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.bash'
+[58.016s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/LKMCANNODE/package.zsh'
+[58.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/c/temp/LKMCANNODE/install/LKMCANNODE/share/colcon-core/packages/LKMCANNODE)
+[58.049s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[58.050s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[58.050s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[58.051s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[58.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[58.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[58.185s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[58.185s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[58.186s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[58.187s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[58.201s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/temp/LKMCANNODE/install/local_setup.ps1'
+[58.210s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/temp/LKMCANNODE/install/_local_setup_util_ps1.py'
+[58.220s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/temp/LKMCANNODE/install/setup.ps1'
+[58.238s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/temp/LKMCANNODE/install/local_setup.sh'
+[58.247s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/temp/LKMCANNODE/install/_local_setup_util_sh.py'
+[58.256s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/temp/LKMCANNODE/install/setup.sh'
+[58.275s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/temp/LKMCANNODE/install/local_setup.bash'
+[58.283s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/temp/LKMCANNODE/install/setup.bash'
+[58.305s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/temp/LKMCANNODE/install/local_setup.zsh'
+[58.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/temp/LKMCANNODE/install/setup.zsh'

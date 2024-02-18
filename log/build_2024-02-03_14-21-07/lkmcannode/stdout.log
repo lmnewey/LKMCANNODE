@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lkmcannode[0m
+[100%] Built target lkmcannode
+-- Install configuration: ""
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode
+-- Set runtime path of "/home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode" to ""
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/package_run_dependencies/lkmcannode
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/parent_prefix_path/lkmcannode
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.sh
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.dsv
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.sh
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.dsv
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.bash
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.sh
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.zsh
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.dsv
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.dsv
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/packages/lkmcannode
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig.cmake
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig-version.cmake
+-- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.xml

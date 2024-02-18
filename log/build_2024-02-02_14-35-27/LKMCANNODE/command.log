@@ -1,0 +1,2 @@
+Invoking command in '/home/luke/LKMCANNODE/build/LKMCANNODE': /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4
+Invoked command in '/home/luke/LKMCANNODE/build/LKMCANNODE' returned '2': /usr/bin/cmake --build /home/luke/LKMCANNODE/build/LKMCANNODE -- -j4 -l4

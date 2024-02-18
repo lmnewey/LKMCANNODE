@@ -1,0 +1,45 @@
+[0.179s] Invoking command in '/home/luke/lkmcannode/build/lkmcannode': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/lkmcannode/build/lkmcannode -- -j4 -l4
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.339s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[6.573s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[6.573s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:901:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.573s]   901 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+[6.573s]       |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.574s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.574s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:970:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.574s]   970 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.574s]       |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.575s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:970:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.575s]   970 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.575s]       |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.575s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[6.575s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:983:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.576s]   983 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+[6.576s]       |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.576s] [01m[K/home/luke/lkmcannode/src/lkmcannode.cpp:983:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.576s]   983 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+[6.576s]       |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[20.259s] [100%] [32m[1mLinking CXX executable lkmcannode[0m
+[22.037s] [100%] Built target lkmcannode
+[22.079s] Invoked command in '/home/luke/lkmcannode/build/lkmcannode' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luke/lkmcannode/build/lkmcannode -- -j4 -l4
+[22.156s] Invoking command in '/home/luke/lkmcannode/build/lkmcannode': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/lkmcannode/build/lkmcannode
+[22.173s] -- Install configuration: ""
+[22.173s] -- Installing: /home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode
+[22.188s] -- Set runtime path of "/home/luke/lkmcannode/install/lkmcannode/lib/lkmcannode/lkmcannode" to ""
+[22.188s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/package_run_dependencies/lkmcannode
+[22.189s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/parent_prefix_path/lkmcannode
+[22.189s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.sh
+[22.189s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.dsv
+[22.189s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.sh
+[22.190s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/environment/path.dsv
+[22.190s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.bash
+[22.190s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.sh
+[22.190s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.zsh
+[22.190s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/local_setup.dsv
+[22.191s] -- Installing: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.dsv
+[22.191s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/ament_index/resource_index/packages/lkmcannode
+[22.191s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.191s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig.cmake
+[22.191s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig-version.cmake
+[22.191s] -- Up-to-date: /home/luke/lkmcannode/install/lkmcannode/share/lkmcannode/package.xml
+[22.194s] Invoked command in '/home/luke/lkmcannode/build/lkmcannode' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luke/lkmcannode/build/lkmcannode
