@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.001109] (lkmcannode) JobQueued: {'identifier': 'lkmcannode', 'dependencies': OrderedDict()}
+[0.001186] (lkmcannode) JobStarted: {'identifier': 'lkmcannode'}
+[0.065108] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'cmake'}
+[0.066302] (lkmcannode) Command: {'cmd': ['/usr/bin/cmake', '/home/luke/ros2_ws/src/LKMCANNODE', '-DCMAKE_INSTALL_PREFIX=/home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode'], 'cwd': '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode', 'env': OrderedDict([('USER', 'luke'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{51855cb2-8cce-5362-8f54-464b92b32386}'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('NAME', 'Luke-Laptop'), ('WSL_INTEROP', '/run/WSL/18873_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.2.2/:/mnt/c/Users/lmnew/.cargo/bin:/mnt/c/Users/lmnew/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lmnew/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Espressif/tools/xtensa-esp32-elf-clang/esp-14.0.0-20220415-x86_64-pc-windows-msvc/bin/:/mnt/c/Users/lmnew/AppData/Local/Programs/jaguar:/mnt/c/Users/lmnew/.dotnet/tools:/snap/bin'), ('WT_SESSION', '3022a6c7-3098-4329-8e76-80593f35d190'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.084979] (lkmcannode) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099618] (-) TimerEvent: {}
+[0.199999] (-) TimerEvent: {}
+[0.300438] (-) TimerEvent: {}
+[0.303887] (lkmcannode) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400602] (-) TimerEvent: {}
+[0.501012] (-) TimerEvent: {}
+[0.601443] (-) TimerEvent: {}
+[0.683397] (lkmcannode) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.686915] (lkmcannode) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.695542] (lkmcannode) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.701607] (-) TimerEvent: {}
+[0.710498] (lkmcannode) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.732968] (lkmcannode) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801753] (-) TimerEvent: {}
+[0.821910] (lkmcannode) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.823559] (lkmcannode) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901943] (-) TimerEvent: {}
+[1.002405] (-) TimerEvent: {}
+[1.102827] (-) TimerEvent: {}
+[1.203267] (-) TimerEvent: {}
+[1.303695] (-) TimerEvent: {}
+[1.404089] (-) TimerEvent: {}
+[1.504478] (-) TimerEvent: {}
+[1.604925] (-) TimerEvent: {}
+[1.705323] (-) TimerEvent: {}
+[1.805729] (-) TimerEvent: {}
+[1.906166] (-) TimerEvent: {}
+[2.006569] (-) TimerEvent: {}
+[2.106923] (-) TimerEvent: {}
+[2.207338] (-) TimerEvent: {}
+[2.307743] (-) TimerEvent: {}
+[2.408188] (-) TimerEvent: {}
+[2.508586] (-) TimerEvent: {}
+[2.609021] (-) TimerEvent: {}
+[2.709433] (-) TimerEvent: {}
+[2.809836] (-) TimerEvent: {}
+[2.910320] (-) TimerEvent: {}
+[3.010770] (-) TimerEvent: {}
+[3.111358] (-) TimerEvent: {}
+[3.212157] (-) TimerEvent: {}
+[3.312585] (-) TimerEvent: {}
+[3.412987] (-) TimerEvent: {}
+[3.513408] (-) TimerEvent: {}
+[3.613776] (-) TimerEvent: {}
+[3.714166] (-) TimerEvent: {}
+[3.814568] (-) TimerEvent: {}
+[3.914990] (-) TimerEvent: {}
+[4.015417] (-) TimerEvent: {}
+[4.115795] (-) TimerEvent: {}
+[4.216277] (-) TimerEvent: {}
+[4.316690] (-) TimerEvent: {}
+[4.417120] (-) TimerEvent: {}
+[4.517589] (-) TimerEvent: {}
+[4.618001] (-) TimerEvent: {}
+[4.718425] (-) TimerEvent: {}
+[4.818785] (-) TimerEvent: {}
+[4.919200] (-) TimerEvent: {}
+[5.019633] (-) TimerEvent: {}
+[5.120037] (-) TimerEvent: {}
+[5.220444] (-) TimerEvent: {}
+[5.320848] (-) TimerEvent: {}
+[5.421255] (-) TimerEvent: {}
+[5.521648] (-) TimerEvent: {}
+[5.622016] (-) TimerEvent: {}
+[5.722430] (-) TimerEvent: {}
+[5.822864] (-) TimerEvent: {}
+[5.923313] (-) TimerEvent: {}
+[6.023730] (-) TimerEvent: {}
+[6.124140] (-) TimerEvent: {}
+[6.224675] (-) TimerEvent: {}
+[6.325078] (-) TimerEvent: {}
+[6.425542] (-) TimerEvent: {}
+[6.525951] (-) TimerEvent: {}
+[6.626325] (-) TimerEvent: {}
+[6.726749] (-) TimerEvent: {}
+[6.827089] (-) TimerEvent: {}
+[6.927459] (-) TimerEvent: {}
+[7.027862] (-) TimerEvent: {}
+[7.128207] (-) TimerEvent: {}
+[7.228977] (-) TimerEvent: {}
+[7.329404] (-) TimerEvent: {}
+[7.429869] (-) TimerEvent: {}
+[7.530251] (-) TimerEvent: {}
+[7.630673] (-) TimerEvent: {}
+[7.731082] (-) TimerEvent: {}
+[7.831592] (-) TimerEvent: {}
+[7.931994] (-) TimerEvent: {}
+[8.032393] (-) TimerEvent: {}
+[8.132936] (-) TimerEvent: {}
+[8.233377] (-) TimerEvent: {}
+[8.333810] (-) TimerEvent: {}
+[8.434246] (-) TimerEvent: {}
+[8.534670] (-) TimerEvent: {}
+[8.635105] (-) TimerEvent: {}
+[8.735551] (-) TimerEvent: {}
+[8.836009] (-) TimerEvent: {}
+[8.936353] (-) TimerEvent: {}
+[9.036784] (-) TimerEvent: {}
+[9.137190] (-) TimerEvent: {}
+[9.237604] (-) TimerEvent: {}
+[9.337991] (-) TimerEvent: {}
+[9.438400] (-) TimerEvent: {}
+[9.538761] (-) TimerEvent: {}
+[9.639142] (-) TimerEvent: {}
+[9.739583] (-) TimerEvent: {}
+[9.840009] (-) TimerEvent: {}
+[9.940431] (-) TimerEvent: {}
+[10.040845] (-) TimerEvent: {}
+[10.141254] (-) TimerEvent: {}
+[10.241677] (-) TimerEvent: {}
+[10.342112] (-) TimerEvent: {}
+[10.442533] (-) TimerEvent: {}
+[10.542978] (-) TimerEvent: {}
+[10.643380] (-) TimerEvent: {}
+[10.743813] (-) TimerEvent: {}
+[10.844197] (-) TimerEvent: {}
+[10.944721] (-) TimerEvent: {}
+[11.045276] (-) TimerEvent: {}
+[11.146053] (-) TimerEvent: {}
+[11.246470] (-) TimerEvent: {}
+[11.346893] (-) TimerEvent: {}
+[11.447298] (-) TimerEvent: {}
+[11.547711] (-) TimerEvent: {}
+[11.648135] (-) TimerEvent: {}
+[11.748537] (-) TimerEvent: {}
+[11.848967] (-) TimerEvent: {}
+[11.949390] (-) TimerEvent: {}
+[12.049825] (-) TimerEvent: {}
+[12.150224] (-) TimerEvent: {}
+[12.250614] (-) TimerEvent: {}
+[12.351001] (-) TimerEvent: {}
+[12.451453] (-) TimerEvent: {}
+[12.551864] (-) TimerEvent: {}
+[12.652277] (-) TimerEvent: {}
+[12.752660] (-) TimerEvent: {}
+[12.853052] (-) TimerEvent: {}
+[12.953481] (-) TimerEvent: {}
+[13.053900] (-) TimerEvent: {}
+[13.154474] (-) TimerEvent: {}
+[13.254894] (-) TimerEvent: {}
+[13.355541] (-) TimerEvent: {}
+[13.455961] (-) TimerEvent: {}
+[13.556319] (-) TimerEvent: {}
+[13.656728] (-) TimerEvent: {}
+[13.757130] (-) TimerEvent: {}
+[13.857541] (-) TimerEvent: {}
+[13.956020] (lkmcannode) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.957636] (-) TimerEvent: {}
+[14.057962] (-) TimerEvent: {}
+[14.158408] (-) TimerEvent: {}
+[14.258860] (-) TimerEvent: {}
+[14.359227] (-) TimerEvent: {}
+[14.459739] (-) TimerEvent: {}
+[14.560117] (-) TimerEvent: {}
+[14.660488] (-) TimerEvent: {}
+[14.760851] (-) TimerEvent: {}
+[14.861250] (-) TimerEvent: {}
+[14.961648] (-) TimerEvent: {}
+[15.062019] (-) TimerEvent: {}
+[15.162802] (-) TimerEvent: {}
+[15.263169] (-) TimerEvent: {}
+[15.363544] (-) TimerEvent: {}
+[15.463966] (-) TimerEvent: {}
+[15.564453] (-) TimerEvent: {}
+[15.664915] (-) TimerEvent: {}
+[15.765404] (-) TimerEvent: {}
+[15.865798] (-) TimerEvent: {}
+[15.966148] (-) TimerEvent: {}
+[16.066506] (-) TimerEvent: {}
+[16.166910] (-) TimerEvent: {}
+[16.267284] (-) TimerEvent: {}
+[16.367679] (-) TimerEvent: {}
+[16.468093] (-) TimerEvent: {}
+[16.568515] (-) TimerEvent: {}
+[16.668925] (-) TimerEvent: {}
+[16.769310] (-) TimerEvent: {}
+[16.869749] (-) TimerEvent: {}
+[16.913061] (lkmcannode) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[16.913445] (lkmcannode) StderrLine: {'line': b'  By not providing "Findcan_msgs.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[16.913597] (lkmcannode) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "can_msgs",\n'}
+[16.913677] (lkmcannode) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[16.913749] (lkmcannode) StderrLine: {'line': b'\n'}
+[16.913823] (lkmcannode) StderrLine: {'line': b'  Could not find a package configuration file provided by "can_msgs" with any\n'}
+[16.913955] (lkmcannode) StderrLine: {'line': b'  of the following names:\n'}
+[16.914149] (lkmcannode) StderrLine: {'line': b'\n'}
+[16.914231] (lkmcannode) StderrLine: {'line': b'    can_msgsConfig.cmake\n'}
+[16.914303] (lkmcannode) StderrLine: {'line': b'    can_msgs-config.cmake\n'}
+[16.914374] (lkmcannode) StderrLine: {'line': b'\n'}
+[16.914444] (lkmcannode) StderrLine: {'line': b'  Add the installation prefix of "can_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[16.914514] (lkmcannode) StderrLine: {'line': b'  "can_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[16.914584] (lkmcannode) StderrLine: {'line': b'  "can_msgs" provides a separate development package or SDK, be sure it has\n'}
+[16.914653] (lkmcannode) StderrLine: {'line': b'  been installed.\n'}
+[16.914802] (lkmcannode) StderrLine: {'line': b'\n'}
+[16.914882] (lkmcannode) StderrLine: {'line': b'\x1b[0m\n'}
+[16.914955] (lkmcannode) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[16.915037] (lkmcannode) StdoutLine: {'line': b'See also "/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode/CMakeFiles/CMakeOutput.log".\n'}
+[16.922301] (lkmcannode) CommandEnded: {'returncode': 1}
+[16.969985] (-) TimerEvent: {}
+[16.981009] (lkmcannode) JobEnded: {'identifier': 'lkmcannode', 'rc': 1}
+[16.992034] (-) EventReactorShutdown: {}

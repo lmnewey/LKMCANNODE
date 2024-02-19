@@ -1,0 +1,11 @@
+[0.071s] Invoking command in '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode': CMAKE_PREFIX_PATH=/opt/ros/humble WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode -- -j12 -l12
+[0.124s] [35m[1mConsolidate compiler generated dependencies of target lkmcannode[0m
+[0.151s] [ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[0.570s] [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:26:10:[m[K [01;31m[Kfatal error: [m[KbldcMotor.hpp: No such file or directory
+[0.571s]    26 | #include [01;31m[K"bldcMotor.hpp"[m[K
+[0.571s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.571s] compilation terminated.
+[0.575s] gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+[0.575s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+[0.575s] gmake: *** [Makefile:146: all] Error 2
+[0.578s] Invoked command in '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode -- -j12 -l12

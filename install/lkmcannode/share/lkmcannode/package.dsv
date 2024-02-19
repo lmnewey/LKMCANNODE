@@ -1,0 +1,8 @@
+source;share/lkmcannode/hook/cmake_prefix_path.ps1
+source;share/lkmcannode/hook/cmake_prefix_path.dsv
+source;share/lkmcannode/hook/cmake_prefix_path.sh
+source;share/lkmcannode/local_setup.bash
+source;share/lkmcannode/local_setup.dsv
+source;share/lkmcannode/local_setup.ps1
+source;share/lkmcannode/local_setup.sh
+source;share/lkmcannode/local_setup.zsh

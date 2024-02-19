@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lkmcannode[0m
+[100%] Built target lkmcannode
+-- Install configuration: ""
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/lib/lkmcannode/lkmcannode
+-- Set runtime path of "/home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/lib/lkmcannode/lkmcannode" to ""
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/package_run_dependencies/lkmcannode
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/parent_prefix_path/lkmcannode
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.sh
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/path.sh
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/path.dsv
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.bash
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.sh
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.zsh
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.dsv
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/package.dsv
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/packages/lkmcannode
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig.cmake
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig-version.cmake
+-- Up-to-date: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/package.xml

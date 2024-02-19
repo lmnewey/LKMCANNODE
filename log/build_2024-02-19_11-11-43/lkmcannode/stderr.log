@@ -1,0 +1,66 @@
+In file included from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:26[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:928:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  928 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+      |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:997:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  997 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:997:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  997 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:1010:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1010 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/include/bldcMotor.hpp:1010:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1010 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 7 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  361 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f"[m[K, leftMotor->getEncoderPosition(), leftdelta, [32m[KrightMotor->getEncoderPosition()[m[K, rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                              [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                                                                            [32m[K|[m[K
+      |                                                                                                                                                                                                            [32m[Kint[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:94:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  361 |                 RCLCPP_INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: [01;36m[K%f[m[K, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                             [01;36m[K~^[m[K
+      |                                                                                              [01;36m[K|[m[K
+      |                                                                                              [01;36m[Kdouble[m[K
+      |                                                                                             [32m[K%d[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 9 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  361 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f"[m[K, leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,[32m[KleftDistanceMoved[m[K, rightDistanceMoved, dTheta);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                                                           [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                                                                                           [32m[K|[m[K
+      |                                                                                                                                                                                                                           [32m[Kdouble[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:110:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  361 |                 RCLCPP_INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: [01;36m[K%i[m[K, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                                             [01;36m[K~^[m[K
+      |                                                                                                              [01;36m[K|[m[K
+      |                                                                                                              [01;36m[Kint[m[K
+      |                                                                                                             [32m[K%f[m[K

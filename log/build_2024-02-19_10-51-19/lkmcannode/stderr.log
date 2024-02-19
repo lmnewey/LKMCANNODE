@@ -1,0 +1,109 @@
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:104:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBLDCMotor[m[K’ was not declared in this scope
+  104 |     std::shared_ptr<[01;31m[KBLDCMotor[m[K> leftMotor;
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:104:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  104 |     std::shared_ptr<BLDCMotor[01;31m[K>[m[K leftMotor;
+      |                              [01;31m[K^[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:105:21:[m[K [01;31m[Kerror: [m[K‘[01m[KBLDCMotor[m[K’ was not declared in this scope
+  105 |     std::shared_ptr<[01;31m[KBLDCMotor[m[K> rightMotor;
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:105:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  105 |     std::shared_ptr<BLDCMotor[01;31m[K>[m[K rightMotor;
+      |                              [01;31m[K^[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In constructor ‘[01m[KDifferentialDriveNode::DifferentialDriveNode()[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:38:[m[K [01;31m[Kerror: [m[K‘[01m[KBLDCMotor[m[K’ was not declared in this scope
+   56 |         leftMotor = std::make_shared<[01;31m[KBLDCMotor[m[K>(1);
+      |                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(int)[m[K’
+   56 |         leftMotor = [01;31m[Kstd::make_shared<BLDCMotor>(1)[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:48:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |         leftMotor = [01;31m[Kstd::make_shared<BLDCMotor>(1)[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:57:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<BLDCMotor>(int)[m[K’
+   57 |         rightMotor = [01;31m[Kstd::make_shared<BLDCMotor>(2)[m[K;
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::onCanMessageReceived(const can_frame&)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:178:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  178 |          leftMotor[01;31m[K->[m[KparseResponse(frame.data);
+      |                   [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:182:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  182 |         rightMotor[01;31m[K->[m[KparseResponse(frame.data);
+      |                   [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::calculateSpeedError()[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:206:34:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  206 |     int32_t leftdelta = leftMotor[01;31m[K->[m[KcalculateDelta();
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:207:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  207 |     int32_t rightdelta = -1 * rightMotor[01;31m[K->[m[KcalculateDelta(); // flip this one to be the opposite
+      |                                         [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:284:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  284 |         auto leftEncoderCommand = leftMotor[01;31m[K->[m[KreadEncoderValuesCommand();
+      |                                            [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:285:46:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  285 |         auto rightEncoderCommand = rightMotor[01;31m[K->[m[KreadEncoderValuesCommand();
+      |                                              [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:327:43:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  327 |         auto leftspeedCommand =  leftMotor[01;31m[K->[m[KcreateSpeedClosedLoopControlCommand(leftMotor->getMotorId(),errorLeftCorrectedSpeedSetPoint );
+      |                                           [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:327:90:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  327 |      auto leftspeedCommand =  leftMotor->createSpeedClosedLoopControlCommand(leftMotor[01;31m[K->[m[KgetMotorId(),errorLeftCorrectedSpeedSetPoint );
+      |                                                                                       [01;31m[K^~[m[K
+
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:330:33:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  330 |         sendCanMessage(leftMotor[01;31m[K->[m[KgetMotorCANId(), leftspeedmessageData, sizeof(leftspeedmessageData));
+      |                                 [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:332:45:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  332 |         auto rightspeedCommand =  rightMotor[01;31m[K->[m[KcreateSpeedClosedLoopControlCommand(rightMotor->getMotorId(),errorRightCorrectedSpeedSetPoint);
+      |                                             [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:332:93:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  332 |   auto rightspeedCommand =  rightMotor->createSpeedClosedLoopControlCommand(rightMotor[01;31m[K->[m[KgetMotorId(),errorRightCorrectedSpeedSetPoint);
+      |                                                                                       [01;31m[K^~[m[K
+
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:335:34:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  335 |         sendCanMessage(rightMotor[01;31m[K->[m[KgetMotorCANId(), rightspeedmessageData, sizeof(rightspeedmessageData));
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:338:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  338 |         int32_t leftdelta = leftMotor[01;31m[K->[m[KcalculateDelta();
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:339:45:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  339 |         int32_t rightdelta = -1 * rightMotor[01;31m[K->[m[KcalculateDelta(); // flip this one to be the opposite
+      |                                             [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:139:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  361 | ot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor[01;31m[K->[m[KgetEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                       [01;31m[K^~[m[K
+
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:184:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  361 | A: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor[01;31m[K->[m[KgetEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                       [01;31m[K^~[m[K
+
+gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

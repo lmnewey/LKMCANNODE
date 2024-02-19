@@ -1,0 +1,114 @@
+-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found can_msgs: 2.0.0 (/opt/ros/humble/share/can_msgs/cmake)
+-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode
+[ 50%] [32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o[0m
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWritePIDParametersToROMResponse(const uint8_t*)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:928:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  928 | void parseWritePIDParametersToROMResponse([01;35m[Kconst uint8_t* response[m[K){ //} uint16_t& anglePidKp, uint16_t& anglePidKi, uint16_t& speedPidKp, uint16_t& speedPidKi, uint16_t& iqPidKp, uint16_t& iqPidKi) {
+      |                                           [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteEncoderValueToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:997:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  997 | void parseWriteEncoderValueToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:997:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  997 | void parseWriteEncoderValueToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                   [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid BLDCMotor::parseWriteCurrentPositionToROMResponse(const uint8_t*, uint16_t&)[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1010:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1010 | void parseWriteCurrentPositionToROMResponse([01;35m[Kconst uint8_t* response[m[K, uint16_t& encoderOffset) {
+      |                                             [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1010:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KencoderOffset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1010 | void parseWriteCurrentPositionToROMResponse(const uint8_t* response, [01;35m[Kuint16_t& encoderOffset[m[K) {
+      |                                                                      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:[m[K In member function ‘[01m[Kvoid DifferentialDriveNode::loop_callback()[m[K’:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1659:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 7 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+ 1659 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f"[m[K, leftMotor->getEncoderPosition(), leftdelta, [32m[KrightMotor->getEncoderPosition()[m[K, rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                              [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                                                                            [32m[K|[m[K
+      |                                                                                                                                                                                                            [32m[Kint[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1659:94:[m[K [01;36m[Knote: [m[Kformat string is defined here
+ 1659 |          RCLCPP_INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: [01;36m[K%f[m[K, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                      [01;36m[K~^[m[K
+      |                                                                                       [01;36m[K|[m[K
+      |                                                                                       [01;36m[Kdouble[m[K
+      |                                                                                      [32m[K%d[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2[m[K:
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1659:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 9 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+ 1659 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f"[m[K, leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,[32m[KleftDistanceMoved[m[K, rightDistanceMoved, dTheta);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                                                           [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                                                                                           [32m[K|[m[K
+      |                                                                                                                                                                                                                           [32m[Kdouble[m[K
+[01m[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:1659:110:[m[K [01;36m[Knote: [m[Kformat string is defined here
+ 1659 | INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: [01;36m[K%i[m[K, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
+      |                                                                                      [01;36m[K~^[m[K
+      |                                                                                       [01;36m[K|[m[K
+      |                                                                                       [01;36m[Kint[m[K
+      |                                                                                      [32m[K%f[m[K
+[100%] [32m[1mLinking CXX executable lkmcannode[0m
+[100%] Built target lkmcannode
+-- Install configuration: ""
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/lib/lkmcannode/lkmcannode
+-- Set runtime path of "/home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/lib/lkmcannode/lkmcannode" to ""
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/package_run_dependencies/lkmcannode
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/parent_prefix_path/lkmcannode
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.sh
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/ament_prefix_path.dsv
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/path.sh
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/environment/path.dsv
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.bash
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.sh
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.zsh
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/local_setup.dsv
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/package.dsv
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/ament_index/resource_index/packages/lkmcannode
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig.cmake
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/cmake/lkmcannodeConfig-version.cmake
+-- Installing: /home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode/share/lkmcannode/package.xml

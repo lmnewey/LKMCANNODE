@@ -1,0 +1,192 @@
+[0.000000] (-) TimerEvent: {}
+[0.001270] (lkmcannode) JobQueued: {'identifier': 'lkmcannode', 'dependencies': OrderedDict()}
+[0.001376] (lkmcannode) JobStarted: {'identifier': 'lkmcannode'}
+[0.064018] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'cmake'}
+[0.065185] (lkmcannode) JobProgress: {'identifier': 'lkmcannode', 'progress': 'build'}
+[0.066173] (lkmcannode) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode', '--', '-j12', '-l12'], 'cwd': '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode', 'env': OrderedDict([('USER', 'luke'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{51855cb2-8cce-5362-8f54-464b92b32386}'), ('HOME', '/home/luke'), ('OLDPWD', '/home/luke/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luke'), ('NAME', 'Luke-Laptop'), ('WSL_INTEROP', '/run/WSL/18873_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.2.2/:/mnt/c/Users/lmnew/.cargo/bin:/mnt/c/Users/lmnew/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lmnew/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Espressif/tools/xtensa-esp32-elf-clang/esp-14.0.0-20220415-x86_64-pc-windows-msvc/bin/:/mnt/c/Users/lmnew/AppData/Local/Programs/jaguar:/mnt/c/Users/lmnew/.dotnet/tools:/snap/bin'), ('WT_SESSION', '3022a6c7-3098-4329-8e76-80593f35d190'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099601] (-) TimerEvent: {}
+[0.120701] (lkmcannode) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lkmcannode\x1b[0m\n'}
+[0.147779] (lkmcannode) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o\x1b[0m\n'}
+[0.199778] (-) TimerEvent: {}
+[0.300395] (-) TimerEvent: {}
+[0.400840] (-) TimerEvent: {}
+[0.501252] (-) TimerEvent: {}
+[0.601675] (-) TimerEvent: {}
+[0.702137] (-) TimerEvent: {}
+[0.802600] (-) TimerEvent: {}
+[0.903012] (-) TimerEvent: {}
+[1.003488] (-) TimerEvent: {}
+[1.103988] (-) TimerEvent: {}
+[1.204460] (-) TimerEvent: {}
+[1.305009] (-) TimerEvent: {}
+[1.405605] (-) TimerEvent: {}
+[1.506119] (-) TimerEvent: {}
+[1.606656] (-) TimerEvent: {}
+[1.707180] (-) TimerEvent: {}
+[1.807730] (-) TimerEvent: {}
+[1.908242] (-) TimerEvent: {}
+[2.008734] (-) TimerEvent: {}
+[2.109398] (-) TimerEvent: {}
+[2.209876] (-) TimerEvent: {}
+[2.310381] (-) TimerEvent: {}
+[2.411376] (-) TimerEvent: {}
+[2.511911] (-) TimerEvent: {}
+[2.612421] (-) TimerEvent: {}
+[2.713042] (-) TimerEvent: {}
+[2.813657] (-) TimerEvent: {}
+[2.914227] (-) TimerEvent: {}
+[3.014748] (-) TimerEvent: {}
+[3.115197] (-) TimerEvent: {}
+[3.215666] (-) TimerEvent: {}
+[3.316208] (-) TimerEvent: {}
+[3.416742] (-) TimerEvent: {}
+[3.517173] (-) TimerEvent: {}
+[3.617625] (-) TimerEvent: {}
+[3.669543] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:104:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBLDCMotor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.670009] (lkmcannode) StderrLine: {'line': b'  104 |     std::shared_ptr<\x1b[01;31m\x1b[KBLDCMotor\x1b[m\x1b[K> leftMotor;\n'}
+[3.670104] (lkmcannode) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.670186] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:104:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.670265] (lkmcannode) StderrLine: {'line': b'  104 |     std::shared_ptr<BLDCMotor\x1b[01;31m\x1b[K>\x1b[m\x1b[K leftMotor;\n'}
+[3.670340] (lkmcannode) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.676932] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:105:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBLDCMotor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.677103] (lkmcannode) StderrLine: {'line': b'  105 |     std::shared_ptr<\x1b[01;31m\x1b[KBLDCMotor\x1b[m\x1b[K> rightMotor;\n'}
+[3.677189] (lkmcannode) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.677697] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:105:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.677782] (lkmcannode) StderrLine: {'line': b'  105 |     std::shared_ptr<BLDCMotor\x1b[01;31m\x1b[K>\x1b[m\x1b[K rightMotor;\n'}
+[3.677886] (lkmcannode) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.717859] (-) TimerEvent: {}
+[3.742556] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveNode::DifferentialDriveNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.742976] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBLDCMotor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.743141] (lkmcannode) StderrLine: {'line': b'   56 |         leftMotor = std::make_shared<\x1b[01;31m\x1b[KBLDCMotor\x1b[m\x1b[K>(1);\n'}
+[3.743486] (lkmcannode) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.743779] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.744489] (lkmcannode) StderrLine: {'line': b'   56 |         leftMotor = \x1b[01;31m\x1b[Kstd::make_shared<BLDCMotor>(1)\x1b[m\x1b[K;\n'}
+[3.744824] (lkmcannode) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.744933] (lkmcannode) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.745015] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.745140] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[3.745222] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.745382] (lkmcannode) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.745482] (lkmcannode) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.745560] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.745637] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:56:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.745712] (lkmcannode) StderrLine: {'line': b'   56 |         leftMotor = \x1b[01;31m\x1b[Kstd::make_shared<BLDCMotor>(1)\x1b[m\x1b[K;\n'}
+[3.745786] (lkmcannode) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.745891] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:57:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<BLDCMotor>(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.745990] (lkmcannode) StderrLine: {'line': b'   57 |         rightMotor = \x1b[01;31m\x1b[Kstd::make_shared<BLDCMotor>(2)\x1b[m\x1b[K;\n'}
+[3.746080] (lkmcannode) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.746161] (lkmcannode) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.746236] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.746310] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[3.746392] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.746473] (lkmcannode) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.746619] (lkmcannode) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.746802] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.774967] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DifferentialDriveNode::onCanMessageReceived(const can_frame&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.775231] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:178:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.775329] (lkmcannode) StderrLine: {'line': b'  178 |          leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KparseResponse(frame.data);\n'}
+[3.775412] (lkmcannode) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.775489] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:182:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.775575] (lkmcannode) StderrLine: {'line': b'  182 |         rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KparseResponse(frame.data);\n'}
+[3.775693] (lkmcannode) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.776012] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DifferentialDriveNode::calculateSpeedError()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.776153] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:206:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.776243] (lkmcannode) StderrLine: {'line': b'  206 |     int32_t leftdelta = leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcalculateDelta();\n'}
+[3.776324] (lkmcannode) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.776401] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:207:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.776479] (lkmcannode) StderrLine: {'line': b'  207 |     int32_t rightdelta = -1 * rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcalculateDelta(); // flip this one to be the opposite\n'}
+[3.776557] (lkmcannode) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.782162] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DifferentialDriveNode::loop_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.782587] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:284:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.782752] (lkmcannode) StderrLine: {'line': b'  284 |         auto leftEncoderCommand = leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KreadEncoderValuesCommand();\n'}
+[3.782838] (lkmcannode) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.782916] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:285:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.782994] (lkmcannode) StderrLine: {'line': b'  285 |         auto rightEncoderCommand = rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KreadEncoderValuesCommand();\n'}
+[3.783070] (lkmcannode) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.783144] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:327:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.783224] (lkmcannode) StderrLine: {'line': b'  327 |         auto leftspeedCommand =  leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcreateSpeedClosedLoopControlCommand(leftMotor->getMotorId(),errorLeftCorrectedSpeedSetPoint );\n'}
+[3.783310] (lkmcannode) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.783385] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:327:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.783461] (lkmcannode) StderrLine: {'line': b'  327 |      auto leftspeedCommand =  leftMotor->createSpeedClosedLoopControlCommand(leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetMotorId(),errorLeftCorrectedSpeedSetPoint );\n'}
+[3.783553] (lkmcannode) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.783627] (lkmcannode) StderrLine: {'line': b'\n'}
+[3.783790] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:330:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.783926] (lkmcannode) StderrLine: {'line': b'  330 |         sendCanMessage(leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetMotorCANId(), leftspeedmessageData, sizeof(leftspeedmessageData));\n'}
+[3.784218] (lkmcannode) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.784354] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:332:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.784437] (lkmcannode) StderrLine: {'line': b'  332 |         auto rightspeedCommand =  rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcreateSpeedClosedLoopControlCommand(rightMotor->getMotorId(),errorRightCorrectedSpeedSetPoint);\n'}
+[3.784515] (lkmcannode) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.784592] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:332:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.784668] (lkmcannode) StderrLine: {'line': b'  332 |   auto rightspeedCommand =  rightMotor->createSpeedClosedLoopControlCommand(rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetMotorId(),errorRightCorrectedSpeedSetPoint);\n'}
+[3.784752] (lkmcannode) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.784829] (lkmcannode) StderrLine: {'line': b'\n'}
+[3.784904] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:335:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.784989] (lkmcannode) StderrLine: {'line': b'  335 |         sendCanMessage(rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetMotorCANId(), rightspeedmessageData, sizeof(rightspeedmessageData));\n'}
+[3.785065] (lkmcannode) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.785139] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:338:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.785216] (lkmcannode) StderrLine: {'line': b'  338 |         int32_t leftdelta = leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcalculateDelta();\n'}
+[3.785300] (lkmcannode) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.785374] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:339:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.785449] (lkmcannode) StderrLine: {'line': b'  339 |         int32_t rightdelta = -1 * rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KcalculateDelta(); // flip this one to be the opposite\n'}
+[3.785524] (lkmcannode) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.785597] (lkmcannode) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.785669] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.785751] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.785825] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.785900] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.785974] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.786047] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.786121] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.786220] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.786321] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.786400] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.786476] (lkmcannode) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:2\x1b[m\x1b[K:\n'}
+[3.786553] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:139:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.786631] (lkmcannode) StderrLine: {'line': b'  361 | ot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);\n'}
+[3.786710] (lkmcannode) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.786786] (lkmcannode) StderrLine: {'line': b'\n'}
+[3.786860] (lkmcannode) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luke/ros2_ws/src/LKMCANNODE/src/lkmcannode.cpp:361:184:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.786944] (lkmcannode) StderrLine: {'line': b'  361 | A: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor\x1b[01;31m\x1b[K->\x1b[m\x1b[KgetEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);\n'}
+[3.787023] (lkmcannode) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.787098] (lkmcannode) StderrLine: {'line': b'\n'}
+[3.818010] (-) TimerEvent: {}
+[3.918523] (-) TimerEvent: {}
+[4.018966] (-) TimerEvent: {}
+[4.119433] (-) TimerEvent: {}
+[4.219867] (-) TimerEvent: {}
+[4.320331] (-) TimerEvent: {}
+[4.420769] (-) TimerEvent: {}
+[4.521215] (-) TimerEvent: {}
+[4.621707] (-) TimerEvent: {}
+[4.722164] (-) TimerEvent: {}
+[4.822593] (-) TimerEvent: {}
+[4.923046] (-) TimerEvent: {}
+[5.023512] (-) TimerEvent: {}
+[5.123975] (-) TimerEvent: {}
+[5.224416] (-) TimerEvent: {}
+[5.324891] (-) TimerEvent: {}
+[5.425290] (-) TimerEvent: {}
+[5.525755] (-) TimerEvent: {}
+[5.626266] (-) TimerEvent: {}
+[5.726727] (-) TimerEvent: {}
+[5.827236] (-) TimerEvent: {}
+[5.928070] (-) TimerEvent: {}
+[6.028504] (-) TimerEvent: {}
+[6.128978] (-) TimerEvent: {}
+[6.229397] (-) TimerEvent: {}
+[6.329852] (-) TimerEvent: {}
+[6.430287] (-) TimerEvent: {}
+[6.530703] (-) TimerEvent: {}
+[6.631143] (-) TimerEvent: {}
+[6.731652] (-) TimerEvent: {}
+[6.832095] (-) TimerEvent: {}
+[6.932600] (-) TimerEvent: {}
+[7.033082] (-) TimerEvent: {}
+[7.133537] (-) TimerEvent: {}
+[7.192956] (lkmcannode) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lkmcannode.dir/build.make:76: CMakeFiles/lkmcannode.dir/src/lkmcannode.cpp.o] Error 1\n'}
+[7.193570] (lkmcannode) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lkmcannode.dir/all] Error 2\n'}
+[7.193932] (lkmcannode) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.196997] (lkmcannode) CommandEnded: {'returncode': 2}
+[7.233905] (-) TimerEvent: {}
+[7.314535] (lkmcannode) JobEnded: {'identifier': 'lkmcannode', 'rc': 2}
+[7.326060] (-) EventReactorShutdown: {}

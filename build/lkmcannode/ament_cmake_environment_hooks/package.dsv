@@ -1,0 +1,4 @@
+source;share/lkmcannode/local_setup.bash
+source;share/lkmcannode/local_setup.dsv
+source;share/lkmcannode/local_setup.sh
+source;share/lkmcannode/local_setup.zsh

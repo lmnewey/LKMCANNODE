@@ -1,0 +1,31 @@
+[0.070s] Invoking command in '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luke/ros2_ws/src/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode
+[0.084s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.303s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.682s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.686s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.694s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.709s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.732s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.821s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.822s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[13.955s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[16.912s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[16.912s]   By not providing "Findcan_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[16.912s]   asked CMake to find a package configuration file provided by "can_msgs",
+[16.913s]   but CMake did not find one.
+[16.913s] 
+[16.913s]   Could not find a package configuration file provided by "can_msgs" with any
+[16.913s]   of the following names:
+[16.913s] 
+[16.913s]     can_msgsConfig.cmake
+[16.913s]     can_msgs-config.cmake
+[16.913s] 
+[16.913s]   Add the installation prefix of "can_msgs" to CMAKE_PREFIX_PATH or set
+[16.913s]   "can_msgs_DIR" to a directory containing one of the above files.  If
+[16.913s]   "can_msgs" provides a separate development package or SDK, be sure it has
+[16.914s]   been installed.
+[16.914s] 
+[16.914s] [0m
+[16.914s] -- Configuring incomplete, errors occurred!
+[16.914s] See also "/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode/CMakeFiles/CMakeOutput.log".
+[16.921s] Invoked command in '/home/luke/ros2_ws/src/LKMCANNODE/build/lkmcannode' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luke/ros2_ws/src/LKMCANNODE -DCMAKE_INSTALL_PREFIX=/home/luke/ros2_ws/src/LKMCANNODE/install/lkmcannode
