@@ -43,6 +43,12 @@ public:
     double leftSpeedError = 0;
     double rightSpeedError = 0;
     double errorScaleFactor = 0.5;
+
+    uint32_t leftLastTicks = 0;
+    uint32_t rightLastTicks = 0;
+
+    bool leftinitialTicksSet = false;
+    bool rightinitialTicksSet = false;
     rclcpp::Time lastLoopTimestamp_;
     bool isFirstLoop = true; // bool for setting the last loop time stamp to a default value.
 
@@ -51,10 +57,8 @@ public:
     DifferentialDriveNode() : Node("differential_drive_node") {
 
         // Initialize CAN publisher
-
-
-        leftMotor = std::make_shared<BLDCMotor>(1);
-        rightMotor = std::make_shared<BLDCMotor>(2);
+        leftMotor = std::make_shared<BLDCMotor>(2);
+        rightMotor = std::make_shared<BLDCMotor>(1);
         
          if (!initCanSocket()) {
             RCLCPP_ERROR(this->get_logger(), "Failed to initialize CAN socket");
@@ -96,7 +100,7 @@ public:
     // Other public methods
 private:
     
-     std::shared_ptr<tf2_ros::TransformBroadcaster> tfBroadcaster_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> tfBroadcaster_;
     int can_socket_;
     std::thread can_read_thread_;
     std::atomic<bool> keep_reading_;    
@@ -109,7 +113,68 @@ private:
     
     // rclcpp::Publisher<your_custom_msg::msg::MotorStats>::SharedPtr stats_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
+    
+    uint32_t calculateDelta(int motornum) {
+    uint32_t currentTicks = 0; // Assuming this is the current reading
+    uint32_t LastTicks = 0;
+    if(motornum == 1)
+    {
+        LastTicks = leftLastTicks;
+        currentTicks = leftMotor->getEncoderRaw();
+        //RCLCPP_INFO(this->get_logger(), "Current Left Ticks  %i, last Ticks %i ", currentTicks, LastTicks);
+    }
+    else
+    {
+         currentTicks = rightMotor->getEncoderRaw();
+        LastTicks = rightLastTicks;
+        //RCLCPP_INFO(this->get_logger(), "Current right Ticks  %i, last Ticks %i ", currentTicks, LastTicks);
+    }
 
+        if (!leftinitialTicksSet) {
+            
+            leftLastTicks = currentTicks;
+            leftinitialTicksSet = true;
+            return 0; // No delta on the first read
+        }
+        if (!rightinitialTicksSet) {
+            
+            rightLastTicks = currentTicks;
+            rightinitialTicksSet = true;
+            return 0; // No delta on the first read
+        }    
+        int32_t rawDelta = currentTicks - LastTicks;
+        
+        //RCLCPP_INFO(this->get_logger(), "Current Motor %i Delta Ticks %i, Current Ticks  %i, last Ticks %i ", motornum ,rawDelta, currentTicks, LastTicks);
+        //RCLCPP_INFO(this->get_logger(), "Current Motor %i Delta Ticks as Cast %i,", motornum ,rawDelta);
+        // Adjust for overflow/underflow
+        // Adjust for overflow/underflow
+        if (rawDelta > 32767) {
+            // Overflow: If the current reading is significantly greater than the last reading,
+            // it indicates the counter has wrapped past 65535 going forwards.
+            rawDelta -= 65536; // Correct by subtracting the full range of a uint16_t
+        } else if (rawDelta < -32768) {
+            // Underflow: If the current reading is significantly less than the last reading,
+            // it indicates the counter has wrapped past 0 going backwards.
+            rawDelta += 65536; // Correct by adding the full range of a uint16_t
+        }
+
+        // Update LastTicks for the next calculation
+        LastTicks = currentTicks;
+
+        if(motornum == 1)
+        {
+            leftLastTicks = LastTicks; 
+            //RCLCPP_INFO(this->get_logger(), "Left Delta Ticks  %i, ", rawDelta);
+        }
+        else
+        {
+            rightLastTicks = LastTicks ;
+            //RCLCPP_INFO(this->get_logger(), "Right Delta Ticks  %i, ", rawDelta);
+        }   
+        // Cast the adjusted delta back to uint16_t to return
+        return rawDelta;
+    
+}
     bool initCanSocket() {
         struct sockaddr_can addr;
         struct ifreq ifr;
@@ -173,11 +238,11 @@ void onCanMessageReceived(const struct can_frame &frame) {
     RCLCPP_INFO(this->get_logger(), "%s", intStream.str().c_str());
     }
 
-    if(frame.can_id == 0x141)// right motor, come back and fix this when I figure out whats causing the fault
+    if(frame.can_id == leftMotor->getMotorCANId())// Left motor, come back and fix this when I figure out whats causing the fault
     {
          leftMotor->parseResponse(frame.data);
     }
-    if(frame.can_id == 0x142) // right motor, come back and fix this when I figure out whats causing the fault
+    if(frame.can_id == rightMotor->getMotorCANId()) // right motor, come back and fix this when I figure out whats causing the fault
     {
         rightMotor->parseResponse(frame.data); 
     }
@@ -185,58 +250,59 @@ void onCanMessageReceived(const struct can_frame &frame) {
 }
 
 void calculateSpeedError() {
-    if(isFirstLoop)
-    {
-        leftSpeedError = 0;
-        rightSpeedError = 0;
-        return;
-    }
-    // Get the elapsed time since the last loop iteration
-    const rclcpp::Time now = this->get_clock()->now();
-    const auto elapsedTime = now - lastLoopTimestamp_;
-    const double dt = elapsedTime.seconds(); // Use elapsedTime directly
+    // if(isFirstLoop)
+    // {
+    //     leftSpeedError = 0;
+    //     rightSpeedError = 0;
+    //     return;
+    // }
+    // // Get the elapsed time since the last loop iteration
+    // const rclcpp::Time now = this->get_clock()->now();
+    // const auto elapsedTime = now - lastLoopTimestamp_;
+    // const double dt = elapsedTime.seconds(); // Use elapsedTime directly
 
 
-    //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
-    // Calculate the commanded distance each wheel should have moved in the elapsed time
-    double leftCommandedDistance = leftSpeedSetpoint * dt;
-    double rightCommandedDistance = rightSpeedSetpoint * dt;
+    // //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
+    // // Calculate the commanded distance each wheel should have moved in the elapsed time
+    // double leftCommandedDistance = leftSpeedSetpoint * dt;
+    // double rightCommandedDistance = rightSpeedSetpoint * dt;
 
-    // Calculate the distance moved by each wheel based on their encoder ticks
-    int32_t leftdelta = leftMotor->calculateDelta();
-    int32_t rightdelta = -1 * rightMotor->calculateDelta(); // flip this one to be the opposite
-    double leftDistanceMovedMm = leftdelta * distancePerTickMm;
-    double rightDistanceMovedMm = rightdelta * distancePerTickMm;
+    // // Calculate the distance moved by each wheel based on their encoder ticks
+    // int32_t leftdelta = calculateDelta(1); //leftMotor->calculateDelta();
+    // int32_t rightdelta = -1 *  calculateDelta(2);//rightMotor->calculateDelta(); // flip this one to be the opposite
 
-    // Convert mm to meters for calculation
-    double leftDistanceMoved = leftDistanceMovedMm / 1000.0;
-    double rightDistanceMoved = rightDistanceMovedMm / 1000.0;
+    // double leftDistanceMovedMm = leftdelta * distancePerTickMm;
+    // double rightDistanceMovedMm = rightdelta * distancePerTickMm;
 
-    // Calculate the percentage error for each motor for distance moved
-    double leftDistanceError = (leftDistanceMoved - leftCommandedDistance) / leftCommandedDistance * 100;
-    double rightDistanceError = (rightDistanceMoved - rightCommandedDistance) / rightCommandedDistance * 100;
+    // // Convert mm to meters for calculation
+    // double leftDistanceMoved = leftDistanceMovedMm / 1000.0;
+    // double rightDistanceMoved = rightDistanceMovedMm / 1000.0;
 
-    //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
+    // // Calculate the percentage error for each motor for distance moved
+    // double leftDistanceError = (leftDistanceMoved - leftCommandedDistance) / leftCommandedDistance * 100;
+    // double rightDistanceError = (rightDistanceMoved - rightCommandedDistance) / rightCommandedDistance * 100;
 
-    // Convert the distance error to a velocity error percentage
-    leftSpeedError = leftDistanceError / dt;
-    rightSpeedError = rightDistanceError / dt;
+    // //RCLCPP_INFO(this->get_logger(), "Current Delta %f", dt);
 
-    RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
-    RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
+    // // Convert the distance error to a velocity error percentage
+    // leftSpeedError = leftDistanceError / dt;
+    // rightSpeedError = rightDistanceError / dt;
+
+    // //RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
+    // //RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
 
 
-    // Calculate the percentage error for each motor for distance moved
-    double leftDistanceErrorPercent = (leftDistanceMoved - leftCommandedDistance) / leftSpeedSetpoint * 100;
-    double rightDistanceErrorPercent = (rightDistanceMoved - rightCommandedDistance) / rightSpeedSetpoint * 100;
+    // // Calculate the percentage error for each motor for distance moved
+    // double leftDistanceErrorPercent = (leftDistanceMoved - leftCommandedDistance) / leftSpeedSetpoint * 100;
+    // double rightDistanceErrorPercent = (rightDistanceMoved - rightCommandedDistance) / rightSpeedSetpoint * 100;
 
-    // Optionally, you can also scale the error by a factor before publishing it as feedback
-    leftSpeedError = leftDistanceErrorPercent;// * errorScaleFactor;
-    rightSpeedError = rightDistanceErrorPercent;// * errorScaleFactor;
-    RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
-    RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
+    // // Optionally, you can also scale the error by a factor before publishing it as feedback
+    // leftSpeedError = leftDistanceErrorPercent;// * errorScaleFactor;
+    // rightSpeedError = rightDistanceErrorPercent;// * errorScaleFactor;
+    // //RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f", leftSpeedError);
+    // //RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f", rightSpeedError);
 
-    lastLoopTimestamp_ = now;
+    // lastLoopTimestamp_ = now;
 }
 
    void velocityCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
@@ -249,7 +315,7 @@ void calculateSpeedError() {
 
     // Assuming msg->linear.x is in m/s and converting it to RPM
     // First, calculate the wheel circumference
-    constexpr double wheelDiameterMm = 183.0; // Wheel diameter in mm
+    constexpr double wheelDiameterMm = 170.0; // Wheel diameter in mm
     constexpr double wheelCircumferenceM = (wheelDiameterMm / 1000.0) * M_PI; // Convert mm to meters and calculate circumference
 
     // Convert m/s to RPM
@@ -270,10 +336,10 @@ void calculateSpeedError() {
     RCLCPP_INFO(this->get_logger(), "Set right motor speed setpoint: %f", rightSpeedSetpoint);
 }
 
-     void loop_callback() {
+void loop_callback() {
             if (isFirstLoop) {
-           lastLoopTimestamp_ = this->get_clock()->now();
-        isFirstLoop = false;
+             lastLoopTimestamp_ = this->get_clock()->now();
+             isFirstLoop = false;
         }
         
         
@@ -289,8 +355,8 @@ void calculateSpeedError() {
         rightEncoderCommand.serialize(rightSerializedData);
 
         // Send the serialized data over CAN // to do come back and fix this, so no segmentation fault on get ID 
-        sendCanMessage(0x141, leftSerializedData, sizeof(leftSerializedData));
-        sendCanMessage(0x142, rightSerializedData, sizeof(rightSerializedData));
+        sendCanMessage(leftMotor->getMotorCANId(), leftSerializedData, sizeof(leftSerializedData));
+        sendCanMessage(rightMotor->getMotorCANId(), rightSerializedData, sizeof(rightSerializedData));
 
         calculateSpeedError();
         double errorLeftCorrectedSpeedSetPoint = 0;
@@ -316,13 +382,7 @@ void calculateSpeedError() {
         {
             errorRightCorrectedSpeedSetPoint = rightSpeedSetpoint;
         }
-        //leftSpeedSetpoint * leftSpeedError;
-        //rightSpeedSetpoint;
-
-        // RCLCPP_INFO(this->get_logger(), "Current Speed Error Left %f, commanded speed %f ", leftSpeedError, leftSpeedSetpoint);
-        // RCLCPP_INFO(this->get_logger(), "Current Speed Error Right %f, commanded speed %f ", rightSpeedError, rightSpeedSetpoint);
-
-         
+        
 
         auto leftspeedCommand =  leftMotor->createSpeedClosedLoopControlCommand(leftMotor->getMotorId(),errorLeftCorrectedSpeedSetPoint );
         uint8_t leftspeedmessageData[8];
@@ -335,14 +395,36 @@ void calculateSpeedError() {
         sendCanMessage(rightMotor->getMotorCANId(), rightspeedmessageData, sizeof(rightspeedmessageData));
 
         // Calculate distance based on delta
-        int32_t leftdelta = leftMotor->calculateDelta();
-        int32_t rightdelta = -1 * rightMotor->calculateDelta(); // flip this one to be the opposite
+        int32_t leftdelta =  calculateDelta(1);//leftMotor->calculateDelta();
+        int32_t rightdelta = -1 * calculateDelta(2);//rightMotor->calculateDelta(); // flip this one to be the opposite
         bool encoderDebug = true;
         
-        double leftDistanceMovedMm = leftdelta * distancePerTickMm;
-        double rightDistanceMovedMm = rightdelta * distancePerTickMm;
-       
-
+        double leftDistanceMovedMm = 0; 
+        double rightDistanceMovedMm = 0;
+        
+        if(leftdelta < 0){
+            leftDistanceMovedMm = -(std::abs(leftdelta) * distancePerTickMm);
+        }else
+        {
+            leftDistanceMovedMm = leftdelta * distancePerTickMm;
+        }
+        
+        
+        if(rightdelta < 0){
+            rightDistanceMovedMm =  -(std::abs(rightdelta) * distancePerTickMm);
+        }
+        else
+        {
+            rightDistanceMovedMm = rightdelta * distancePerTickMm;
+        }
+        
+        
+        
+        //RCLCPP_INFO(this->get_logger(), "Current Actual Left Ticks  %i, Actual Right Ticks %i ", leftMotor->getEncoderRaw(), rightMotor->getEncoderRaw());        
+        //RCLCPP_INFO(this->get_logger(), "Current Delta Left Ticks  %i, Delta Right Ticks %i ", leftdelta, rightdelta);
+        RCLCPP_INFO(this->get_logger(), "Distance per Tick %.2f,  Left %d, Right %d ",distancePerTickMm , leftdelta , rightdelta );
+        RCLCPP_INFO(this->get_logger(), "Current Delta MM Left %.2f, Delta Right MM %.2f ", leftDistanceMovedMm , rightDistanceMovedMm );
+        
         if (!leftMotor && !rightMotor){
              std::cerr << "Motors are uninitialized or nullptr!" << std::endl;             
         }
@@ -353,35 +435,40 @@ void calculateSpeedError() {
         double leftDistanceMoved = leftDistanceMovedMm / 1000.0;
         double rightDistanceMoved = rightDistanceMovedMm / 1000.0;
 
-        // Calculate the change in orientation
-        double dTheta = (rightDistanceMoved - leftDistanceMoved) / wheelbase;
+        // // Calculate the change in orientation
+        // double dTheta = (rightDistanceMoved - leftDistanceMoved) / wheelbase;       
         
-        if(encoderDebug){
-            if(leftdelta != 0 || rightdelta != 0){
-                RCLCPP_INFO(this->get_logger(), "Robot encoder Delta - LA: %u, Ld: %i, LDM: %f, RA: %u, rD: %i, RDM: %f, t: %f", leftMotor->getEncoderPosition(), leftdelta, rightMotor->getEncoderPosition(), rightdelta,leftDistanceMoved, rightDistanceMoved, dTheta);
-            }
-            }
         
         // Calculate the average distance moved
         //double dDistance = (leftDistanceMoved + rightDistanceMoved) / 2.0;
         double dDistance = (rightDistanceMoved + leftDistanceMoved) / 2.0;
+        
+        // Calculate the change in orientation
+        double dTheta = (rightDistanceMoved - leftDistanceMoved) / wheelbase;
 
-        // Improved pose calculation
-        if (dTheta != 0) {
-            double radius = dDistance / dTheta;
-            double centerX = x - radius * sin(theta);
-            double centerY = y + radius * cos(theta);
-            x = centerX + radius * sin(theta + dTheta);
-            y = centerY - radius * cos(theta + dTheta);
-        } else {
-            // If dTheta is zero, the robot is moving straight
-            x += dDistance * cos(theta);
-            y += dDistance * sin(theta);
-        }
+        // Update pose
+        x += dDistance * std::cos(theta + (dTheta / 2));
+        y += dDistance * std::sin(theta + (dTheta / 2));
         theta += dTheta;
 
-        // Normalize theta to the range [-pi, pi)
-        theta = atan2(sin(theta), cos(theta));
+        // Ensure theta is within the range [0, 2*pi)
+        theta = std::fmod(theta, 2 * M_PI);
+        // // Improved pose calculation
+        // if (dTheta != 0) {
+        //     double radius = dDistance / dTheta;
+        //     double centerX = x - radius * sin(theta);
+        //     double centerY = y + radius * cos(theta);
+        //     x = centerX + radius * sin(theta + dTheta);
+        //     y = centerY - radius * cos(theta + dTheta);
+        // } else {
+        //     // If dTheta is zero, the robot is moving straight
+        //     x += dDistance * cos(theta);
+        //     y += dDistance * sin(theta);
+        // }
+        // theta += dTheta;
+
+        // // Normalize theta to the range [-pi, pi)
+        // theta = atan2(sin(theta), cos(theta));
         
         // TODO: Calculate and publish odometry data
 
@@ -431,7 +518,9 @@ void calculateSpeedError() {
 int main(int argc, char **argv) {   
     
     
-    rclcpp::init(argc, argv);
+    rclcpp::init(argc, argv);    
+    // Create a static logger with a specific name
+    auto static_logger = rclcpp::get_logger("staticLogger");
     auto node = std::make_shared<DifferentialDriveNode>();
     rclcpp::spin(node);
     rclcpp::shutdown();

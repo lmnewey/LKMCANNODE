@@ -36,8 +36,7 @@ class BLDCMotor {
 
 private:
     MotorType motorType_; // Type of the motor
-    uint8_t motorId_; // Unique ID for the motor
-   
+    uint8_t motorId_; // Unique ID for the motor   
     int8_t temperature_  =0;   // Motor temperature (1℃/LSB)
     int16_t motorPower_  =0;   // Motor power (-850~850 or -2048~2048 depending on the command)
     int16_t motorSpeed_ =0;   // Motor speed (1dps/LSB)
@@ -79,14 +78,18 @@ private:
     int16_t iC_ =0;
 
     // startup boolean, for calculating the delta tick change
-    bool initialTicksSet;
+    bool initialTicksSet = false;
 
     uint16_t deltaTicks = 0;
 
     // ticks for encoders
-    uint16_t LastTicks = 0;
+    //uint16_t LastTicks = 0;
+    uint32_t LastTicks = 0;
 public:
 // Define a struct to represent the Motor Off command
+
+bool isReversedDirection = false;
+
 struct MotorOffCommand {
     uint32_t identifier; // Identifier: 0x140 + ID (1~32)
     uint8_t data[8];    // Data field: 8 bytes
@@ -645,33 +648,67 @@ struct WriteAccelerationToRAMCommand {
         buffer[7] = static_cast<uint8_t>(acceleration >> 24);
     }
 };
+// uint16_t calculateDelta() {
+//     uint16_t currentTicks = encoderPosition_; // Assuming this is the current reading
+//     if (!initialTicksSet) {
+//         LastTicks = currentTicks;
+//         initialTicksSet = true;
+//         return 0; // No delta on the first read
+//     } else {
+//         // Calculate the difference as a signed 32-bit integer to handle overflow/underflow
+//         int32_t rawDelta = static_cast<int32_t>(currentTicks) - static_cast<int32_t>(LastTicks);
 
-int32_t calculateDelta() {
-    uint16_t currentTicks = encoderPosition_;
-    if (!initialTicksSet) {
-        LastTicks = currentTicks;
-        initialTicksSet = true;
-        return 0; // No delta on the first read
-    }
+//         // Adjust for overflow/underflow
+//         if (rawDelta < -32768) {
+//             // Underflow: If the current reading is significantly less than the last reading,
+//             // it indicates the counter has wrapped past 0 going backwards.
+//             rawDelta += 65536; // Correct by adding the full range of a uint16_t
+//         } else if (rawDelta > 32767) {
+//             // Overflow: If the current reading is significantly greater than the last reading,
+//             // it indicates the counter has wrapped past 65535 going forwards.
+//             rawDelta -= 65536; // Correct by subtracting the full range of a uint16_t
+//         }
 
-    // Calculate the raw delta considering the unsigned nature of encoder values
-    int32_t rawDelta = static_cast<int32_t>(currentTicks) - static_cast<int32_t>(LastTicks);
+//         // Update LastTicks for the next calculation
+//         LastTicks = currentTicks;
 
-    // Correct the delta for underflow or overflow
-    if (rawDelta < -32768) {
-        // Underflow correction
-        rawDelta += 65536;
-    } else if (rawDelta > 32767) {
-        // Overflow correction
-        rawDelta -= 65536;
-    }
+//         // Cast the adjusted delta back to uint16_t to return
+//         return static_cast<uint16_t>(rawDelta);
+//     }
+// }
+// int32_t calculateDelta() {
+//     uint32_t currentTicks = static_cast<int32_t>(encoderPosition_);
+//     if (!initialTicksSet) {
+//         LastTicks = currentTicks;
+//         initialTicksSet = true;
+//         //RCLCPP_INFO(get_logger("staticLogger"), "Initial ticks set.");
+//         return 0; // No delta on the first read
+//     }
 
-    // Update LastTicks for the next calculation
-    LastTicks = currentTicks;
+//     int32_t rawDelta = 0;
+//     // Calculate the raw delta considering the unsigned nature of encoder values
+//     rawDelta = currentTicks - LastTicks;//static_cast<int32_t>(currentTicks) - static_cast<int32_t>(LastTicks);
+//     //int32_t rawDelta = static_cast<int32_t>(std::abs(currentTicks)) - static_cast<int32_t>(std::abs(LastTicks));
 
-    // Return the signed delta
-    return rawDelta;
-}
+//      // ROS logging for debugging
+    
+//     //RCLCPP_INFO(get_logger("staticLogger"), "Raw Delta: %d", rawDelta);
+//     // Correct the delta for underflow or overflow
+//     if (rawDelta < -32768) {
+//         // Underflow correction
+//         rawDelta += 65536;
+//     } else if (rawDelta > 32767) {
+//         // Overflow correction
+//         rawDelta -= 65536;
+//     }
+
+//     // Update LastTicks for the next calculation
+//     LastTicks = currentTicks;
+
+//     // Return the signed delta
+//     //rawDelta = 10;
+//     return rawDelta;
+// }
 //  // Call this method with the current encoder ticks
 //  uint16_t calculateDelta() {
 //         uint16_t currentTicks = encoderPosition_;//encoderRaw_;
